@@ -47,8 +47,8 @@ Feel free to create a PR if you see something missing!
 ### Once Per Mod
 
 #### Use VSCode Find and Replace across the whole repository
-1. replace PLACEHOLDER: `~MAINPREFIX~` with desired MAINPREFIX, example: `x`
-2. replace PLACEHOLDER: `~PREFIX~` with desired PREFIX, example `ABE`
+1. replace PLACEHOLDER: `x` with desired MAINPREFIX, example: `x`
+2. replace PLACEHOLDER: `awx` with desired PREFIX, example `ABE`
 
 #### Update the following files according to your needs
 1. `mod.cpp`
@@ -71,7 +71,7 @@ Examples are `common` or `my_addon`
 > Building with hemtt through github will cause issues if uppercase is used!
 
 #### Use VSCode Find and Replace
-1. replace PLACEHOLDER: `~TEMPLATE_ADDON~` with desired Addon Name.
+1. replace PLACEHOLDER: `core` with desired Addon Name.
 
 #### Update the following files according to your needs
 ##### Template Addon
@@ -80,7 +80,7 @@ Examples are `common` or `my_addon`
 3. Check and Update `script_component.hpp`
    1. check and update `COMPONENT` and `COMPONENT_BEAUTIFIED` if needed
    2. check both `#includes`
-4. Update `addons\~TEMPLATE_ADDON~\config.cpp`
+4. Update `addons\core\config.cpp`
    - update `authors[] = {};`
    - update other entries where needed.
 
