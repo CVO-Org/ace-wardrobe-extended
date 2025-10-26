@@ -31,4 +31,3 @@ class CfgPatches {
 
 	};
 };
-#include "XEH\CfgXEH.hpp"

@@ -17,4 +17,5 @@ class ace_wardrobe {
     class ace_wardrobe_base_U_jacket_closed;
 
     #include "ace_wardrobe_uniforms.hpp"
+    #include "ace_wardrobe_headgear.hpp"
 };
