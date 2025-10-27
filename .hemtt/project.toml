@@ -1,11 +1,11 @@
 mainprefix = "x"     # Ideally, replace "x" across the whole repo with your mod's mainprefix, example "t" (without the "")
 prefix = "awx"             # Ideally, replace "awx" across the whole repo with your mod's prefix, example "mod" (without the "") 
 
-name = "Example Mod"
+name = "ACE Wardrobe Extended Compats"
 
 [properties]
-author = "Derp Derpington"
-url = "https://github.com/Derpington"
+author = "OverlordZorn"
+url = "https://github.com/OverlordZorn/ace-wardrobe-extended-compats"
 
 [binarize]
 # enabled = true # Default: true

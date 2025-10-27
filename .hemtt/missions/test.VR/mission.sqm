@@ -8,18 +8,18 @@ class EditorData
 	toggles=517;
 	class ItemIDProvider
 	{
-		nextID=186;
+		nextID=187;
 	};
 	class Camera
 	{
 		pos[]={0.47298321,29.067928,-25.468061};
 		dir[]={0.031283207,-0.75997806,0.64924896};
 		up[]={0.036577139,0.64992648,0.75911689};
-		aside[]={0.99886912,1.7450247e-007,-0.04813011};
+		aside[]={0.99886912,1.7450247e-07,-0.04813011};
 	};
 };
 binarizationWanted=0;
-sourceName="exec";
+sourceName="test";
 addons[]=
 {
 	"A3_Characters_F"
@@ -42,6 +42,9 @@ randomSeed=4540948;
 class ScenarioData
 {
 	author="Overlord Zorn";
+};
+class CustomAttributes
+{
 };
 class Mission
 {
@@ -73,7 +76,7 @@ class Mission
 			side="West";
 			class Entities
 			{
-				items=1;
+				items=2;
 				class Item0
 				{
 					dataType="Object";
@@ -119,6 +122,21 @@ class Mission
 						};
 						nAttributes=2;
 					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5.2343106,5.0014391,-13.860383};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+					};
+					id=186;
+					type="B_Survivor_F";
 				};
 			};
 			class Attributes
@@ -748,7 +766,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4.7683716e-007,5.0014391,8.0500002};
+						position[]={4.7683716e-07,5.0014391,8.0500002};
 						angles[]={0,3.1415927,0};
 					};
 					side="Civilian";
@@ -1053,7 +1071,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4.7683716e-007,5.0014391,12.05};
+						position[]={4.7683716e-07,5.0014391,12.05};
 						angles[]={0,3.1415927,0};
 					};
 					side="Civilian";
