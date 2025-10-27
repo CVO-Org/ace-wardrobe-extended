@@ -56,7 +56,7 @@ class LungeeOpen: ace_wardrobe_base {\
     class modifiableTo {\
         LungeeRegular {};\
     };\
-};\
+}
 
 #define LUNGEE_2(LungeeRegular,LungeeOpen,LungeeShemagh)\
 class LungeeRegular: ace_wardrobe_base {\
@@ -167,7 +167,7 @@ class HelmetGogglesBack: ace_wardrobe_base_H_goggles_on {\
         class HelmetBase {};\
         class HelmetGogglesFront {};\
     };\
-}\
+}
 
 OPSCORE_HELMET_SF_COVERED_GOGGLES(CFP_OpsC_Covered2_KSK2,CFP_OpsC_Cov_Goggles_Off_KSK2,CFP_OpsC_Med_KSK2,SP_Goggles_Black);
 OPSCORE_HELMET_SF_COVERED_GOGGLES(CFP_OpsC_Covered2_KSK,CFP_OpsC_Cov_Goggles_Off_KSK,CFP_OpsC_Med_KSK,SP_Goggles_Black);
