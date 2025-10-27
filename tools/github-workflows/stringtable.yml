@@ -23,7 +23,7 @@ jobs:
       - name: Checkout the source code
         uses: actions/checkout@master
       - name: Update Translation issue
-        if: github.repository == 'OverlordZorn/immersion-cigs-rewrite' && github.ref	== 'refs/heads/main' && ! contains(github.event.head_commit.message, '[ci skip]')
+        if: github.repository == 'OverlordZorn/immersion-cigs-rewrite' && github.ref    == 'refs/heads/main' && ! contains(github.event.head_commit.message, '[ci skip]')
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 tools/stringtableDeploy.py
