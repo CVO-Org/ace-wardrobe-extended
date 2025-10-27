@@ -839,8 +839,10 @@ USP_UNIFORM_GLOVES(USP_PCU_G3C_KP_MCT_TSW,USP_PCU_G3C_KP_MX_MCT_TSW,USP_MECHANIX
 
 //Overwhite
 
+//T-Shirts
+
 //Regular Uniforms
-#define USP_UNIFORM_SLEEVES_GLOVES(UniformBase,UniformRolledSleeves1,UniformRolledSleeves2,UniformCollarUp,UniformGloves1,Gloves1,UniformGloves2,Gloves2)\
+#define USP_UNIFORM_SLEEVES_COLLAR_GLOVES(UniformBase,UniformRolledSleeves1,UniformRolledSleeves2,UniformCollarUp,UniformGloves1,Gloves1,UniformGloves2,Gloves2)\//ToDo
 class UniformBase: ace_wardrobe_base {\
     class modifiableTo {\
         class UniformRolledSleeves1 {};\
