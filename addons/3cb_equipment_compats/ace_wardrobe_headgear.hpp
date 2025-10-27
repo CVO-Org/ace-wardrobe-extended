@@ -4,7 +4,7 @@ class HelmetBase: ace_wardrobe_base {\
         class HelmetGoggles {};\
     };\
     components[] = {QUOTE(HelmetGoggles)};\
-}\
+}
 
 HELMET_MK6_ESS(UK3CB_BAF_H_Mk6_DDPM_C,UK3CB_BAF_H_Mk6_DDPM_F,G_Combat);
 HELMET_MK6_ESS(UK3CB_BAF_H_Mk6_DPMT_C,UK3CB_BAF_H_Mk6_DPMT_F,G_Combat);
@@ -27,7 +27,7 @@ class HelmetGoggles2: ace_wardrobe_base {\
     class modifiableTo {\
         class HelmetGoggles1 {};\
     };\
-}\
+}
 
 HELMET_MK7_ESS(UK3CB_BAF_H_Mk7_Camo_A,UK3CB_BAF_H_Mk7_Camo_ESS_A,UK3CB_BAF_H_Mk7_Camo_CESS_A,G_Combat);
 HELMET_MK7_ESS(UK3CB_BAF_H_Mk7_Camo_B,UK3CB_BAF_H_Mk7_Camo_ESS_B,UK3CB_BAF_H_Mk7_Camo_CESS_B,G_Combat);
