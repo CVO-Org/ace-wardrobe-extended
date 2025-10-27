@@ -31,3 +31,5 @@ class CfgPatches {
 
     };
 };
+
+#include "ace_wardrobe.hpp"
