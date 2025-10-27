@@ -1,5 +1,5 @@
 // Read the contents of README.md
-let readme = HEMTT_VFS.join("README.md")
+let readme = HEMTT_VFS.join("readme.md")
     .open_file()
     .read();
 // Replace the placeholder version with the actual version
@@ -9,7 +9,7 @@ readme.replace("{version}",
     .to_string_short()
 );
 // Write the new contents over the old contents
-HEMTT_VFS.join("README.md")
+HEMTT_VFS.join("readme.md")
     .create_file()
     .write(readme);
 // Done
