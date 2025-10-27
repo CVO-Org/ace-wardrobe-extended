@@ -32,4 +32,4 @@ class CfgPatches {
     };
 };
 
-#include "XEH\CfgXEH.hpp"
+#include "ace_wardrobe.hpp"
