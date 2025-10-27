@@ -1,16 +1,17 @@
 #define USP_UNIFORM_GLOVES(UniformBase,UniformGloves1,Gloves1,UniformGloves2,Gloves2)\
 class UniformBase: ace_wardrobe_base {\
     class modifiableTo {\
-        class UniformVariant1 {};\
+        class UniformGloves1 {};\
+        class UniformGloves2 {};\
     };\
 };\
-class UniformVariant1: ace_wardrobe_base {\
+class UniformGloves1: ace_wardrobe_base {\
     class modifiableTo {\
         class UniformBase {};\
         components[] = {QUOTE(Gloves1)};\
     };\
 };\
-class UniformVariant2: ace_wardrobe_base {\
+class UniformGloves2: ace_wardrobe_base {\
     class modifiableTo {\
         class UniformBase {};\
         components[] = {QUOTE(Gloves2)};\

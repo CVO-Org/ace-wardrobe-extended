@@ -32,8 +32,8 @@ dlc = []
 extends = "default"
 mission = "test.VR"
 
-[USP]
+[usp]
 extends = "default"
-addons = [
+workshop = [
     "1795825073", # USP AiO
 ]
