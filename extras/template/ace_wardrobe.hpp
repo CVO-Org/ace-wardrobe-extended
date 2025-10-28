@@ -17,4 +17,5 @@ class ace_wardrobe {
 
     #include "ace_wardrobe_uniforms.hpp"
     #include "ace_wardrobe_headgear.hpp"
+    #include "ace_wardrobe_goggles.hpp"
 };
