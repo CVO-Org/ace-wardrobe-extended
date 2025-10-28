@@ -1,12 +1,12 @@
 #define BOONIEHATS(BoonieHatUnfolded,BoonieHatFolded)\
 class BoonieHatUnfolded: ace_wardrobe_base {\
     class modifiableTo {\
-        BoonieHatFolded {};\
+        class BoonieHatFolded {};\
     };\
 };\
 class BoonieHatFolded: ace_wardrobe_base {\
     class modifiableTo {\
-        BoonieHatUnfolded {};\
+        class BoonieHatUnfolded {};\
     };\
 }
 
@@ -16,12 +16,12 @@ BOONIEHATS(CFP_BoonieHat_M81,CFP_BoonieHat2_M81);
 #define CAPS(CapRegular,CapBackwards)\
 class CapRegular: ace_wardrobe_base {\
     class modifiableTo {\
-        CapBackwards {};\
+        class CapBackwards {};\
     };\
 };\
 class CapBackwards: ace_wardrobe_base {\
     class modifiableTo {\
-        CapRegular {};\
+        class CapRegular {};\
     };\
 }
 
@@ -49,32 +49,32 @@ CAPS(CFP_BaseballCap_Multicam_DEF,CFP_BaseballCap_Multicam_DEF_Back);
 #define LUNGEE_1(LungeeRegular,LungeeOpen)\
 class LungeeRegular: ace_wardrobe_base {\
     class modifiableTo {\
-        LungeeOpen {};\
+        class LungeeOpen {};\
     };\
 };\
 class LungeeOpen: ace_wardrobe_base {\
     class modifiableTo {\
-        LungeeRegular {};\
+        class LungeeRegular {};\
     };\
 }
 
 #define LUNGEE_2(LungeeRegular,LungeeOpen,LungeeShemagh)\
 class LungeeRegular: ace_wardrobe_base {\
     class modifiableTo {\
-        LungeeOpen {};\
-        LungeeShemagh {};\
+        class LungeeOpen {};\
+        class LungeeShemagh {};\
     };\
 };\
 class LungeeOpen: ace_wardrobe_base {\
     class modifiableTo {\
-        LungeeRegular {};\
-        LungeeShemagh {};\
+        class LungeeRegular {};\
+        class LungeeShemagh {};\
     };\
 };\
 class LungeeShemagh: ace_wardrobe_base {\
     class modifiableTo {\
-        LungeeRegular {};\
-        LungeeOpen {};\
+        class LungeeRegular {};\
+        class LungeeOpen {};\
     };\
 }
 
@@ -232,7 +232,7 @@ OPSCORE_HELMET_SF_COVERED_GOGGLES(CFP_OpsC_Covered2_AOR2,CFP_OpsC_Cov_Goggles_Of
 // CFP_MitzHelm4_Wdl2
 
 BASE_PAIR(CFP_Shemagh_Head_Black,CFP_Shemagh_Full_Black);
-BASE_PARI(CFP_Shemagh_Head_M81,CFP_Shemagh_Full_M81);
+BASE_PAIR(CFP_Shemagh_Head_M81,CFP_Shemagh_Full_M81);
 BASE_PAIR(CFP_Shemagh_Head_Red,CFP_Shemagh_Full_Red);
 BASE_PAIR(CFP_Shemagh_Head_Tan,CFP_Shemagh_Full_Tan);
 BASE_PAIR(CFP_Shemagh_Head_White,CFP_Shemagh_Full_White);

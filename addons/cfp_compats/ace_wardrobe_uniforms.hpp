@@ -5,7 +5,7 @@ UNIFORM_SLEEVES(CFP_BDU_IA_DCU,CFP_BDU_IA_DCU2);
 UNIFORM_SLEEVES(CFP_BDU_Green,CFP_BDU_Green2);
 UNIFORM_SLEEVES(CFP_BDU_Tan,CFP_BDU_Tan2);
 UNIFORM_SLEEVES(CFP_BDU_UPDFM81,CFP_BDU_UPDFM812);
-UNIFORM_SLEEVES(CFP_BDU_UPDFM812,CFP_BDU_UPDFMarpat2);
+UNIFORM_SLEEVES(CFP_BDU_UPDFMarpat,CFP_BDU_UPDFMarpat2);
 UNIFORM_SLEEVES(CFP_BDU_DBDU,CFP_BDU_DBDU2);
 UNIFORM_SLEEVES(CFP_BDU_Wdl_Mali,CFP_BDU_Wdl_Mali2);
 
@@ -24,7 +24,6 @@ UNIFORM_SLEEVES(SP_0000_Standard_FieldUniform_ATacsFG,SP_0000_Standard_FieldUnif
 UNIFORM_SLEEVES(CFP_U_FieldUniform_acr_desert,CFP_U_FieldUniform_acr_desert_SS);
 UNIFORM_SLEEVES(SP_0000_Standard_FieldUniform_Black,SP_0000_Standard_FieldUniform_Black_SS);
 UNIFORM_SLEEVES(CFP_U_FieldUniform_ChocChip,CFP_U_FieldUniform_ChocChip_SS);
-UNIFORM_SLEEVES(CFP_U_FieldUniform_DDPM,);
 UNIFORM_SLEEVES(SP_0000_Standard_FieldUniform_GreenOlive,SP_0000_Standard_FieldUniform_GreenOlive_SS);
 UNIFORM_SLEEVES(SP_0000_Standard_FieldUniform_Green,SP_0000_Standard_FieldUniform_Green_SS);
 UNIFORM_SLEEVES(SP_0000_Standard_FieldUniform_Grey,SP_0000_Standard_FieldUniform_Grey_SS);
@@ -53,6 +52,19 @@ UNIFORM_SLEEVES(CFP_75th_CRYE_V3_Full,CFP_75th_CRYE_V3_Sleeved);
 UNIFORM_SLEEVES(CFP_75th_CRYE_V3b_Full,CFP_75th_CRYE_V3b_Sleeved);
 UNIFORM_SLEEVES(CFP_75th_CRYE_V4_Full,CFP_75th_CRYE_V4_Sleeved);
 UNIFORM_SLEEVES(CFP_75th_CRYE_V4b_Full,CFP_75th_CRYE_V4b_Sleeved);
+
+UNIFORM_SLEEVES(CFP_RAID_DBDU_1,CFP_RAID_DBDU_2);
+UNIFORM_SLEEVES(CFP_RAID_DBDU_3,CFP_RAID_DBDU_4);
+UNIFORM_SLEEVES(CFP_RAID_DCU1,CFP_RAID_DCU2);
+UNIFORM_SLEEVES(CFP_RAID_DCU3,CFP_RAID_DCU4);
+UNIFORM_SLEEVES(CFP_RAID_DCU_M81_1,CFP_RAID_DCU_M81_2);
+UNIFORM_SLEEVES(CFP_RAID_DCU_M81_3,CFP_RAID_DCU_M81_4);
+UNIFORM_SLEEVES(CFP_RAID_M811,CFP_RAID_M812);
+UNIFORM_SLEEVES(CFP_RAID_M813,CFP_RAID_M814);
+UNIFORM_SLEEVES(CFP_RAID_M81_DCU_1,CFP_RAID_M81_DCU_2);
+UNIFORM_SLEEVES(CFP_RAID_M81_DCU_3,CFP_RAID_M81_DCU_4);
+
+UNIFORM_SLEEVES(CFP_IDF_6,CFP_IDF_4);
 
 #define UNIFORM_SLEEVES_2(UniformBase,UniformRolled1,UniformRolled2)\
 class UniformBase: ace_wardrobe_base_U_sleeves_down {\
@@ -86,56 +98,61 @@ class CFP_BDU_Marpat: ace_wardrobe_base {
         class CFP_BDU_Marpat2 {};
     };
 };
-
 class CFP_BDU_Marpat1: ace_wardrobe_base {
     class modifiableTo {
         class CFP_BDU_Marpat {};
     };
 };
-
 class CFP_BDU_Marpat2: ace_wardrobe_base {
     class modifiableTo {
         class CFP_BDU_Marpat {};
     };
 };
 
-//ToDo Gloves + Rolled
-CFP_BDU_PolyDes
-CFP_BDU_PolyDes2
-CFP_BDU_PolyDes5
-CFP_BDU_PolyDes3
-CFP_BDU_PolyDes4
+class CFP_BDU_PolyDes: ace_wardrobe_base {
+    class modifiableTo {
+        class CFP_BDU_PolyDes2 {};
+    };
+};
+class CFP_BDU_PolyDes2: ace_wardrobe_base {
+    class modifiableTo {
+        class CFP_BDU_PolyDes {};
+        class CFP_BDU_PolyDes3 {};
+        class CFP_BDU_PolyDes5 {};
+    };
+};
+class CFP_BDU_PolyDes3: ace_wardrobe_base {
+    class modifiableTo {
+        class CFP_BDU_PolyDes2 {};
+        class CFP_BDU_PolyDes4 {};
+    };
+};
+class CFP_BDU_PolyDes4: ace_wardrobe_base {
+    class modifiableTo {
+        class CFP_BDU_PolyDes3 {};
+        class CFP_BDU_PolyDes5 {};
+    };
+};
+class CFP_BDU_PolyDes5: ace_wardrobe_base {
+    class modifiableTo {
+        class CFP_BDU_PolyDes4 {};
+        class CFP_BDU_PolyDes2 {};
+    };
+};
 
-//ToDo Gloves + Rollen + Kneepads
-CFP_IDF_6
-CFP_IDF_4
-CFP_IDF_1
-CFP_IDF_2
-CFP_IDF_3
-CFP_IDF_5
-
-//ToDo
-CFP_RAID_DBDU_1
-CFP_RAID_DBDU_3
-CFP_RAID_DBDU_4
-CFP_RAID_DBDU_2
-
-CFP_RAID_DCU3
-CFP_RAID_DCU1
-CFP_RAID_DCU4
-CFP_RAID_DCU2
-
-CFP_RAID_DCU_M81_3
-CFP_RAID_DCU_M81_1
-CFP_RAID_DCU_M81_4
-CFP_RAID_DCU_M81_2
-
-CFP_RAID_M811
-CFP_RAID_M813
-CFP_RAID_M812
-CFP_RAID_M814
-
-CFP_RAID_M81_DCU_3
-CFP_RAID_M81_DCU_1
-CFP_RAID_M81_DCU_4
-CFP_RAID_M81_DCU_2
+class CFP_IDF_1: ace_wardrobe_base {
+    class modifiableTo {
+        class CFP_IDF_2 {};
+    };
+};
+class CFP_IDF_2: ace_wardrobe_base {
+    class modifiableTo {
+        class CFP_IDF_1 {};
+        class CFP_IDF_3 {};
+    };
+};
+class CFP_IDF_3: ace_wardrobe_base {
+    class modifiableTo {
+        class CFP_IDF_2 {};
+    };
+};
