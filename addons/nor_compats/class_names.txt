@@ -1,4 +1,0 @@
-NOR_Combat_Uniform
-NOR_Combat_Uniform_Gloves
-NOR_Combat_Uniform_Gloves_Rolled
-NOR_Combat_Uniform_Rolled
