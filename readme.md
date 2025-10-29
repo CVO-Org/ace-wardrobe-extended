@@ -1,98 +1,35 @@
-# Overlord Zorns Personal Mod Template
+<p align="center">
+    <img src="https://github.com/OverlordZorn/ace-wardrobe-extended/blob/main/extras/logo/awx_logo.png" width="512">
+    </br>
+    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3595979374"><img src="https://img.shields.io/steam/subscriptions/3595979374?style=for-the-badge&logo=steam&label=Steam%20Workshop&color=%23690000"></a>
+</p>
 
-Here I maintain a personal, basic mod framework.
+# Advanced Slingloading Redux
 
-Feel free to create a PR if you see something missing!
+[![License](https://img.shields.io/badge/License-MIT-red?style=flat-square)](https://github.com/OverlordZorn/ace-wardrobe-extended/blob/main/LICENSE.md)
+[![Issues](https://img.shields.io/github/issues-raw/OverlordZorn/ace-wardrobe-extended.svg?style=flat-square&label=Issues)](https://github.com/OverlordZorn/ace-wardrobe-extended/issues)
+[![HEMTT](https://img.shields.io/github/actions/workflow/status/OverlordZorn/ace-wardrobe-extended/hemtt.yml?style=flat-square&label=HEMTT)](https://github.com/OverlordZorn/ace-wardrobe-extended/actions/workflows/hemtt.yml)
+[![Validate](https://img.shields.io/github/actions/workflow/status/OverlordZorn/ace-wardrobe-extended/validate.yml?style=flat-square&label=Validate)](https://github.com/OverlordZorn/ace-wardrobe-extended/actions/workflows/validate.yml)
 
-## This Arma3 Mod Template comes with:
+**Requires the latest version of [CBA A3](https://github.com/CBATeam/CBA_A3/releases/latest) and [ACE3](https://github.com/acemod/ACE3/releases/latest)**
 
-- MAIN ADDON
-  - Has a set of my personal macros. Some are somewhat duplicate from cba, but i already got used to them. Feel free to use them or not.
+**Advanced Slingloading Redux** (aslr) aims to improve slingloading in Arma 3.
 
-- TEMPLATE ADDON Folder
-  - Basic CfgFunctions Setup
-    - example `fn_example.sqf` function
-  - Basic CBA XEH Setup
-    - example `XEH_preInit.sqf` with CBA Addon Option Template
+This project is based on previous [work](https://github.com/sethduda/AdvancedSlingLoading) by sethduda.
 
-- INCLUDE Folder
-  - CBA Macros and Stuff
-  - ACE3 Macros and Stuff
-  - some A3 GUI Stuff
+The project is entirely **open-source** and any contributions are welcome.
 
-- HEMTT
-  - hemtt's project.toml
-  - hemtt's launch.toml
-    - simple Editor Test Mission `test.vr` to be used with `hemtt launch Test`
+## Core Features
 
-- GITHUB
-  - Github Action on release
-    - create and rename .zip files for the Github Release Page
-    - Update Existing Steam Workshop Files directly from the Github Release
-      - Requires Steam Account that Owns Arma3. It is strongly advised to aquire a secondary account if you wish to use the release->Steamworkshop feature
-    - Planned: Bump Patch Version on PR Merge
-    - Planned: Bump Minor Version on Release, set patch to 0
-  - SQF Validator Python Script
+- Manual attaching of cargo
+- Allows for up to 3 slingload points per helicopter
 
+Full documentation can be found [here](https://OverlordZorn.github.io/ace-wardrobe-extended/).
 
-- Automated Version Bumping
-  - MINOR on `hemtt release` (WIP: Only bumps when using on your local mashine through hemtt, not when releasing through github action.)
-  - PATCH on github PR (PLANNED, not done yet - need to learn github action stuff first)
-  - BUILD on `hemtt built`, including `hemtt launch`
+## Contributing
 
+For new contributers, see the [Contributing Setup & Guidelines](./.github/CONTRIBUTING.md).
 
+## License
 
-## HOW TO SETUP
-
-### Once Per Mod
-
-#### Use VSCode Find and Replace across the whole repository
-1. replace PLACEHOLDER: `x` with desired MAINPREFIX, example: `x`
-2. replace PLACEHOLDER: `awx` with desired PREFIX, example `ABE`
-
-#### Update the following files according to your needs
-1. `mod.cpp`
-2. `.hemtt\project.toml`
-
-#### Update the Main Addon
-1. Check `$PBOPREFIX$`
-2. Update `addons\main\script_mod.hpp`
-3. Update `addons\main\script_version.hpp` when needed
-4. Update `addons\main\config.cpp`
-5. Update `addons\main\stringtable.xml`
-
-### Per New Addon
-
-#### Choose a suitable name for the addon.
-Examples are `common` or `my_addon`
-
-> [!IMPORTANT]
-> Ensure only lowercase is used in addon name! Especially important for the foldername.
-> Building with hemtt through github will cause issues if uppercase is used!
-
-#### Use VSCode Find and Replace
-1. replace PLACEHOLDER: `core` with desired Addon Name.
-
-#### Update the following files according to your needs
-##### Template Addon
-1. Rename Folder accordingly, like `common` or `my_addon`. only lowercase!
-2. Check `$PBOPREFIX$` should say something like `x\abe\addons\my_addon`
-3. Check and Update `script_component.hpp`
-   1. check and update `COMPONENT` and `COMPONENT_BEAUTIFIED` if needed
-   2. check both `#includes`
-4. Update `addons\core\config.cpp`
-   - update `authors[] = {};`
-   - update other entries where needed.
-
-5. Start building your mod
-   1. Dont forget to remove fn_example.
-
-## How to install Hemtt
-`winget install BrettMayson.HEMTT` to install.
-
-### auto update hemtt
-in `tools` you can find a `update_hemtt.bat` which i use in my autostart folder to automatically update hemtt.
-You can find your Win Users Autostart folder via  `WIN+R` -> `shell:startup`
-
-### Install Winget
-https://learn.microsoft.com/en-us/windows/package-manager/winget/
+Advanced Slingloading Redux is licensed under the [MIT License](./LICENSE.md).
