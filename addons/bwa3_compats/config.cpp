@@ -6,7 +6,7 @@ class CfgPatches {
         // Meta information for editor
         name = ADDON_NAME;
         author = "$STR_mod_author";
-        authors[] = {"Overlord [CVO]", "Andx [TTT]"};
+        authors[] = {"Overlord Zorn [CVO]", "Andx [TTT]"};
         
         url = "$STR_mod_URL";
 
