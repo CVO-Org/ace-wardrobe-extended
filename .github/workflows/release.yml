@@ -15,9 +15,9 @@
 name: Release
 
 env:
-  FOLDER: # '@cvo_aux'
-  WORKSHOPID: # '3037257908'
-  WORKSHOPNAME: # 'my mod name on the workshop'
+  FOLDER: # '@cvo_aux' //ToDo
+  WORKSHOPID: # '3037257908' //ToDo
+  WORKSHOPNAME: # 'my mod name on the workshop' //ToDo
 
 on:
   release:
