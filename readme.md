@@ -13,23 +13,35 @@
 
 **Requires the latest version of [CBA A3](https://github.com/CBATeam/CBA_A3/releases/latest) and [ACE3](https://github.com/acemod/ACE3/releases/latest)**
 
-**Advanced Slingloading Redux** (aslr) aims to improve slingloading in Arma 3.
-
-This project is based on previous [work](https://github.com/sethduda/AdvancedSlingLoading) by sethduda.
-
 The project is entirely **open-source** and any contributions are welcome.
 
-## Core Features
+# ACE Wardrobe Extended Compats
 
-- Manual attaching of cargo
-- Allows for up to 3 slingload points per helicopter
+This mod includes many compats for the [ACE Wardrobe](https://ace3.acemod.org/wiki/framework/wardrobe-framework) Framework for 3rd-party mods.
 
-Full documentation can be found [here](https://OverlordZorn.github.io/ace-wardrobe-extended/).
+For any help visit our [Discord](https://discord.gg/cQ7dSwRcVd).
 
-## Contributing
+## Supported Mods
 
-For new contributers, see the [Contributing Setup & Guidelines](./.github/CONTRIBUTING.md).
+- [X] [BWmod](https://steamcommunity.com/sharedfiles/filedetails/?id=1200127537)
+- [] [(CUP) Norwegian Armed Forces](https://steamcommunity.com/sharedfiles/filedetails/?id=3333292879)
+
+## Planned Mods
+
+- [ ] [USP Gear & Uniforms AIO](https://steamcommunity.com/sharedfiles/filedetails/?id=1795825073)
+- [ ] [3CB BAF Equipment](https://steamcommunity.com/sharedfiles/filedetails/?id=893328083)
+- [ ] [Community Factions Project (CFP)](https://steamcommunity.com/sharedfiles/filedetails/?id=1369691841)
+
+## Bugs and Mod Requests
+
+If you want to report a bug, please create an [Issue](https://github.com/OverlordZorn/ace-wardrobe-extended/issues).
+
+If you want to request a mod to be added to the project please create an [Issue](https://github.com/OverlordZorn/ace-wardrobe-extended/issues).
 
 ## License
 
 Advanced Slingloading Redux is licensed under the [MIT License](./LICENSE.md).
+
+## Contributing
+
+For new contributers, see the [Contributing Setup & Guidelines](./.github/CONTRIBUTING.md).
