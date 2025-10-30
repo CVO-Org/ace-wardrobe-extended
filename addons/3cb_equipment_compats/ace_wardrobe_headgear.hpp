@@ -14,7 +14,7 @@ HELMET_MK6_ESS(UK3CB_BAF_H_Mk6_DPMW_C,UK3CB_BAF_H_Mk6_DPMW_F,rhs_ess_black);
 #define HELMET_MK7_ESS(HelmetBase,HelmetGoggles1,HelmetGoggles2,Goggles)\
 class HelmetBase: ace_wardrobe_base {\
     class modifiableTo {\
-        class HelmetGoggles {};\
+        class HelmetGoggles1 {};\
     };\
 };\
 class HelmetGoggles1: ace_wardrobe_base {\
@@ -22,13 +22,14 @@ class HelmetGoggles1: ace_wardrobe_base {\
         class HelmetGoggles2 {};\
         class HelmetBase {};\
     };\
-    components[] = {QUOTE(HelmetGoggles)};\
+    components[] = {QUOTE(Goggles)};\
     fallbackComponent = QUOTE(G_Combat);\
 };\
 class HelmetGoggles2: ace_wardrobe_base {\
     class modifiableTo {\
         class HelmetGoggles1 {};\
         class HelmetBase {};\
+        components[] = {QUOTE(Goggles)};\
         fallbackComponent = QUOTE(G_Combat);\
     };\
 }
