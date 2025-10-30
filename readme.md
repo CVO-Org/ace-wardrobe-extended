@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://github.com/CVO-Org/ace-wardrobe-extended/blob/main/extras/assets/workshop_2048_1024.png" width="512">
+    <img src="https://github.com/CVO-Org/ace-wardrobe-extended/blob/main/extras/assets/workshop_2048_1024.png" width="1024">
     </br>
     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3595979374"><img src="https://img.shields.io/steam/subscriptions/3595979374?style=for-the-badge&logo=steam&label=Steam%20Workshop&color=%23690000"></a>
 </p>
