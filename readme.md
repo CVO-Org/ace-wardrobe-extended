@@ -2,9 +2,8 @@
     <img src="https://github.com/CVO-Org/ace-wardrobe-extended/blob/main/extras/assets/logo-no-bg.png" width="512">
     </br>
     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3595979374"><img src="https://img.shields.io/steam/subscriptions/3595979374?style=for-the-badge&logo=steam&label=Steam%20Workshop&color=%23690000"></a>
-</p>
-
-<p align="center">
+    </br>
+    </br>
     <a href="https://github.com/CVO-Org/ace-wardrobe-extended/blob/main/LICENSE">               <img src="https://img.shields.io/badge/License-APLSA-red?style=flat-square"></a>
     <a href="https://github.com/CVO-Org/ace-wardrobe-extended/issues">                          <img src="https://img.shields.io/github/issues-raw/OverlordZorn/ace-wardrobe-extended.svg?style=flat-square&label=Issues"></a>
     <a href="https://github.com/CVO-Org/ace-wardrobe-extended/actions/workflows/hemtt.yml">     <img src="https://img.shields.io/github/actions/workflow/status/OverlordZorn/ace-wardrobe-extended/hemtt.yml?style=flat-square&label=HEMTT"></a>
