@@ -7,7 +7,7 @@ class CFP_UA_Thermals_Blk_GPS: ace_wardrobe_base {
     class modifiableTo {
         class CFP_UA_Thermals_Blk {};
     };
-    components[] = {QUOTE(CFP_Foretex)}
+    components[] = {QUOTE(CFP_Foretex)};
 };
 
 #define NECKWRAP_GLASSES(NeckwrapBase,NeckwrapGlasses,Glasses)\
@@ -20,7 +20,7 @@ class NeckwrapGlasses: ace_wardrobe_base {\
     class modifiableTo {\
         class NeckwrapBase {};\
     };\
-    components[] = {QUOTE(Glasses)}\
+    components[] = {QUOTE(Glasses)};\
 }
 
 NECKWRAP_GLASSES(CFP_Neck_Plain_Atacs,CFP_Neck_Wrap_Atacs,CUP_G_Oakleys_Clr);
