@@ -4,7 +4,7 @@
     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3595979374"><img src="https://img.shields.io/steam/subscriptions/3595979374?style=for-the-badge&logo=steam&label=Steam%20Workshop&color=%23690000"></a>
 </p>
 
-# Advanced Slingloading Redux
+# ACE Wardrobe Extended
 
 [![License](https://img.shields.io/badge/License-MIT-red?style=flat-square)](https://github.com/OverlordZorn/ace-wardrobe-extended/blob/main/LICENSE.md)
 [![Issues](https://img.shields.io/github/issues-raw/OverlordZorn/ace-wardrobe-extended.svg?style=flat-square&label=Issues)](https://github.com/OverlordZorn/ace-wardrobe-extended/issues)
@@ -15,8 +15,6 @@
 
 The project is entirely **open-source** and any contributions are welcome.
 
-# ACE Wardrobe Extended Compats
-
 This mod includes many compats for the [ACE Wardrobe](https://ace3.acemod.org/wiki/framework/wardrobe-framework) Framework for 3rd-party mods.
 
 For any help visit our [Discord](https://discord.gg/cQ7dSwRcVd).
@@ -24,7 +22,7 @@ For any help visit our [Discord](https://discord.gg/cQ7dSwRcVd).
 ## Supported Mods
 
 - [X] [BWmod](https://steamcommunity.com/sharedfiles/filedetails/?id=1200127537)
-- [] [(CUP) Norwegian Armed Forces](https://steamcommunity.com/sharedfiles/filedetails/?id=3333292879)
+- [x] [(CUP) Norwegian Armed Forces](https://steamcommunity.com/sharedfiles/filedetails/?id=3333292879)
 
 ## Planned Mods
 
