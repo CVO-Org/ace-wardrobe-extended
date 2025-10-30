@@ -29,22 +29,43 @@ CAPS(CFP_BaseballCap_Multicam,CFP_BaseballCap_Multicam_Back);
 CAPS(CFP_BaseballCap_Multicam_DEF,CFP_BaseballCap_Multicam_DEF_Back);
 
 //ToDo Helmet with Goggles
-// CFP_IDF_M76_BD
-// CFP_IDF_M76_BD_GG
-// CFP_IDF_M76_BD_CB_GG
-// CFP_IDF_M76_BD_CF_GG
+#define IDF_M76(HelmetBase,HelmetGoggles,HelmetCoverFront,HelmetCoverBack,Goggles)\
+class HelmetBase: ace_wardrobe_base_H_goggles_off {\
+    class modifiableTo {\
+        class HelmetGoggles {};\
+        class HelmetCoverFront {};\
+        class HelmetCoverBack {};\
+    };\
+};\
+class HelmetGoggles: ace_wardrobe_base_H_goggles_on {\
+      class modifiableTo {\
+        class HelmetBase {};\
+        class HelmetCoverFront {};\
+        class HelmetCoverBack {};\
+    };\
+    components[] = {QUOTE(Goggles)};\
+};\
+class HelmetCoverFront: ace_wardrobe_base_H_goggles_on {\
+      class modifiableTo {\
+        class HelmetBase {};\
+        class HelmetGoggles {};\
+        class HelmetCoverBack {};\
+    };\
+    components[] = {QUOTE(Goggles)};\
+};\
+class HelmetCoverBack: ace_wardrobe_base_H_goggles_on {\
+      class modifiableTo {\
+        class HelmetBase {};\
+        class HelmetCoverFront {};\
+        class HelmetGoggles {};\
+    };\
+    components[] = {QUOTE(Goggles)};\
+}
 
-// CFP_IDF_M76_BD_Black
-// CFP_IDF_M76_BD_GG_Black
-// CFP_IDF_M76_CB_GG_Black
-// CFP_IDF_M76_CF_GG_Black
-// CFP_IDF_M76_BD_CB_GG_Black
-// CFP_IDF_M76_BD_CF_GG_Black
-
-// CFP_IDF_M76
-// CFP_IDF_M76_CB_GG
-// CFP_IDF_M76_CF_GG
-// CFP_IDF_M76_GG
+IDF_M76(CFP_IDF_M76,CFP_IDF_M76_GG,CFP_IDF_M76_CF_GG,CFP_IDF_M76_CB_GG,CUP_G_ESS_BLK);
+IDF_M76(CFP_IDF_M76_BD,CFP_IDF_M76_BD_GG,CFP_IDF_M76_BD_CF_GG,CFP_IDF_M76_BD_CB_GG,CUP_G_ESS_BLK);
+IDF_M76(CFP_IDF_M76_BD_Black,CFP_IDF_M76_BD_GG_Black,CFP_IDF_M76_BD_CF_GG_Black,CFP_IDF_M76_BD_CB_GG_Black,CUP_G_ESS_BLK);
+//IDF_M76(,CFP_IDF_M76_GG_Black,CFP_IDF_M76_CF_GG_Black,CFP_IDF_M76_CB_GG_Black,CUP_G_ESS_BLK);
 
 #define LUNGEE_1(LungeeRegular,LungeeOpen)\
 class LungeeRegular: ace_wardrobe_base {\
@@ -230,28 +251,16 @@ class HelmetGogglesBack: ace_wardrobe_base_H_goggles_on {\
     };\
 }
 
-OPSCORE_HELMET_SF_COVERED_GOGGLES(CFP_OpsC_Covered2_KSK2,CFP_OpsC_Cov_Goggles_Off_KSK2,CFP_OpsC_Med_KSK2,SP_Goggles_Black);
-OPSCORE_HELMET_SF_COVERED_GOGGLES(CFP_OpsC_Covered2_KSK,CFP_OpsC_Cov_Goggles_Off_KSK,CFP_OpsC_Med_KSK,SP_Goggles_Black);
-OPSCORE_HELMET_SF_COVERED_GOGGLES(CFP_OpsC_Covered2_AOR1,CFP_OpsC_Cov_Goggles_Off_AOR1,CFP_OpsC_Med_AOR1,SP_Goggles_Black);
-OPSCORE_HELMET_SF_COVERED_GOGGLES(CFP_OpsC_Covered2_AOR2,CFP_OpsC_Cov_Goggles_Off_AOR2,CFP_OpsC_Med_AOR2,SP_Goggles_Black);
+OPSCORE_HELMET_SF_COVERED_GOGGLES(CFP_OpsC_Covered_KSK2,CFP_OpsC_Cov_Goggles_Off_KSK2,CFP_OpsC_Med_KSK2,CUP_G_ESS_BLK);
+OPSCORE_HELMET_SF_COVERED_GOGGLES(CFP_OpsC_Covered_KSK,CFP_OpsC_Cov_Goggles_Off_KSK,CFP_OpsC_Med_KSK,CUP_G_ESS_BLK);
+OPSCORE_HELMET_SF_COVERED_GOGGLES(CFP_OpsC_Covered_AOR1,CFP_OpsC_Cov_Goggles_Off_AOR1,CFP_OpsC_Med_AOR1,CUP_G_ESS_BLK);
+OPSCORE_HELMET_SF_COVERED_GOGGLES(CFP_OpsC_Covered_AOR2,CFP_OpsC_Cov_Goggles_Off_AOR2,CFP_OpsC_Med_AOR2,CUP_G_ESS_BLK);
+OPSCORE_HELMET_SF_COVERED_GOGGLES(CFP_OpsC_Covered,CFP_OpsC_Cov_Goggles_Off,CFP_OpsC_Med,CUP_G_ESS_BLK);
 
-//ToDo 75th Helmets
-// CFP_OpsC_Cov_Goggles_Off
-// CFP_OpsC_Cov_Full
-// CFP_OpsC_Covered/ CFP_OpsC_Covered2
-// CFP_OpsC_Covered2
-// CFP_OpsC_Med
-// CFP_OpsC_Uncov_Full
-// CFP_OpsC_Uncov_Goggles
-// CFP_OpsC_Uncovered
+//ToDo CFP_OpsC_Uncov_Full,CFP_OpsC_Uncov_Goggles,CFP_OpsC_Uncovered > (CUP_FR_NeckScarf4 + CUP_G_ESS_BLK)
+//ToDo CFP_OpsC_Covered > CFP_OpsC_Cov_Full (CUP_G_ESS_CBR_Ember + CUP_FR_NeckScarf4)
 
-// ToDo IDF Helmets
-// CFP_OpsC_Painted_IDF
-// CFP_OpsC_Med_IDF
-// CFP_OpsC_Uncov_Full_IDF
-// CFP_OpsC_Covered2_IDF
-// CFP_OpsC_Covered_IDF
-// CUP_H_OpsCore_Covered_IDF
+BASE_PAIR(CFP_75th_Patrol_Cap,CFP_75th_Patrol_Cap_Oakleys);
 
 class CFP_MitzHelm1_Des: ace_wardrobe_base {
     class modifiableTo {
