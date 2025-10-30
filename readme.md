@@ -12,16 +12,18 @@
 
 # ACE Wardrobe Extended
 
+ACE Wardrobe Extended provides [ACE Wardrobe](https://ace3.acemod.org/wiki/framework/wardrobe-framework) Compatibility for 3rd-party mods.
 
-
-
-**Requires the latest version of [CBA A3](https://github.com/CBATeam/CBA_A3/releases/latest) and [ACE3](https://github.com/acemod/ACE3/releases/latest)**
+### Why not include these in ACE itself?
+There are many reasons for us to handle these Compats outside of the ACE Mod itself, but mainly,
+- it keeps the maintenance-workload in ACE itself managable.
+- it allows for more flexibility and a more frequent update cycle.
 
 The project is entirely **open-source** and any contributions are welcome.
 
-This mod includes many compats for the [ACE Wardrobe](https://ace3.acemod.org/wiki/framework/wardrobe-framework) Framework for 3rd-party mods.
-
 For any help visit our [Discord](https://discord.gg/cQ7dSwRcVd).
+
+**Requires the latest version of [CBA A3](https://github.com/CBATeam/CBA_A3/releases/latest) and [ACE3](https://github.com/acemod/ACE3/releases/latest)**
 
 ## Supported Mods
 
