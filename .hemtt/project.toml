@@ -1,11 +1,11 @@
 mainprefix = "x"     # Ideally, replace "x" across the whole repo with your mod's mainprefix, example "t" (without the "")
 prefix = "awx"             # Ideally, replace "awx" across the whole repo with your mod's prefix, example "mod" (without the "") 
 
-name = "Example Mod"
+name = "ACE Wardrobe Extended"
 
 [properties]
-author = "Derp Derpington"
-url = "https://github.com/Derpington"
+author = "AWX Team"
+url = "https://github.com/CVO-Org/ace-wardrobe-extended"
 
 [binarize]
 # enabled = true # Default: true
@@ -16,6 +16,7 @@ include = [
     "meta.cpp",     # They do not need to be added to your list
     "LICENSE",
     "/img/*.paa",
+    "/img/*.png",
     "logo_ca.paa",
     "logo_co.paa",
     "*.bikey",

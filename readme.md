@@ -1,98 +1,51 @@
-# Overlord Zorns Personal Mod Template
+<p align="center">
+    <img src="https://github.com/CVO-Org/ace-wardrobe-extended/blob/main/extras/assets/logo-no-bg.png" width="512">
+    </br>
+    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3595979374"><img src="https://img.shields.io/steam/subscriptions/3595979374?style=for-the-badge&logo=steam&label=Steam%20Workshop&color=%23690000"></a>
+    </br>
+    </br>
+    <a href="https://github.com/CVO-Org/ace-wardrobe-extended/blob/main/LICENSE">               <img src="https://img.shields.io/badge/License-APLSA-red?style=flat-square"></a>
+    <a href="https://github.com/CVO-Org/ace-wardrobe-extended/issues">                          <img src="https://img.shields.io/github/issues-raw/OverlordZorn/ace-wardrobe-extended.svg?style=flat-square&label=Issues"></a>
+    <a href="https://github.com/CVO-Org/ace-wardrobe-extended/actions/workflows/validate_hemtt.yml">     <img src="https://img.shields.io/github/actions/workflow/status/OverlordZorn/ace-wardrobe-extended/validate_hemtt.yml?style=flat-square&label=HEMTT"></a>
+    <a href="https://github.com/CVO-Org/ace-wardrobe-extended/actions/workflows/validate_config.yml">  <img src="https://img.shields.io/github/actions/workflow/status/OverlordZorn/ace-wardrobe-extended/validate_config.yml?style=flat-square&label=Validate"></a>
+</p>
 
-Here I maintain a personal, basic mod framework.
+# ACE Wardrobe Extended
 
-Feel free to create a PR if you see something missing!
+ACE Wardrobe Extended provides [ACE Wardrobe](https://ace3.acemod.org/wiki/framework/wardrobe-framework) Compatibility for 3rd-party mods.
 
-## This Arma3 Mod Template comes with:
+### Why not include these in ACE itself?
+There are many reasons for us to handle these Compats outside of the ACE Mod itself, but mainly,
+- it keeps the maintenance-workload in ACE itself managable.
+- it allows for more flexibility and a more frequent update cycle.
 
-- MAIN ADDON
-  - Has a set of my personal macros. Some are somewhat duplicate from cba, but i already got used to them. Feel free to use them or not.
+The project is entirely **open-source** and any contributions are welcome.
 
-- TEMPLATE ADDON Folder
-  - Basic CfgFunctions Setup
-    - example `fn_example.sqf` function
-  - Basic CBA XEH Setup
-    - example `XEH_preInit.sqf` with CBA Addon Option Template
+For any help visit our [Discord](https://discord.gg/cQ7dSwRcVd).
 
-- INCLUDE Folder
-  - CBA Macros and Stuff
-  - ACE3 Macros and Stuff
-  - some A3 GUI Stuff
+**Requires the latest version of [CBA A3](https://github.com/CBATeam/CBA_A3/releases/latest) and [ACE3](https://github.com/acemod/ACE3/releases/latest)**
 
-- HEMTT
-  - hemtt's project.toml
-  - hemtt's launch.toml
-    - simple Editor Test Mission `test.vr` to be used with `hemtt launch Test`
+## Supported Mods
 
-- GITHUB
-  - Github Action on release
-    - create and rename .zip files for the Github Release Page
-    - Update Existing Steam Workshop Files directly from the Github Release
-      - Requires Steam Account that Owns Arma3. It is strongly advised to aquire a secondary account if you wish to use the release->Steamworkshop feature
-    - Planned: Bump Patch Version on PR Merge
-    - Planned: Bump Minor Version on Release, set patch to 0
-  - SQF Validator Python Script
+- [X] [BWmod](https://steamcommunity.com/sharedfiles/filedetails/?id=1200127537)
+- [x] [(CUP) Norwegian Armed Forces](https://steamcommunity.com/sharedfiles/filedetails/?id=3333292879)
 
+## Planned Mods
 
-- Automated Version Bumping
-  - MINOR on `hemtt release` (WIP: Only bumps when using on your local mashine through hemtt, not when releasing through github action.)
-  - PATCH on github PR (PLANNED, not done yet - need to learn github action stuff first)
-  - BUILD on `hemtt built`, including `hemtt launch`
+- [ ] [USP Gear & Uniforms AIO](https://steamcommunity.com/sharedfiles/filedetails/?id=1795825073)
+- [ ] [3CB BAF Equipment](https://steamcommunity.com/sharedfiles/filedetails/?id=893328083)
+- [ ] [Community Factions Project (CFP)](https://steamcommunity.com/sharedfiles/filedetails/?id=1369691841)
 
+## Bugs and Mod Requests
 
+If you want to report a bug, please create an [Issue](https://github.com/CVO-Org/ace-wardrobe-extended/issues).
 
-## HOW TO SETUP
+If you want to request a mod to be added to the project please create an [Issue](https://github.com/CVO-Org/ace-wardrobe-extended/issues).
 
-### Once Per Mod
+## License
 
-#### Use VSCode Find and Replace across the whole repository
-1. replace PLACEHOLDER: `x` with desired MAINPREFIX, example: `x`
-2. replace PLACEHOLDER: `awx` with desired PREFIX, example `ABE`
+ACE Wardrobe Extended is licensed under the [APL-SA License](./LICENSE).
 
-#### Update the following files according to your needs
-1. `mod.cpp`
-2. `.hemtt\project.toml`
+## Contributing
 
-#### Update the Main Addon
-1. Check `$PBOPREFIX$`
-2. Update `addons\main\script_mod.hpp`
-3. Update `addons\main\script_version.hpp` when needed
-4. Update `addons\main\config.cpp`
-5. Update `addons\main\stringtable.xml`
-
-### Per New Addon
-
-#### Choose a suitable name for the addon.
-Examples are `common` or `my_addon`
-
-> [!IMPORTANT]
-> Ensure only lowercase is used in addon name! Especially important for the foldername.
-> Building with hemtt through github will cause issues if uppercase is used!
-
-#### Use VSCode Find and Replace
-1. replace PLACEHOLDER: `core` with desired Addon Name.
-
-#### Update the following files according to your needs
-##### Template Addon
-1. Rename Folder accordingly, like `common` or `my_addon`. only lowercase!
-2. Check `$PBOPREFIX$` should say something like `x\abe\addons\my_addon`
-3. Check and Update `script_component.hpp`
-   1. check and update `COMPONENT` and `COMPONENT_BEAUTIFIED` if needed
-   2. check both `#includes`
-4. Update `addons\core\config.cpp`
-   - update `authors[] = {};`
-   - update other entries where needed.
-
-5. Start building your mod
-   1. Dont forget to remove fn_example.
-
-## How to install Hemtt
-`winget install BrettMayson.HEMTT` to install.
-
-### auto update hemtt
-in `tools` you can find a `update_hemtt.bat` which i use in my autostart folder to automatically update hemtt.
-You can find your Win Users Autostart folder via  `WIN+R` -> `shell:startup`
-
-### Install Winget
-https://learn.microsoft.com/en-us/windows/package-manager/winget/
+For new contributers, see the [Contributing Setup & Guidelines](./.github/CONTRIBUTING.md).
