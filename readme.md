@@ -7,8 +7,8 @@
 <p align="center">
     <a href="https://github.com/CVO-Org/ace-wardrobe-extended/blob/main/LICENSE">               <img src="https://img.shields.io/badge/License-APLSA-red?style=flat-square"></a>
     <a href="https://github.com/CVO-Org/ace-wardrobe-extended/issues">                          <img src="https://img.shields.io/github/issues-raw/OverlordZorn/ace-wardrobe-extended.svg?style=flat-square&label=Issues"></a>
-    <a href="https://github.com/CVO-Org/ace-wardrobe-extended/actions/workflows/validate-hemtt.yml">     <img src="https://img.shields.io/github/actions/workflow/status/OverlordZorn/ace-wardrobe-extended/hemtt.yml?style=flat-square&label=HEMTT"></a>
-    <a href="https://github.com/CVO-Org/ace-wardrobe-extended/actions/workflows/validate-config.yml">  <img src="https://img.shields.io/github/actions/workflow/status/OverlordZorn/ace-wardrobe-extended/validate.yml?style=flat-square&label=Validate"></a>
+    <a href="https://github.com/CVO-Org/ace-wardrobe-extended/actions/workflows/validate_hemtt.yml">     <img src="https://img.shields.io/github/actions/workflow/status/OverlordZorn/ace-wardrobe-extended/validate_hemtt.yml?style=flat-square&label=HEMTT"></a>
+    <a href="https://github.com/CVO-Org/ace-wardrobe-extended/actions/workflows/validate_config.yml">  <img src="https://img.shields.io/github/actions/workflow/status/OverlordZorn/ace-wardrobe-extended/validate_config.yml?style=flat-square&label=Validate"></a>
 </p>
 
 # ACE Wardrobe Extended
