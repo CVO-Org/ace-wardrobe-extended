@@ -1,0 +1,7 @@
+UNIFORM_SLEEVES(BWA3_Uniform2_Fleck,BWA3_Uniform2_sleeves_Fleck);
+UNIFORM_SLEEVES(BWA3_Uniform2_Multi,BWA3_Uniform2_sleeves_Multi);
+UNIFORM_SLEEVES(BWA3_Uniform2_Tropen,BWA3_Uniform2_sleeves_Tropen);
+
+UNIFORM_SLEEVES(BWA3_Uniform_Fleck,BWA3_Uniform_sleeves_Fleck);
+UNIFORM_SLEEVES(BWA3_Uniform_Multi,BWA3_Uniform_sleeves_Multi);
+UNIFORM_SLEEVES(BWA3_Uniform_Tropen,BWA3_Uniform_sleeves_Tropen);
