@@ -38,7 +38,7 @@ If you want to request a mod to be added to the project please create an [Issue]
 
 ## License
 
-Advanced Slingloading Redux is licensed under the [APL-SA License](./LICENSE.md).
+Advanced Slingloading Redux is licensed under the [APL-SA License](./LICENSE).
 
 ## Contributing
 
