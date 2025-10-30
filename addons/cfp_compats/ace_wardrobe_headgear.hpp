@@ -131,20 +131,81 @@ HELMET_GOGGLES(SP_ZSH1Helmet_Black1,SP_ZSH1Helmet_Black2,SP_Goggles_Black);
 HELMET_GOGGLES(SP_ZSH1Helmet_Green1,SP_ZSH1Helmet_Green2,SP_Goggles_Black);
 HELMET_GOGGLES(SP_ZSH1Helmet_Tan1,SP_ZSH1Helmet_Tan2,SP_Goggles_Black);
 
-// ToDo US Helmets
-// CFP_PASGTHelmet_M811
-// CFP_PASGTHelmet_M812
-// CFP_PASGTHelmet_M813
-// CFP_PASGTHelmet_M814
-// CFP_PASGTHelmet_M815
-// CFP_PASGTHelmet_M816
+#define HELMET_PASGT(HelmetBase,HelmetGoggles,HelmetCoverFront,HelmetCoverBack,Goggles)\
+class HelmetBase: ace_wardrobe_base_H_goggles_off {\
+    class modifiableTo {\
+        class HelmetGoggles {};\
+    };\
+};\
+class HelmetGoggles: ace_wardrobe_base_H_goggles_on {\
+    class modifiableTo {\
+        class HelmetBase {};\
+        class HelmetCoverFront {};\
+        class HelmetCoverBack {};\
+    };\
+    components[] = {QUOTE(Goggles)};\
+};\
+class HelmetCoverFront: ace_wardrobe_base_H_goggles_on {\
+    class modifiableTo {\
+        class HelmetBase {};\
+        class HelmetCoverBack {};\
+        class HelmetGoggles {};\
+    };\
+    components[] = {QUOTE(Goggles)};\
+};\
+class HelmetCoverBack: ace_wardrobe_base_H_goggles_on {\
+    class modifiableTo {\
+        class HelmetBase {};\
+        class HelmetCoverFront {};\
+        class HelmetGoggles {};\
+    };\
+    components[] = {QUOTE(Goggles)};\
+}
+HELMET_PASGT(CFP_PASGTHelmet_M811,CFP_PASGTHelmet_M814,CFP_PASGTHelmet_M815,CFP_PASGTHelmet_M816,CUP_G_ESS_BLK);
 
-// CFP_PASGTHelmet_DBDU1
-// CFP_PASGTHelmet_DBDU2
-// CFP_PASGTHelmet_DBDU3
-// CFP_PASGTHelmet_DBDU4
-// CFP_PASGTHelmet_DBDU5
-// CFP_PASGTHelmet_DBDU6
+class CFP_PASGTHelmet_DBDU1: ace_wardrobe_base_H_goggles_off {
+    class modifiableTo {
+        class CFP_PASGTHelmet_DBDU4 {};
+        class CFP_PASGTHelmet_DBDU5 {};
+    };
+};
+class CFP_PASGTHelmet_DBDU4: ace_wardrobe_base_H_goggles_on {
+    class modifiableTo {
+        class CFP_PASGTHelmet_DBDU1 {};
+        class CFP_PASGTHelmet_DBDU5 {};
+    };
+    components[] = {QUOTE(CUP_G_ESS_BLK)};
+};
+class CFP_PASGTHelmet_DBDU5: ace_wardrobe_base_H_goggles_on {
+    class modifiableTo {
+        class CFP_PASGTHelmet_DBDU1 {};
+        class CFP_PASGTHelmet_DBDU4 {};
+    };
+    components[] = {QUOTE(CUP_G_ESS_BLK)};
+};
+
+class CFP_PASGTHelmet_DBDU2: ace_wardrobe_base_H_goggles_off {
+    class modifiableTo {
+        class CFP_PASGTHelmet_DBDU3 {};
+        class CFP_PASGTHelmet_DBDU6 {};
+    };
+};
+class CFP_PASGTHelmet_DBDU3: ace_wardrobe_base_H_goggles_on {
+    class modifiableTo {
+        class CFP_PASGTHelmet_DBDU2 {};
+        class CFP_PASGTHelmet_DBDU6 {};
+    };
+    components[] = {QUOTE(CUP_G_ESS_BLK)};
+};
+class CFP_PASGTHelmet_DBDU6: ace_wardrobe_base_H_goggles_on {
+    class modifiableTo {
+        class CFP_PASGTHelmet_DBDU2 {};
+        class CFP_PASGTHelmet_DBDU3 {};
+    };
+    components[] = {QUOTE(CUP_G_ESS_BLK)};
+};
+
+HELMET_GOGGLES(CFP_PASGTHelmet_M812,CFP_PASGTHelmet_M813,CUP_G_ESS_BLK);
 
 //Goggles might be changed, they are covered on the helmet
 //there exists also a variante with goggles coverd at the back
@@ -192,44 +253,227 @@ OPSCORE_HELMET_SF_COVERED_GOGGLES(CFP_OpsC_Covered2_AOR2,CFP_OpsC_Cov_Goggles_Of
 // CFP_OpsC_Covered_IDF
 // CUP_H_OpsCore_Covered_IDF
 
-// CFP_Mitznefet_Desert / CUP_PMC_Facewrap_Ranger
-// CFP_Mitznefet_Desert_Ranger / CUP_PMC_Facewrap_Ranger
-// CFP_Mitznefet_Desert_Tan / CUP_PMC_Facewrap_Tan
-// CFP_Mitznefet_Desert_Tropical / CUP_PMC_Facewrap_Tropical
-// CFP_Mitznefet_Mcam / CUP_PMC_Facewrap_Black
-// CFP_Mitznefet / CUP_PMC_Facewrap_Black
-// CFP_Mitznefet_Ranger / CUP_PMC_Facewrap_Ranger
-// CFP_Mitznefet_Tropical /CUP_PMC_Facewrap_Tropical
+class CFP_MitzHelm1_Des: ace_wardrobe_base {
+    class modifiableTo {
+        class CFP_MitzHelm2_Des {};
+        class CFP_MitzHelm3_Des {};
+        class CFP_MitzHelm4_Des {};
+        class CFP_Mitznefet_Desert {};
+        class CFP_Mitznefet_Desert_Ranger {};
+        class CFP_Mitznefet_Desert_Tan {};
+        class CFP_Mitznefet_Desert_Tropical {};
+    };
+};
+class CFP_MitzHelm2_Des: ace_wardrobe_base {
+    class modifiableTo {
+        class CFP_MitzHelm1_Des {};
+        class CFP_MitzHelm3_Des {};
+        class CFP_MitzHelm4_Des {};
+        class CFP_Mitznefet_Desert {};
+        class CFP_Mitznefet_Desert_Ranger {};
+        class CFP_Mitznefet_Desert_Tan {};
+        class CFP_Mitznefet_Desert_Tropical {};
+    };
+};
+class CFP_MitzHelm3_Des: ace_wardrobe_base {
+    class modifiableTo {
+        class CFP_MitzHelm1_Des {};
+        class CFP_MitzHelm2_Des {};
+        class CFP_MitzHelm4_Des {};
+        class CFP_Mitznefet_Desert {};
+        class CFP_Mitznefet_Desert_Ranger {};
+        class CFP_Mitznefet_Desert_Tan {};
+        class CFP_Mitznefet_Desert_Tropical {};
+    };
+};
+class CFP_MitzHelm4_Des: ace_wardrobe_base {
+    class modifiableTo {
+        class CFP_MitzHelm1_Des {};
+        class CFP_MitzHelm2_Des {};
+        class CFP_MitzHelm3_Des {};
+        class CFP_Mitznefet_Desert {};
+        class CFP_Mitznefet_Desert_Ranger {};
+        class CFP_Mitznefet_Desert_Tan {};
+        class CFP_Mitznefet_Desert_Tropical {};
+    };
+};
+class CFP_Mitznefet_Desert: ace_wardrobe_base {
+    class modifiableTo {
+        class CFP_MitzHelm1_Des {};
+        class CFP_MitzHelm2_Des {};
+        class CFP_MitzHelm3_Des {};
+        class CFP_MitzHelm4_Des {};
+    };
+    components[] = {"CUP_PMC_Facewrap_Black"};
+};
+class CFP_Mitznefet_Desert_Ranger: ace_wardrobe_base {
+    class modifiableTo {
+        class CFP_MitzHelm1_Des {};
+        class CFP_MitzHelm2_Des {};
+        class CFP_MitzHelm3_Des {};
+        class CFP_MitzHelm4_Des {};
+    };
+    components[] = {"CUP_PMC_Facewrap_Ranger"};
+};
+class CFP_Mitznefet_Desert_Tan: ace_wardrobe_base {
+    class modifiableTo {
+        class CFP_MitzHelm1_Des {};
+        class CFP_MitzHelm2_Des {};
+        class CFP_MitzHelm3_Des {};
+        class CFP_MitzHelm4_Des {};
+    };
+    components[] = {"CUP_PMC_Facewrap_Tan"};
+};
+class CFP_Mitznefet_Desert_Tropical: ace_wardrobe_base {
+    class modifiableTo {
+        class CFP_MitzHelm1_Des {};
+        class CFP_MitzHelm2_Des {};
+        class CFP_MitzHelm3_Des {};
+        class CFP_MitzHelm4_Des {};
+    };
+    components[] = {"CUP_PMC_Facewrap_Tropical"};
+};
 
-// *2 is with Comms / CUP_G_RUS_Ratnik_6M21_Summer?
+class CFP_MitzHelm1_Mcam: ace_wardrobe_base {
+    class modifiableTo {
+        class CFP_Mitznefet_Mcam {};
+        class CFP_MitzHelm2_Mcam {};
+        class CFP_MitzHelm3_Mcam {};
+        class CFP_MitzHelm4_Mcam {};
+    };
+};
+class CFP_MitzHelm2_Mcam: ace_wardrobe_base {
+    class modifiableTo {
+        class CFP_Mitznefet_Mcam {};
+        class CFP_MitzHelm1_Mcam {};
+        class CFP_MitzHelm3_Mcam {};
+        class CFP_MitzHelm4_Mcam {};
+    };
+};
+class CFP_MitzHelm3_Mcam: ace_wardrobe_base {
+    class modifiableTo {
+        class CFP_Mitznefet_Mcam {};
+        class CFP_MitzHelm1_Mcam {};
+        class CFP_MitzHelm2_Mcam {};
+        class CFP_MitzHelm4_Mcam {};
+    };
+};
+class CFP_MitzHelm4_Mcam: ace_wardrobe_base {
+    class modifiableTo {
+        class CFP_Mitznefet_Mcam {};
+        class CFP_MitzHelm1_Mcam {};
+        class CFP_MitzHelm2_Mcam {};
+        class CFP_MitzHelm3_Mcam {};
+    };
+};
+class CFP_Mitznefet_Mcam: ace_wardrobe_base {
+    class modifiableTo {
+        class CFP_MitzHelm1_Mcam {};
+        class CFP_MitzHelm2_Mcam {};
+        class CFP_MitzHelm3_Mcam {};
+        class CFP_MitzHelm4_Mcam {};
+    };
+    components[] = {"CUP_PMC_Facewrap_Black"};
+};
 
-// CFP_MitzHelm1_Des
-// CFP_MitzHelm1_Des2
-// CFP_MitzHelm1_Mcam
-// CFP_MitzHelm1_Mcam2
-// CFP_MitzHelm1_Wdl
-// CFP_MitzHelm1_Wdl2
+class CFP_MitzHelm1_Wdl: ace_wardrobe_base {
+    class modifiableTo {
+        class CFP_Mitznefet_Wdl {};
+        class CFP_MitzHelm2_Wdl {};
+        class CFP_MitzHelm3_Wdl {};
+        class CFP_MitzHelm4_Wdl {};
+        class CFP_Mitznefet_Ranger {};
+        class CFP_Mitznefet {};
+        class CFP_Mitznefet_Tan {};
+        class CFP_Mitznefet_Tropical {};
+    };
+};
+class CFP_MitzHelm2_Wdl: ace_wardrobe_base {
+    class modifiableTo {
+        class CFP_Mitznefet_Wdl {};
+        class CFP_MitzHelm1_Wdl {};
+        class CFP_MitzHelm3_Wdl {};
+        class CFP_MitzHelm4_Wdl {};
+        class CFP_Mitznefet_Ranger {};
+        class CFP_Mitznefet {};
+        class CFP_Mitznefet_Tan {};
+        class CFP_Mitznefet_Tropical {};
+    };
+};
+class CFP_MitzHelm3_Wdl: ace_wardrobe_base {
+    class modifiableTo {
+        class CFP_Mitznefet_Wdl {};
+        class CFP_MitzHelm1_Wdl {};
+        class CFP_MitzHelm2_Wdl {};
+        class CFP_MitzHelm4_Wdl {};
+        class CFP_Mitznefet_Ranger {};
+        class CFP_Mitznefet {};
+        class CFP_Mitznefet_Tan {};
+        class CFP_Mitznefet_Tropical {};
+    };
+};
+class CFP_MitzHelm4_Wdl: ace_wardrobe_base {
+    class modifiableTo {
+        class CFP_Mitznefet_Wdl {};
+        class CFP_MitzHelm1_Wdl {};
+        class CFP_MitzHelm2_Wdl {};
+        class CFP_MitzHelm3_Wdl {};
+        class CFP_Mitznefet_Ranger {};
+        class CFP_Mitznefet {};
+        class CFP_Mitznefet_Tan {};
+        class CFP_Mitznefet_Tropical {};
+    };
+};
+class CFP_Mitznefet: ace_wardrobe_base {
+    class modifiableTo {
+        class CFP_MitzHelm1_Wdl {};
+        class CFP_MitzHelm2_Wdl {};
+        class CFP_MitzHelm3_Wdl {};
+        class CFP_MitzHelm4_Wdl {};
+        class CFP_Mitznefet_Ranger {};
+        class CFP_Mitznefet_Tan {};
+        class CFP_Mitznefet_Tropical {};
+    };
+    components[] = {"CUP_PMC_Facewrap_Black"};
+};
 
-// CFP_MitzHelm2_Des
-// CFP_MitzHelm2_Des2
-// CFP_MitzHelm2_Mcam
-// CFP_MitzHelm2_Mcam2
-// CFP_MitzHelm2_Wdl
-// CFP_MitzHelm2_Wdl2
+class CFP_Mitznefet_Ranger: ace_wardrobe_base {
+    class modifiableTo {
+        class CFP_MitzHelm1_Wdl {};
+        class CFP_MitzHelm2_Wdl {};
+        class CFP_MitzHelm3_Wdl {};
+        class CFP_MitzHelm4_Wdl {};
+        class CFP_Mitznefet {};
+        class CFP_Mitznefet_Tan {};
+        class CFP_Mitznefet_Tropical {};
+    };
+    components[] = {"CUP_PMC_Facewrap_Ranger"};
+};
+class CFP_Mitznefet_Tan: ace_wardrobe_base {
+    class modifiableTo {
+        class CFP_MitzHelm1_Wdl {};
+        class CFP_MitzHelm2_Wdl {};
+        class CFP_MitzHelm3_Wdl {};
+        class CFP_MitzHelm4_Wdl {};
+        class CFP_Mitznefet_Ranger {};
+        class CFP_Mitznefet {};
+        class CFP_Mitznefet_Tropical {};
+    };
+    components[] = {"CUP_PMC_Facewrap_Tan"};
+};
 
-// CFP_MitzHelm3_Des
-// CFP_MitzHelm3_Des2
-// CFP_MitzHelm3_Mcam
-// CFP_MitzHelm3_Mcam2
-// CFP_MitzHelm3_Wdl
-// CFP_MitzHelm3_Wdl2
-
-// CFP_MitzHelm4_Des
-// CFP_MitzHelm4_Des2
-// CFP_MitzHelm4_Mcam
-// CFP_MitzHelm4_Mcam2
-// CFP_MitzHelm4_Wdl
-// CFP_MitzHelm4_Wdl2
+class CFP_Mitznefet_Tropical: ace_wardrobe_base {
+    class modifiableTo {
+        class CFP_MitzHelm1_Wdl {};
+        class CFP_MitzHelm2_Wdl {};
+        class CFP_MitzHelm3_Wdl {};
+        class CFP_MitzHelm4_Wdl {};
+        class CFP_Mitznefet {};
+        class CFP_Mitznefet_Tan {};
+        class CFP_Mitznefet_Ranger {};
+    };
+    components[] = {"CUP_PMC_Facewrap_Tropical"};
+};
 
 BASE_PAIR(CFP_Shemagh_Head_Black,CFP_Shemagh_Full_Black);
 BASE_PAIR(CFP_Shemagh_Head_M81,CFP_Shemagh_Full_M81);
