@@ -4,12 +4,17 @@
     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3595979374"><img src="https://img.shields.io/steam/subscriptions/3595979374?style=for-the-badge&logo=steam&label=Steam%20Workshop&color=%23690000"></a>
 </p>
 
+<p align="center">
+    <a href="https://github.com/CVO-Org/ace-wardrobe-extended/blob/main/LICENSE">               <img src="https://img.shields.io/badge/License-APLSA-red?style=flat-square"></a>
+    <a href="https://github.com/CVO-Org/ace-wardrobe-extended/issues">                          <img src="https://img.shields.io/github/issues-raw/OverlordZorn/ace-wardrobe-extended.svg?style=flat-square&label=Issues"></a>
+    <a href="https://github.com/CVO-Org/ace-wardrobe-extended/actions/workflows/hemtt.yml">     <img src="https://img.shields.io/github/actions/workflow/status/OverlordZorn/ace-wardrobe-extended/hemtt.yml?style=flat-square&label=HEMTT"></a>
+    <a href="https://github.com/CVO-Org/ace-wardrobe-extended/actions/workflows/validate.yml">  <img src="https://img.shields.io/github/actions/workflow/status/OverlordZorn/ace-wardrobe-extended/validate.yml?style=flat-square&label=Validate"></a>
+</p>
+
 # ACE Wardrobe Extended
 
-[![License](https://img.shields.io/badge/License-APLSA-red?style=flat-square)](https://github.com/CVO-Org/ace-wardrobe-extended/blob/main/LICENSE)
-[![Issues](https://img.shields.io/github/issues-raw/OverlordZorn/ace-wardrobe-extended.svg?style=flat-square&label=Issues)](https://github.com/CVO-Org/ace-wardrobe-extended/issues)
-[![HEMTT](https://img.shields.io/github/actions/workflow/status/OverlordZorn/ace-wardrobe-extended/hemtt.yml?style=flat-square&label=HEMTT)](https://github.com/CVO-Org/ace-wardrobe-extended/actions/workflows/hemtt.yml)
-[![Validate](https://img.shields.io/github/actions/workflow/status/OverlordZorn/ace-wardrobe-extended/validate.yml?style=flat-square&label=Validate)](https://github.com/CVO-Org/ace-wardrobe-extended/actions/workflows/validate.yml)
+
+
 
 **Requires the latest version of [CBA A3](https://github.com/CBATeam/CBA_A3/releases/latest) and [ACE3](https://github.com/acemod/ACE3/releases/latest)**
 
