@@ -6,7 +6,7 @@
 
 # ACE Wardrobe Extended
 
-[![License](https://img.shields.io/badge/License-APLSA-red?style=flat-square)](https://github.com/CVO-Org/ace-wardrobe-extended/blob/main/LICENSE.md)
+[![License](https://img.shields.io/badge/License-APLSA-red?style=flat-square)](https://github.com/CVO-Org/ace-wardrobe-extended/blob/main/LICENSE)
 [![Issues](https://img.shields.io/github/issues-raw/OverlordZorn/ace-wardrobe-extended.svg?style=flat-square&label=Issues)](https://github.com/CVO-Org/ace-wardrobe-extended/issues)
 [![HEMTT](https://img.shields.io/github/actions/workflow/status/OverlordZorn/ace-wardrobe-extended/hemtt.yml?style=flat-square&label=HEMTT)](https://github.com/CVO-Org/ace-wardrobe-extended/actions/workflows/hemtt.yml)
 [![Validate](https://img.shields.io/github/actions/workflow/status/OverlordZorn/ace-wardrobe-extended/validate.yml?style=flat-square&label=Validate)](https://github.com/CVO-Org/ace-wardrobe-extended/actions/workflows/validate.yml)
