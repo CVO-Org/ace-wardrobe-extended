@@ -15,9 +15,9 @@
 name: Release
 
 env:
-  FOLDER: # '@cvo_aux' //ToDo
-  WORKSHOPID: # '3037257908' //ToDo
-  WORKSHOPNAME: # 'my mod name on the workshop' //ToDo
+  FOLDER: '@awx'
+  WORKSHOPID: '3595979374'
+  WORKSHOPNAME: 'ACE Wardrobe Extended'
 
 on:
   release:
