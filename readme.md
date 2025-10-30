@@ -29,11 +29,11 @@ For any help visit our [Discord](https://discord.gg/cQ7dSwRcVd).
 
 - [X] [BWmod](https://steamcommunity.com/sharedfiles/filedetails/?id=1200127537)
 - [x] [(CUP) Norwegian Armed Forces](https://steamcommunity.com/sharedfiles/filedetails/?id=3333292879)
+- [x] [3CB BAF Equipment](https://steamcommunity.com/sharedfiles/filedetails/?id=893328083)
 
 ## Planned Mods
 
 - [ ] [USP Gear & Uniforms AIO](https://steamcommunity.com/sharedfiles/filedetails/?id=1795825073)
-- [ ] [3CB BAF Equipment](https://steamcommunity.com/sharedfiles/filedetails/?id=893328083)
 - [ ] [Community Factions Project (CFP)](https://steamcommunity.com/sharedfiles/filedetails/?id=1369691841)
 
 ## Bugs and Mod Requests
