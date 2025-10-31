@@ -1,0 +1,12 @@
+HELMET_GOGGLES(LOP_H_6B27M_CDF,LOP_H_6B27M_ess_CDF,rhsusf_oakley_goggles_clr);
+HELMET_GOGGLES(LOP_H_6B27M_Flora,LOP_H_6B27M_ess_Flora,rhsusf_oakley_goggles_clr);
+HELMET_GOGGLES(LOP_H_6B27M_RACS,LOP_H_6B27M_ess_RACS,rhsusf_oakley_goggles_clr);
+HELMET_GOGGLES(LOP_H_6B27M_Skol,LOP_H_6B27M_ess_Skol,rhsusf_oakley_goggles_clr);
+HELMET_GOGGLES(LOP_H_6B27M_UN,LOP_H_6B27M_ess_UN,rhsusf_oakley_goggles_clr);
+HELMET_GOGGLES(LOP_H_6B27M_wz93,LOP_H_6B27M_ess_wz93,rhsusf_oakley_goggles_clr);
+HELMET_GOGGLES(LOP_H_6B27M_Izlom,LOP_H_6B27M_ess_Izlom,rhsusf_oakley_goggles_clr);
+HELMET_GOGGLES(LOP_H_6B27M_Digit,LOP_H_6B27M_ess_Digit,rhsusf_oakley_goggles_clr);
+HELMET_GOGGLES(LOP_H_6B27M_MTP,LOP_H_6B27M_ess_MTP,rhsusf_oakley_goggles_clr);
+HELMET_GOGGLES(LOP_H_6B27M_UKR,LOP_H_6B27M_ess_UKR,rhsusf_oakley_goggles_clr);
+
+HELMET_MASK(LOP_H_Turban,LOP_H_Turban_mask);
