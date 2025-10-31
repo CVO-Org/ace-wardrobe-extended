@@ -32,7 +32,6 @@ For any help visit our [Discord](https://discord.gg/cQ7dSwRcVd).
 
 ## Planned Mods
 
-- [ ] [USP Gear & Uniforms AIO](https://steamcommunity.com/sharedfiles/filedetails/?id=1795825073)
 - [ ] [3CB BAF Equipment](https://steamcommunity.com/sharedfiles/filedetails/?id=893328083)
 - [ ] [Community Factions Project (CFP)](https://steamcommunity.com/sharedfiles/filedetails/?id=1369691841)
 
