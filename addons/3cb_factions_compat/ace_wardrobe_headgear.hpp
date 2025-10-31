@@ -38,7 +38,7 @@ HELMET_GOGGLES(UK3CB_ABP_B_H_6b27m_UCC,UK3CB_ABP_B_H_6b27m_ess_UCC,rhs_ess_black
 HELMET_GOGGLES(UK3CB_ANA_B_H_6b27m_WDL,UK3CB_ANA_B_H_6b27m_ESS_WDL,rhs_ess_black);
 
 HELMET_GOGGLES(UK3CB_ARD_B_H_Crew_Cap,UK3CB_ARD_B_H_Crew_Cap_Ess,rhsusf_oakley_goggles_blk);
-HELMET_GOGGLES(UK3CB_ARD_B_UK3CB_H_Crew_CapH_Crew_Cap,UK3CB_H_Crew_Cap_Ess,rhsusf_oakley_goggles_blk);
+HELMET_GOGGLES(UK3CB_ARD_B_H_Crew_Cap,UK3CB_H_Crew_Cap_Ess,rhsusf_oakley_goggles_blk);
 
 #define HELMET_ESS_BALACLAVA(HelmetBase,HelmetGoggles,HelmetBalaclava,HelmetCombo,Goggles,Balaclava)\
 class HelmetBase: ace_wardrobe_base {\
