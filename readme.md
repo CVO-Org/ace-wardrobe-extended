@@ -29,6 +29,7 @@ For any help visit our [Discord](https://discord.gg/cQ7dSwRcVd).
 
 - [X] [BWmod](https://steamcommunity.com/sharedfiles/filedetails/?id=1200127537)
 - [x] [(CUP) Norwegian Armed Forces](https://steamcommunity.com/sharedfiles/filedetails/?id=3333292879)
+- [x] [Project Opfor](https://steamcommunity.com/sharedfiles/filedetails/?id=735566597)
 
 ## Planned Mods
 
