@@ -93,7 +93,7 @@ HELMET_MASK(UK3CB_H_Turban_Facewrap_03_Red,UK3CB_H_Turban_Neckwrap_03_Red);
 
 HELMET_MASK(UK3CB_H_Turban_Facewrap_01_Tan,UK3CB_H_Turban_Neckwrap_01_Tan);
 HELMET_MASK(UK3CB_H_Turban_Facewrap_02_Tan,UK3CB_H_Turban_Neckwrap_02_Tan);
-HELMET_MASK(UK3CB_H_Turban_Facewrap_03_Red,UK3CB_H_Turban_Neckwrap_03_Tan);
+HELMET_MASK(UK3CB_H_Turban_Facewrap_03_Tan,UK3CB_H_Turban_Neckwrap_03_Tan);
 
 HELMET_MASK(UK3CB_H_Turban_Facewrap_01_Trq,UK3CB_H_Turban_Neckwrap_01_Trq);
 HELMET_MASK(UK3CB_H_Turban_Facewrap_02_Trq,UK3CB_H_Turban_Neckwrap_02_Trq);
@@ -101,7 +101,7 @@ HELMET_MASK(UK3CB_H_Turban_Facewrap_03_Trq,UK3CB_H_Turban_Neckwrap_03_Trq);
 
 HELMET_MASK(UK3CB_H_Turban_Facewrap_01_Whi,UK3CB_H_Turban_Neckwrap_01_Whi);
 HELMET_MASK(UK3CB_H_Turban_Facewrap_02_Whi,UK3CB_H_Turban_Neckwrap_02_Whi);
-HELMET_MASK(UK3CB_H_Turban_Facewrap_03_Whi,UK3CB_H_Turban_Neckwrap_02_Whi);
+HELMET_MASK(UK3CB_H_Turban_Facewrap_03_Whi,UK3CB_H_Turban_Neckwrap_03_Whi);
 
 HELMET_MASK(UK3CB_H_Turban_Facewrap_01_Yel,UK3CB_H_Turban_Neckwrap_01_Yel);
 HELMET_MASK(UK3CB_H_Turban_Facewrap_02_Yel,UK3CB_H_Turban_Neckwrap_02_Yel);
