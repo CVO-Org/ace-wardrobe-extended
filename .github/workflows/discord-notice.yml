@@ -13,9 +13,9 @@ jobs:
         uses: SethCohen/github-releases-to-discord@v1.16.2
         with:
           webhook_url: ${{ secrets.DISCORD_WEBHOOK_URL }} #ToDo Add Webhook URL to repo secrets
-          username: "AWEC - Release Bot"
+          username: "AWX - Release Bot"
           avatar_url: ""
           content: ""
-          footer_title: "AWEC - ACE Wardrobe Extended Compats"
+          footer_title: "AWX - ACE Wardrobe Extended "
           footer_icon_url: ""
           footer_timestamp: true
