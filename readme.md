@@ -33,10 +33,6 @@ For any help visit our [Discord](https://discord.gg/cQ7dSwRcVd).
 - [x] [3CB BAF Equipment](https://steamcommunity.com/sharedfiles/filedetails/?id=893328083)
 - [x] [Project Opfor](https://steamcommunity.com/sharedfiles/filedetails/?id=735566597)
 
-## Planned Mods
-
-- [ ] [USP Gear & Uniforms AIO](https://steamcommunity.com/sharedfiles/filedetails/?id=1795825073)
-
 ## Bugs and Mod Requests
 
 If you want to report a bug, please create an [Issue](https://github.com/CVO-Org/ace-wardrobe-extended/issues).
