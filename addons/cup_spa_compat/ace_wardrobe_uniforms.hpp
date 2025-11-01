@@ -20,7 +20,7 @@ class UniformRolled: ace_wardrobe_base_U_sleeves_up {\
 class UniformGlovesRolled: ace_wardrobe_base {\
     class modifiableTo {\
         class UniformGloves {};\
-        class UniformGlovesRolled {};\
+        class UniformRolled {};\
     };\
 }
 
