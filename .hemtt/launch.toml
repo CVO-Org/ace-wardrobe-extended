@@ -45,3 +45,13 @@ extends = "cup"
 workshop = [
     "1369691841", # Community Factions Project
 ]
+
+[3cbf]
+extends = "Test"
+workshop = [
+    "843425103", # RHS AFRF Workshop ID
+    "843577117", # RHS USAF Workshop ID
+    "843593391", # RHS GREF Workshop ID
+    "843632231", # RHS SAF  Workshop ID
+    "1673456286", # 3CB Factions Pack
+]

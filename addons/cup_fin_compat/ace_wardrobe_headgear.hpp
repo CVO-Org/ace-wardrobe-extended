@@ -1,0 +1,3 @@
+HELMET_GOGGLES(Flex_CUP_FIN_Helmet_Comms,Flex_CUP_FIN_Helmet_Comms_cov,CUP_G_ESS_BLK);
+HELMET_GOGGLES(Flex_CUP_FIN_Helmet_Comms_Alt,Flex_CUP_FIN_Helmet_Comms_cov_Alt,CUP_G_ESS_BLK);
+HELMET_GOGGLES(Flex_CUP_FIN_Helmet_Comms_Winter,Flex_CUP_FIN_Helmet_Comms_cov_Winter,CUP_G_ESS_BLK);

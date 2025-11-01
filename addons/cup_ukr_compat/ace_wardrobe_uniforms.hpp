@@ -1,0 +1,2 @@
+UNIFORM_SLEEVES(UAF_Combat_Uniform_Pads,UAF_Combat_Uniform_Pads_Rolled);
+UNIFORM_SLEEVES(UAF_Combat_Uniform_1,UAF_Combat_Uniform_Rolled_1);
