@@ -128,7 +128,6 @@ class UK3CB_LDF_B_H_HB97_GEO:ace_wardrobe_base_H_goggles_off {
 };
 class UK3CB_LDF_B_H_HB97_ESS_GEO: ace_wardrobe_base_H_goggles_on {
     class modifiableTo {
-        class UK3CB_LDF_B_H_HB97_ESS_GEO {};
         class UK3CB_LDF_B_H_HB97_ESS_Cover_GEO {};
     };
     components[] = {QUOTE(rhs_ess_black)};
@@ -136,7 +135,6 @@ class UK3CB_LDF_B_H_HB97_ESS_GEO: ace_wardrobe_base_H_goggles_on {
 class UK3CB_LDF_B_H_HB97_ESS_Cover_GEO: ace_wardrobe_base_H_goggles_on {
     class modifiableTo {
         class UK3CB_LDF_B_H_HB97_ESS_GEO {};
-        class UK3CB_LDF_B_H_HB97_ESS_Cover_GEO {};
     };
     components[] = {QUOTE(rhs_ess_black)};
 };
