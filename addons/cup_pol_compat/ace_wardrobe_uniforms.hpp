@@ -36,14 +36,14 @@ class Flex_CUP_POL_BDU: ace_wardrobe_base {
 class Flex_CUP_POL_BDU_Rolled: ace_wardrobe_base_U_sleeves_up {
     class modifiableTo {
         class Flex_CUP_POL_BDU_Gloves_Rolled {};
-        class Flex_CUP_POL_BDU_Pads {};
+        class Flex_CUP_POL_BDU {};
     };
 };
 
 class Flex_CUP_POL_BDU_Gloves: ace_wardrobe_base_U_gloves_on {
     class modifiableTo {
         class Flex_CUP_POL_BDU_Gloves_Rolled {};
-        class Flex_CUP_POL_BDU_Pads {};
+        class Flex_CUP_POL_BDU {};
     };
 };
 
