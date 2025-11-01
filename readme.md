@@ -33,6 +33,7 @@ For any help visit our [Discord](https://discord.gg/cQ7dSwRcVd).
 - [x] [Community Factions Project (CFP)](https://steamcommunity.com/sharedfiles/filedetails/?id=1369691841)
 - [x] [3CB BAF Equipment](https://steamcommunity.com/sharedfiles/filedetails/?id=893328083)
 - [x] [Project Opfor](https://steamcommunity.com/sharedfiles/filedetails/?id=735566597)
+- [x] [3CB Factions](https://steamcommunity.com/sharedfiles/filedetails/?id=1673456286)
 
 ## Bugs and Mod Requests
 
