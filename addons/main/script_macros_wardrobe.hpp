@@ -116,3 +116,17 @@ class HelmetCoverBack: ace_wardrobe_base_H_goggles_on {\
     };\
     components[] = {QUOTE(Goggles)};\
 }
+
+//Helmet with Goggles Component
+#define HELMET_GOGGLES_COMPONENT(HelmetBase,HelmetGoggles,Goggles)\
+class HelmetBase: ace_wardrobe_base_H_goggles_off {\
+    class modifiableTo {\
+        class HelmetGoggles {};\
+    };\
+};\
+class HelmetGoggles: ace_wardrobe_base_H_goggles_on {\
+    class modifiableTo {\
+        class HelmetBase {};\
+    };\
+    components[] = {QUOTE(Goggles)};\
+}
