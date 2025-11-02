@@ -1,0 +1,14 @@
+class EF_H_MCH: ace_wardrobe_base {
+    class modifiableTo {
+        class EF_H_MCH_Basic {};
+    };
+};
+
+class EF_H_MCH_Basic: ace_wardrobe_base {
+    class modifiableTo {
+        class EF_H_MCH {};
+    };
+    components[] = {QUOTE(EF_H_Protecta)};
+};
+
+//IN theory you could be wearing the EF_H_Protecta and the helmet in you backpack, but I dont think that makes much sense
