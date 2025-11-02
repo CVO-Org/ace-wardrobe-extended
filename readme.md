@@ -14,8 +14,10 @@
 
 ACE Wardrobe Extended provides [ACE Wardrobe](https://ace3.acemod.org/wiki/framework/wardrobe-framework) Compatibility for 3rd-party mods.
 
-### Why not include these in ACE itself?
+## Why not include these in ACE itself?
+
 There are many reasons for us to handle these Compats outside of the ACE Mod itself, but mainly,
+
 - it keeps the maintenance-workload in ACE itself managable.
 - it allows for more flexibility and a more frequent update cycle.
 
@@ -39,6 +41,9 @@ For any help visit our [Discord](https://discord.gg/cQ7dSwRcVd).
 - [x] [Project Opfor](https://steamcommunity.com/sharedfiles/filedetails/?id=735566597)
 - [x] [3CB Factions](https://steamcommunity.com/sharedfiles/filedetails/?id=1673456286)
 - [x] [S.O.G. Nickel Steel](https://steamcommunity.com/sharedfiles/filedetails/?id=3083451905)
+- [x] [ArmaModFrance AiO](https://steamcommunity.com/workshop/filedetails/?id=1781990846)
+
+- [x] [Expeditionary Forces cDLC](https://store.steampowered.com/app/2647830/Arma_3_Creator_DLC_Expeditionary_Forces/)
 
 ## Bugs and Mod Requests
 
