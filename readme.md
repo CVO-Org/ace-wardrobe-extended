@@ -42,6 +42,8 @@ For any help visit our [Discord](https://discord.gg/cQ7dSwRcVd).
 - [x] [3CB Factions](https://steamcommunity.com/sharedfiles/filedetails/?id=1673456286)
 - [x] [ArmaModFrance AiO](https://steamcommunity.com/workshop/filedetails/?id=1781990846)
 
+- [x] [Expeditionary Forces cDLC](https://store.steampowered.com/app/2647830/Arma_3_Creator_DLC_Expeditionary_Forces/)
+
 ## Bugs and Mod Requests
 
 If you want to report a bug, please create an [Issue](https://github.com/CVO-Org/ace-wardrobe-extended/issues).
