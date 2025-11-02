@@ -150,7 +150,8 @@ class FaceMaskGoggles: ace_wardrobe_base {\
 #define FACEMASK_GOGGLES2(FaceMaskBase,FaceMaskGoggles1,FaceMaskGoggles2,Goggles1,Goggles2)\
 class FaceMaskBase: ace_wardrobe_base {\
     class modifiableTo {\
-        class FaceMaskGoggles {};\
+        class FaceMaskGoggles1 {};\
+        class FaceMaskGoggles2 {};\
     };\
     components[] = {QUOTE(FaceMaskBase)};\
 };\
