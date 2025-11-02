@@ -27,11 +27,23 @@ workshop = [
 ]
 dlc = []
 
-
-[Test]
+[test]
 extends = "default"
 mission = "test.VR"
 
+[bw]
+extends = "default"
+workshop = [
+    "1200127537", # BW Mod
+]
+
+[3cb]
+extends = "default"
+workshop = [
+    "893328083" # 3CB BAF Equipment
+]
+
+# CUP based Presets
 [cup]
 extends = "default"
 workshop = [
@@ -46,12 +58,54 @@ workshop = [
     "1369691841", # Community Factions Project
 ]
 
-[3cbf]
-extends = "Test"
+[ldf]
+extends = "cup"
+workshop = [
+    "3294585159", # (CUP) Livonian Defense Force
+]
+
+[ukr]
+extends = "cup"
+workshop = [
+    "3312210548", # (CUP) Ukrainian Armed Forces
+]
+
+[fin]
+extends = "cup"
+workshop = [
+    "3465921651", # (CUP) Finnish Defence Forces
+]
+
+[nor]
+extends = "cup"
+workshop = [
+    "3333292879", # (CUP) Norwegian Armed Forces
+]
+
+[pol]
+extends = "cup"
+workshop = [
+    "3459905206", # (CUP) Polish Armed Forces
+]
+
+# RHS based Presets
+[rhs]
+extends = "default"
 workshop = [
     "843425103", # RHS AFRF Workshop ID
     "843577117", # RHS USAF Workshop ID
     "843593391", # RHS GREF Workshop ID
     "843632231", # RHS SAF  Workshop ID
+]
+
+[po]
+extends = "rhs"
+workshop = [
+    "735566597", # Project OPFOR
+]
+
+[3cbf]
+extends = "rhs"
+workshop = [
     "1673456286", # 3CB Factions Pack
 ]
