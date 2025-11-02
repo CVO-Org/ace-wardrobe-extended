@@ -72,3 +72,29 @@ class HelmetCoverBack: ace_wardrobe_base_H_goggles_on {\
     };\
     components[] = {QUOTE(Goggles)};\
 }
+
+//Boonie Hat with a Variant with Rolled Up Sides
+#define BOONIE_ROLLED(Boonie,BoonieRolled)\
+class Boonie: ace_wardrobe_base {\
+    class modifiableTo {\
+        class BoonieRolled {};\
+    };\
+};\
+class BoonieRolled: ace_wardrobe_base {\
+    class modifiableTo {\
+        class Boonie {};\
+    };\
+}
+
+//Helmet with Goggles Up/Down but not Component
+#define HELMET_GOGGLES2(HelmetGogglesUp,HelmetGogglesDown)\
+class HelmetGogglesUp: ace_wardrobe_base_H_goggles_off {\
+    class modifiableTo {\
+        class HelmetGogglesDown {};\
+    };\
+};\
+class HelmetGogglesDown: ace_wardrobe_base_H_goggles_on {\
+    class modifiableTo {\
+        class HelmetGogglesUp {};\
+    };\
+}
