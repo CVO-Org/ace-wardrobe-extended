@@ -11,4 +11,4 @@ class EF_H_MCH_Basic: ace_wardrobe_base {
     components[] = {QUOTE(EF_H_Protecta)};
 };
 
-//IN theory you could be wearing the EF_H_Protecta and the helmet in you backpack, but I dont think that makes much sense
+//IN theory you could be wearing the EF_H_Protecta and the helmet in you backpack, but I don't think that makes much sense
