@@ -1,1 +1,5 @@
-
+FACEMASK_GOGGLES(amf_balaclava_blk,amf_balaclava_goggles_blk,AMF_MSC_GOGGLES_BLK);
+FACEMASK_GOGGLES(amf_balaclava_od,amf_balaclava_goggles_od,AMF_MSC_GOGGLES_BLK);
+FACEMASK_GOGGLES(amf_balaclava_ranger,amf_balaclava_goggles_ranger,AMF_MSC_GOGGLES_BLK);
+FACEMASK_GOGGLES(amf_balaclava_tan,amf_balaclava_goggles_tan,AMF_MSC_GOGGLES_BLK);
+FACEMASK_GOGGLES(amf_balaclava_WHITE,amf_balaclava_goggles_WHITE,AMF_MSC_GOGGLES_BLK);
