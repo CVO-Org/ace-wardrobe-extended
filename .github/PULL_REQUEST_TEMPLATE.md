@@ -9,6 +9,6 @@
 ## IMPORTANT
 
 - [ ] [Development Guidelines](https://ace3.acemod.org/wiki/development/) are read, understood and applied.
-- [ ] Title of this PR describes the changes accuratly.
+- [ ] Title of this PR describes the changes accurately.
 - [ ] Mod is added to `readme.md`
 - [ ] Launch Preset is added to `.hemmt/launch.toml`.
