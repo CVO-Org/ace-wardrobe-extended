@@ -56,19 +56,19 @@ class HelmetGoggles: ace_wardrobe_base_H_goggles_on {\
         class HelmetCoverFront {};\
         class HelmetCoverBack {};\
     };\
-    component[] = {QUOTE(Goggles)};\
+    components[] = {QUOTE(Goggles)};\
 };\
 class HelmetCoverFront: ace_wardrobe_base_H_goggles_on {\
     class modifiableTo {\
         class HelmetGoggles {};\
         class HelmetCoverBack {};\
     };\
-    component[] = {QUOTE(Goggles)};\
+    components[] = {QUOTE(Goggles)};\
 };\
 class HelmetCoverBack: ace_wardrobe_base_H_goggles_on {\
     class modifiableTo {\
         class HelmetCoverFront {};\
         class HelmetGoggles {};\
     };\
-    component[] = {QUOTE(Goggles)};\
+    components[] = {QUOTE(Goggles)};\
 }

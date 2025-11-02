@@ -28,44 +28,9 @@ class CapBackwards: ace_wardrobe_base {\
 CAPS(CFP_BaseballCap_Multicam,CFP_BaseballCap_Multicam_Back);
 CAPS(CFP_BaseballCap_Multicam_DEF,CFP_BaseballCap_Multicam_DEF_Back);
 
-//ToDo Helmet with Goggles
-#define IDF_M76(HelmetBase,HelmetGoggles,HelmetCoverFront,HelmetCoverBack,Goggles)\
-class HelmetBase: ace_wardrobe_base_H_goggles_off {\
-    class modifiableTo {\
-        class HelmetGoggles {};\
-        class HelmetCoverFront {};\
-        class HelmetCoverBack {};\
-    };\
-};\
-class HelmetGoggles: ace_wardrobe_base_H_goggles_on {\
-      class modifiableTo {\
-        class HelmetBase {};\
-        class HelmetCoverFront {};\
-        class HelmetCoverBack {};\
-    };\
-    components[] = {QUOTE(Goggles)};\
-};\
-class HelmetCoverFront: ace_wardrobe_base_H_goggles_on {\
-      class modifiableTo {\
-        class HelmetBase {};\
-        class HelmetGoggles {};\
-        class HelmetCoverBack {};\
-    };\
-    components[] = {QUOTE(Goggles)};\
-};\
-class HelmetCoverBack: ace_wardrobe_base_H_goggles_on {\
-      class modifiableTo {\
-        class HelmetBase {};\
-        class HelmetCoverFront {};\
-        class HelmetGoggles {};\
-    };\
-    components[] = {QUOTE(Goggles)};\
-}
-
-IDF_M76(CFP_IDF_M76,CFP_IDF_M76_GG,CFP_IDF_M76_CF_GG,CFP_IDF_M76_CB_GG,CUP_G_ESS_BLK);
-IDF_M76(CFP_IDF_M76_BD,CFP_IDF_M76_BD_GG,CFP_IDF_M76_BD_CF_GG,CFP_IDF_M76_BD_CB_GG,CUP_G_ESS_BLK);
-IDF_M76(CFP_IDF_M76_BD_Black,CFP_IDF_M76_BD_GG_Black,CFP_IDF_M76_BD_CF_GG_Black,CFP_IDF_M76_BD_CB_GG_Black,CUP_G_ESS_BLK);
-//IDF_M76(,CFP_IDF_M76_GG_Black,CFP_IDF_M76_CF_GG_Black,CFP_IDF_M76_CB_GG_Black,CUP_G_ESS_BLK);
+HELMET_GOGGLES_COVER(CFP_IDF_M76,CFP_IDF_M76_GG,CFP_IDF_M76_CF_GG,CFP_IDF_M76_CB_GG,CUP_G_ESS_BLK);
+HELMET_GOGGLES_COVER(CFP_IDF_M76_BD,CFP_IDF_M76_BD_GG,CFP_IDF_M76_BD_CF_GG,CFP_IDF_M76_BD_CB_GG,CUP_G_ESS_BLK);
+HELMET_GOGGLES_COVER(CFP_IDF_M76_BD_Black,CFP_IDF_M76_BD_GG_Black,CFP_IDF_M76_BD_CF_GG_Black,CFP_IDF_M76_BD_CB_GG_Black,CUP_G_ESS_BLK);
 
 #define LUNGEE_1(LungeeRegular,LungeeOpen)\
 class LungeeRegular: ace_wardrobe_base {\
@@ -152,37 +117,7 @@ HELMET_GOGGLES(SP_ZSH1Helmet_Black1,SP_ZSH1Helmet_Black2,SP_Goggles_Black);
 HELMET_GOGGLES(SP_ZSH1Helmet_Green1,SP_ZSH1Helmet_Green2,SP_Goggles_Black);
 HELMET_GOGGLES(SP_ZSH1Helmet_Tan1,SP_ZSH1Helmet_Tan2,SP_Goggles_Black);
 
-#define HELMET_PASGT(HelmetBase,HelmetGoggles,HelmetCoverFront,HelmetCoverBack,Goggles)\
-class HelmetBase: ace_wardrobe_base_H_goggles_off {\
-    class modifiableTo {\
-        class HelmetGoggles {};\
-    };\
-};\
-class HelmetGoggles: ace_wardrobe_base_H_goggles_on {\
-    class modifiableTo {\
-        class HelmetBase {};\
-        class HelmetCoverFront {};\
-        class HelmetCoverBack {};\
-    };\
-    components[] = {QUOTE(Goggles)};\
-};\
-class HelmetCoverFront: ace_wardrobe_base_H_goggles_on {\
-    class modifiableTo {\
-        class HelmetBase {};\
-        class HelmetCoverBack {};\
-        class HelmetGoggles {};\
-    };\
-    components[] = {QUOTE(Goggles)};\
-};\
-class HelmetCoverBack: ace_wardrobe_base_H_goggles_on {\
-    class modifiableTo {\
-        class HelmetBase {};\
-        class HelmetCoverFront {};\
-        class HelmetGoggles {};\
-    };\
-    components[] = {QUOTE(Goggles)};\
-}
-HELMET_PASGT(CFP_PASGTHelmet_M811,CFP_PASGTHelmet_M814,CFP_PASGTHelmet_M815,CFP_PASGTHelmet_M816,CUP_G_ESS_BLK);
+HELMET_GOGGLES_COVER(CFP_PASGTHelmet_M811,CFP_PASGTHelmet_M814,CFP_PASGTHelmet_M815,CFP_PASGTHelmet_M816,CUP_G_ESS_BLK);
 
 class CFP_PASGTHelmet_DBDU1: ace_wardrobe_base_H_goggles_off {
     class modifiableTo {
