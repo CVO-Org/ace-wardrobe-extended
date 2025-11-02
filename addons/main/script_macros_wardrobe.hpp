@@ -25,6 +25,36 @@ class UniformGlovesRolled: ace_wardrobe_base {\
     };\
 }
 
+//Uniform with Gloves as Component, and Sleeves Rolled up and Combined
+#define UNIFORM_GLOVES_ROLLED_COMPONENT(UniformBase,UniformGloves,UniformRolled,UniformGlovesRolled,Gloves)\
+class UniformBase: ace_wardrobe_base {\
+    class modifiableTo {\
+        class UniformGloves {};\
+        class UniformRolled {};\
+    };\
+};\
+class UniformGloves: ace_wardrobe_base_U_gloves_on {\
+    class modifiableTo {\
+        class UniformBase {};\
+        class UniformGlovesRolled {};\
+    };\
+    components[] = {QUOTE(Gloves)};\
+};\
+class UniformRolled: ace_wardrobe_base_U_sleeves_up {\
+    class modifiableTo {\
+        class UniformBase {};\
+        class UniformGlovesRolled {};\
+    };\
+};\
+class UniformGlovesRolled: ace_wardrobe_base {\
+    class modifiableTo {\
+        class UniformGloves {};\
+        class UniformRolled {};\
+    };\
+    components[] = {QUOTE(Gloves)};\
+}
+
+
 //Uniform with a Variant with Gloves and a Variant with Sleeves Rolled up, BUT not combined
 #define UNIFORM_GLOVES_ROLLED2(UniformBase,UniformGloves,UniformRolled)\
 class UniformBase: ace_wardrobe_base {\
