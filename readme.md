@@ -14,8 +14,10 @@
 
 ACE Wardrobe Extended provides [ACE Wardrobe](https://ace3.acemod.org/wiki/framework/wardrobe-framework) Compatibility for 3rd-party mods.
 
-### Why not include these in ACE itself?
+## Why not include these in ACE itself?
+
 There are many reasons for us to handle these Compats outside of the ACE Mod itself, but mainly,
+
 - it keeps the maintenance-workload in ACE itself managable.
 - it allows for more flexibility and a more frequent update cycle.
 
