@@ -15,7 +15,7 @@ jobs:
           webhook_url: ${{ secrets.DISCORD_WEBHOOK_URL }} #ToDo Add Webhook URL to repo secrets
           username: "AWX - Release Bot"
           avatar_url: ""
-          content: ""
+          content: "||@AWX Ping||"
           footer_title: "AWX - ACE Wardrobe Extended "
           footer_icon_url: ""
           footer_timestamp: true
