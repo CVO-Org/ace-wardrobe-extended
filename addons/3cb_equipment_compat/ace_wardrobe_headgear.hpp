@@ -29,9 +29,9 @@ class HelmetGoggles2: ace_wardrobe_base {\
     class modifiableTo {\
         class HelmetGoggles1 {};\
         class HelmetBase {};\
-        components[] = {QUOTE(Goggles)};\
-        fallbackComponent = QUOTE(G_Combat);\
     };\
+    components[] = {QUOTE(Goggles)};\
+    fallbackComponent = QUOTE(G_Combat);\
 }
 
 HELMET_MK7_ESS(UK3CB_BAF_H_Mk7_Camo_A,UK3CB_BAF_H_Mk7_Camo_ESS_A,UK3CB_BAF_H_Mk7_Camo_CESS_A,rhs_ess_black);
