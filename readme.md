@@ -42,8 +42,10 @@ For any help visit our [Discord](https://discord.gg/cQ7dSwRcVd).
 - [x] [3CB Factions](https://steamcommunity.com/sharedfiles/filedetails/?id=1673456286)
 - [x] [S.O.G. Nickel Steel](https://steamcommunity.com/sharedfiles/filedetails/?id=3083451905)
 - [x] [ArmaModFrance AiO](https://steamcommunity.com/workshop/filedetails/?id=1781990846)
+    
 
 - [x] [Expeditionary Forces cDLC](https://store.steampowered.com/app/2647830/Arma_3_Creator_DLC_Expeditionary_Forces/)
+- [x] [CSLA Iron Curtain](https://store.steampowered.com/app/1294440/Arma_3_Creator_DLC_CSLA_Iron_Curtain/)
 
 ## Bugs and Mod Requests
 
