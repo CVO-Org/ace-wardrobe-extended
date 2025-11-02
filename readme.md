@@ -40,6 +40,7 @@ For any help visit our [Discord](https://discord.gg/cQ7dSwRcVd).
 - [x] [3CB BAF Equipment](https://steamcommunity.com/sharedfiles/filedetails/?id=893328083)
 - [x] [Project Opfor](https://steamcommunity.com/sharedfiles/filedetails/?id=735566597)
 - [x] [3CB Factions](https://steamcommunity.com/sharedfiles/filedetails/?id=1673456286)
+- [x] [S.O.G. Nickel Steel](https://steamcommunity.com/sharedfiles/filedetails/?id=3083451905)
 - [x] [ArmaModFrance AiO](https://steamcommunity.com/workshop/filedetails/?id=1781990846)
 
 - [x] [Expeditionary Forces cDLC](https://store.steampowered.com/app/2647830/Arma_3_Creator_DLC_Expeditionary_Forces/)
