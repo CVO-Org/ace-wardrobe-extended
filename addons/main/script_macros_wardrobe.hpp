@@ -25,6 +25,50 @@ class UniformGlovesRolled: ace_wardrobe_base {\
     };\
 }
 
+//Uniform with Gloves as Component, and Sleeves Rolled up and Combined
+#define UNIFORM_GLOVES_ROLLED_COMPONENT(UniformBase,UniformGloves,UniformRolled,UniformGlovesRolled,Gloves)\
+class UniformBase: ace_wardrobe_base {\
+    class modifiableTo {\
+        class UniformGloves {};\
+        class UniformRolled {};\
+    };\
+};\
+class UniformGloves: ace_wardrobe_base_U_gloves_on {\
+    class modifiableTo {\
+        class UniformBase {};\
+        class UniformGlovesRolled {};\
+    };\
+    components[] = {QUOTE(Gloves)};\
+};\
+class UniformRolled: ace_wardrobe_base_U_sleeves_up {\
+    class modifiableTo {\
+        class UniformBase {};\
+        class UniformGlovesRolled {};\
+    };\
+};\
+class UniformGlovesRolled: ace_wardrobe_base {\
+    class modifiableTo {\
+        class UniformGloves {};\
+        class UniformRolled {};\
+    };\
+    components[] = {QUOTE(Gloves)};\
+}
+
+//Uniform with Gloves and Component
+#define UNIFORM_GLOVES_COMPONENT(UniformBase,UniformGloves,Gloves)\
+class UniformBase: ace_wardrobe_base_U_gloves_off {\
+    class modifiableTo {\
+        class UniformGloves {};\
+    };\
+};\
+class UniformGloves: ace_wardrobe_base_U_gloves_on {\
+    class modifiableTo {\
+        class UniformBase {};\
+    };\
+    components[] = {QUOTE(Gloves)};\
+}
+
+
 //Uniform with a Variant with Gloves and a Variant with Sleeves Rolled up, BUT not combined
 #define UNIFORM_GLOVES_ROLLED2(UniformBase,UniformGloves,UniformRolled)\
 class UniformBase: ace_wardrobe_base {\
@@ -97,4 +141,53 @@ class HelmetGogglesDown: ace_wardrobe_base_H_goggles_on {\
     class modifiableTo {\
         class HelmetGogglesUp {};\
     };\
+//Helmet with Goggles Component
+#define HELMET_GOGGLES_COMPONENT(HelmetBase,HelmetGoggles,Goggles)\
+class HelmetBase: ace_wardrobe_base_H_goggles_off {\
+    class modifiableTo {\
+        class HelmetGoggles {};\
+    };\
+};\
+class HelmetGoggles: ace_wardrobe_base_H_goggles_on {\
+    class modifiableTo {\
+        class HelmetBase {};\
+    };\
+    components[] = {QUOTE(Goggles)};\
+}
+
+//Facemask with Goggles
+#define FACEMASK_GOGGLES(FaceMaskBase,FaceMaskGoggles,Goggles)\
+class FaceMaskBase: ace_wardrobe_base {\
+    class modifiableTo {\
+        class FaceMaskGoggles {};\
+    };\
+    components[] = {QUOTE(FaceMaskBase)};\
+};\
+class FaceMaskGoggles: ace_wardrobe_base {\
+    class modifiableTo {\
+        class FaceMaskBase {};\
+    };\
+    components[] = {QUOTE(FaceMaskBase),QUOTE(Goggles)};\
+}
+
+//Facemask with 2 Variants of Goggles
+#define FACEMASK_GOGGLES2(FaceMaskBase,FaceMaskGoggles1,FaceMaskGoggles2,Goggles1,Goggles2)\
+class FaceMaskBase: ace_wardrobe_base {\
+    class modifiableTo {\
+        class FaceMaskGoggles1 {};\
+        class FaceMaskGoggles2 {};\
+    };\
+    components[] = {QUOTE(FaceMaskBase)};\
+};\
+class FaceMaskGoggles1: ace_wardrobe_base {\
+    class modifiableTo {\
+        class FaceMaskBase {};\
+    };\
+    components[] = {QUOTE(FaceMaskBase),QUOTE(Goggles1)};\
+};\
+class FaceMaskGoggles2: ace_wardrobe_base {\
+    class modifiableTo {\
+        class FaceMaskBase {};\
+    };\
+    components[] = {QUOTE(FaceMaskBase),QUOTE(Goggles2)};\
 }

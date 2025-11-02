@@ -43,6 +43,12 @@ workshop = [
     "893328083" # 3CB BAF Equipment
 ]
 
+[amf]
+extends = "default"
+workshop = [
+    "1781990846", # Arma Mod France
+]
+
 # CUP based Presets
 [cup]
 extends = "default"
