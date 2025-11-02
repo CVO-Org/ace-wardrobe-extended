@@ -131,7 +131,7 @@ class HelmetGoggles: ace_wardrobe_base_H_goggles_on {\
     components[] = {QUOTE(Goggles)};\
 }
 
-//Balaclava with Goggles
+//Facemask with Goggles
 #define FACEMASK_GOGGLES(FaceMaskBase,FaceMaskGoggles,Goggles)\
 class FaceMaskBase: ace_wardrobe_base {\
     class modifiableTo {\
@@ -144,4 +144,25 @@ class FaceMaskGoggles: ace_wardrobe_base {\
         class FaceMaskBase {};\
     };\
     components[] = {QUOTE(FaceMaskBase),QUOTE(Goggles)};\
+}
+
+//Facemask with 2 Variants of Goggles
+#define FACEMASK_GOGGLES2(FaceMaskBase,FaceMaskGoggles1,FaceMaskGoggles2,Goggles1,Goggles2)\
+class FaceMaskBase: ace_wardrobe_base {\
+    class modifiableTo {\
+        class FaceMaskGoggles {};\
+    };\
+    components[] = {QUOTE(FaceMaskBase)};\
+};\
+class FaceMaskGoggles1: ace_wardrobe_base {\
+    class modifiableTo {\
+        class FaceMaskBase {};\
+    };\
+    components[] = {QUOTE(FaceMaskBase),QUOTE(Goggles1)};\
+};\
+class FaceMaskGoggles2: ace_wardrobe_base {\
+    class modifiableTo {\
+        class FaceMaskBase {};\
+    };\
+    components[] = {QUOTE(FaceMaskBase),QUOTE(Goggles2)};\
 }
