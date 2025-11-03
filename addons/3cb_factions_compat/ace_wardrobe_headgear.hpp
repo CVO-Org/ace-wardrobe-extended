@@ -121,7 +121,7 @@ BASE_PAIR(UK3CB_H_Cap_Back_ION_WHI,UK3CB_H_Cap_ION_WHI);
 BASE_PAIR(UK3CB_H_Radio_Cap_Back_ION_WHI,UK3CB_H_Radio_Cap_ION_WHI);
 BASE_PAIR(UK3CB_H_Radio_Cap_Back_ION_WHI_ALT,UK3CB_H_Radio_Cap_ION_WHI_ALT);
 
-class UK3CB_LDF_B_H_HB97_GEO:ace_wardrobe_base_H_goggles_off {
+class UK3CB_LDF_B_H_HB97_GEO: ace_wardrobe_base_H_goggles_off {
     class modifiableTo {
         class UK3CB_LDF_B_H_HB97_ESS_GEO {};
     };
