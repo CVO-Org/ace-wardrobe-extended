@@ -19,7 +19,7 @@
                 "cwd": "${workspaceFolder}/tools"
             },
             "args": [
-                "stringtableDiag.py"
+                "validate_stringtable.py"
             ],
             "problemMatcher": []
         },
