@@ -64,6 +64,12 @@ workshop = [
     "1369691841", # Community Factions Project
 ]
 
+[cwr3]
+extends = "cup"
+workshop = [
+    "2316343124", # Cold War Rearmed III
+]
+
 [ldf]
 extends = "cup"
 workshop = [
