@@ -98,12 +98,12 @@ class CFP_BDU_Marpat: ace_wardrobe_base {
         class CFP_BDU_Marpat3 {};
     };
 };
-class CFP_BDU_Marpat2: ace_wardrobe_base {
+class CFP_BDU_Marpat2: ace_wardrobe_base_U_gloves_on {
     class modifiableTo {
         class CFP_BDU_Marpat {};
     };
 };
-class CFP_BDU_Marpat3: ace_wardrobe_base {
+class CFP_BDU_Marpat3: ace_wardrobe_base_U_sleeves_up {
     class modifiableTo {
         class CFP_BDU_Marpat {};
     };
