@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="mod-template">
+<Project name="AWX">
     <Package name="Main">
-        <Key ID="STR_mod_URL">
+        <Key ID="STR_AWX_Main_mod_URL">
             <English>https://github.com/CVO-Org/ace-wardrobe-extended</English>
         </Key>
-        <Key ID="STR_mod_author">
+        <Key ID="STR_AWX_Main_mod_author">
             <English>AWX Team</English>
         </Key>
     </Package>
