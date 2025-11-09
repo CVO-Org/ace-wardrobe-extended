@@ -94,16 +94,16 @@ UNIFORM_SLEEVES_2(CFP_BDU_OD_Sudan,CFP_BDU_OD_Sudan2,CFP_BDU_OD_Sudan3);
 
 class CFP_BDU_Marpat: ace_wardrobe_base {
     class modifiableTo {
-        class CFP_BDU_Marpat1 {};
         class CFP_BDU_Marpat2 {};
+        class CFP_BDU_Marpat3 {};
     };
 };
-class CFP_BDU_Marpat1: ace_wardrobe_base {
+class CFP_BDU_Marpat2: ace_wardrobe_base_U_gloves_on {
     class modifiableTo {
         class CFP_BDU_Marpat {};
     };
 };
-class CFP_BDU_Marpat2: ace_wardrobe_base {
+class CFP_BDU_Marpat3: ace_wardrobe_base_U_sleeves_up {
     class modifiableTo {
         class CFP_BDU_Marpat {};
     };

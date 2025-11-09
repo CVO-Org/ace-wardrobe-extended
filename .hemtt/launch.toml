@@ -64,6 +64,12 @@ workshop = [
     "1369691841", # Community Factions Project
 ]
 
+[cwr3]
+extends = "cup"
+workshop = [
+    "2316343124", # Cold War Rearmed III
+]
+
 [ldf]
 extends = "cup"
 workshop = [
@@ -114,4 +120,10 @@ workshop = [
 extends = "rhs"
 workshop = [
     "1673456286", # 3CB Factions Pack
+]
+
+[vsm]
+extends = "default"
+workshop = [
+    "823636749", # VSM AIO
 ]
