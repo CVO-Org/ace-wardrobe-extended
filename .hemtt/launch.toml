@@ -121,3 +121,9 @@ extends = "rhs"
 workshop = [
     "1673456286", # 3CB Factions Pack
 ]
+
+[vsm]
+extends = "default"
+workshop = [
+    "823636749", # VSM AIO
+]

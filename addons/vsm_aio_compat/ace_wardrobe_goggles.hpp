@@ -1,0 +1,9 @@
+//These could be made more complex by including the Peltor-Variants
+FACEMASK_GOGGLES(VSM_balaclava_tan,VSM_Balaclava_tan_glasses,G_Shades_Black);
+FACEMASK_GOGGLES(VSM_balaclava_Black,VSM_Balaclava_black_glasses,G_Shades_Black);
+FACEMASK_GOGGLES(VSM_balaclava_olive,VSM_Balaclava_OD_glasses,G_Shades_Black);
+FACEMASK_GOGGLES(VSM_FaceMask_black,VSM_Facemask_black_glasses,G_Shades_Black);
+FACEMASK_GOGGLES(VSM_FaceMask_olive,VSM_Facemask_OD_glasses,G_Shades_Black);
+FACEMASK_GOGGLES(VSM_FaceMask_tan,VSM_Facemask_tan_glasses,G_Shades_Black);
+FACEMASK_GOGGLES(VSM_Shemagh_OD,VSM_Shemagh_Glasses_OD,G_Shades_Black);
+FACEMASK_GOGGLES(VSM_Shemagh_tan,VSM_Shemagh_glasses_tan,G_Shades_Black);
