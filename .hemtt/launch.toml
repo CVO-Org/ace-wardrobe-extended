@@ -99,6 +99,12 @@ workshop = [
     "3459905206", # (CUP) Polish Armed Forces
 ]
 
+[spa]
+extends = "cup"
+workshop = [
+    "3473326177", # (CUP) Spanish Armed Forces
+]
+
 # RHS based Presets
 [rhs]
 extends = "default"
