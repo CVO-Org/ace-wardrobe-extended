@@ -30,24 +30,6 @@ dlc = []
 extends = "default"
 mission = "test.VR"
 
-[bw]
-extends = "default"
-workshop = [
-    "1200127537", # BW Mod
-]
-
-[3cb]
-extends = "default"
-workshop = [
-    "893328083" # 3CB BAF Equipment
-]
-
-[amf]
-extends = "default"
-workshop = [
-    "1781990846", # Arma Mod France
-]
-
 # CUP based Presets
 [cup]
 extends = "default"
@@ -127,8 +109,33 @@ workshop = [
     "1673456286", # 3CB Factions Pack
 ]
 
+#other
 [vsm]
 extends = "default"
 workshop = [
     "823636749", # VSM AIO
+]
+
+[bw]
+extends = "default"
+workshop = [
+    "1200127537", # BW Mod
+]
+
+[3cb]
+extends = "default"
+workshop = [
+    "893328083" # 3CB BAF Equipment
+]
+
+[amf]
+extends = "default"
+workshop = [
+    "1781990846", # Arma Mod France
+]
+
+[nist]
+extends = "default"
+workshop = [
+    "3083451905" # SOG Nickel Steel
 ]
