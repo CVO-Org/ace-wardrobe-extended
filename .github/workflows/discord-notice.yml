@@ -15,7 +15,7 @@ jobs:
           webhook_url: ${{ secrets.DISCORD_WEBHOOK_URL }}
           username: "AWX - Release Bot"
           avatar_url: ""
-          content: "||@AWX Ping||"
+          content: "|| @AWX-Ping ||"
           footer_title: "AWX - ACE Wardrobe Extended "
           footer_icon_url: ""
           footer_timestamp: true
