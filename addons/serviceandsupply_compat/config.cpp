@@ -23,7 +23,7 @@ class CfgPatches {
             "simc_nv_67_core",
             "simc_mc_67_core",
             "simc_uaf_67_core",
-            "simc_uaf_68_core", //probably missing some, S&S has way to many different CfgPatches to list them all
+            "simc_uaf_68_core", //probably missing some, S&S has way too many different CfgPatches to list them all
             };
 
         // Optional. If this is 1, if any of requiredAddons[] entry is missing in your game the entire config will be ignored and return no error (but in rpt) so useful to make a compat Mod (Since Arma 3 2.14)
