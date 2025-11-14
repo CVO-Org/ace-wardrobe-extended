@@ -38,6 +38,7 @@ For any help visit our [Discord](https://discord.gg/cQ7dSwRcVd).
 - [x] [(CUP) Livonian Defense Force](https://steamcommunity.com/sharedfiles/filedetails/?id=3294585159)
 - [x] [Community Factions Project (CFP)](https://steamcommunity.com/sharedfiles/filedetails/?id=1369691841)
 - [x] [Cold War Rearmed III](https://steamcommunity.com/sharedfiles/filedetails/?id=2316343124)
+- [x] [Cold War Rearmed III - British Armed Forces](https://steamcommunity.com/sharedfiles/filedetails/?id=2521566285)
 - [x] [Cold War Rearmed III - United States Marine Corps](https://steamcommunity.com/sharedfiles/filedetails/?id=2523658639)
 - [x] [Cold War Rearmed III - Soviet Airborne Forces](https://steamcommunity.com/sharedfiles/filedetails/?id=2523662458)
 - [x] [Cold War Rearmed III - Tonali Defense Forces](https://steamcommunity.com/sharedfiles/filedetails/?id=2778903330)
