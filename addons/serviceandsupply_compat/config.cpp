@@ -6,7 +6,7 @@ class CfgPatches {
         // Meta information for editor
         name = ADDON_NAME;
         author = ECSTRING(main,mod_author);
-        authors[] = {"You!"};
+        authors[] = {"Andx [TTT]"};
 
         url = ECSTRING(main,mod_url);
 
@@ -18,7 +18,13 @@ class CfgPatches {
 
         // Required addons, used for setting load order.
         // When any of the addons is missing, pop-up warning will appear when launching the game.
-        requiredAddons[] = {QPVAR(main), "mod_dependency"};
+        requiredAddons[] = {
+            QPVAR(main),
+            "simc_nv_67_core",
+            "simc_mc_67_core",
+            "simc_uaf_67_core",
+            "simc_uaf_68_core", //probably missing some, S&S has way to many different CfgPatches to list them all
+            };
 
         // Optional. If this is 1, if any of requiredAddons[] entry is missing in your game the entire config will be ignored and return no error (but in rpt) so useful to make a compat Mod (Since Arma 3 2.14)
         skipWhenMissingDependencies = 1;

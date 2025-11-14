@@ -1,1 +1,1 @@
-
+BASE_PAIR(G_SWDG,G_SWDG_low);
