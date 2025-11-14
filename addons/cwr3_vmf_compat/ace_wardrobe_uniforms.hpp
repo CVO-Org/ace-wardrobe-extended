@@ -1,0 +1,3 @@
+UNIFORM_SLEEVES(cwr3_o_uniform_m1969_vmf,cwr3_o_uniform_m1969_rolled_vmf);
+UNIFORM_SLEEVES(cwr3_o_uniform_m1982_lacers_ttsko_vmf,cwr3_o_uniform_m1982_lacers_rolled_ttsko_vmf);
+UNIFORM_SLEEVES(cwr3_o_uniform_m1982_ttsko_vmf,cwr3_o_uniform_m1982_rolled_ttsko_vmf);
