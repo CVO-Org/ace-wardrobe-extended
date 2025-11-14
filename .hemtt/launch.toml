@@ -69,7 +69,7 @@ workshop = [
     "2523662458", # Cold War Rearmed III - Soviet Airborne Forces
 ]
 
-[cwr3_trf]
+[cwr3_tdf]
 extends = "cwr3"
 workshop = [
     "2778903330", # Cold War Rearmed III - Soviet Airborne Forces
