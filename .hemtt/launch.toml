@@ -57,6 +57,12 @@ workshop = [
     "2523658639", # CWR3 USMC Expansion
 ]
 
+[cwr3_vdv]
+extends = "cwr3"
+workshop = [
+    "2523662458", # Cold War Rearmed III - Soviet Airborne Forces
+]
+
 [ldf]
 extends = "cup"
 workshop = [
