@@ -47,6 +47,7 @@ For any help visit our [Discord](https://discord.gg/cQ7dSwRcVd).
 - [x] [S.O.G. Nickel Steel](https://steamcommunity.com/sharedfiles/filedetails/?id=3083451905)
 - [x] [ArmaModFrance AiO](https://steamcommunity.com/workshop/filedetails/?id=1781990846)
 - [x] [VSM All in One](https://steamcommunity.com/sharedfiles/filedetails/?id=823636749)
+- [x] [Service & Supply](https://steamcommunity.com/sharedfiles/filedetails/?id=2183975396)
 
 ## Supported DLCs
 

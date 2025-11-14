@@ -157,3 +157,9 @@ extends = "default"
 workshop = [
     "3083451905" # SOG Nickel Steel
 ]
+
+[sas]
+extends = "default"
+workshop = [
+    "2183975396" # Service & Supply
+]
