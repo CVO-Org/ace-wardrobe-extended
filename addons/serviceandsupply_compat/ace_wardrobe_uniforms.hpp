@@ -1,0 +1,85 @@
+UNIFORM_SLEEVES(U_Simc_arvn_BDQ,U_Simc_arvn_BDQ_trop);
+UNIFORM_SLEEVES(U_Simc_arvn_BDQ_tuck,U_Simc_arvn_BDQ_tuck_trop);
+UNIFORM_SLEEVES(U_Simc_arvn_DerFrosch,U_Simc_arvn_DerFrosch_trop);
+UNIFORM_SLEEVES(U_Simc_arvn_DerFrosch_tuck,U_Simc_arvn_DerFrosch_tuck_trop);
+UNIFORM_SLEEVES(U_Simc_arvn_ERDL_invis,U_Simc_arvn_ERDL_invis_trop);
+UNIFORM_SLEEVES(U_Simc_arvn_ERDL_invis_tuck,U_Simc_arvn_ERDL_invis_tuck_trop);
+UNIFORM_SLEEVES(U_Simc_arvn_ERDL_low,U_Simc_arvn_ERDL_low_trop);
+UNIFORM_SLEEVES(U_Simc_arvn_ERDL_low_tuck,U_Simc_arvn_ERDL_low_tuck_trop);
+UNIFORM_SLEEVES(U_Simc_arvn_OD7,U_Simc_arvn_OD7_trop);
+UNIFORM_SLEEVES(U_Simc_arvn_OD7_tuck,U_Simc_arvn_OD7_tuck_trop);
+UNIFORM_SLEEVES(U_Simc_arvn_og107,U_Simc_arvn_og107_trop);
+UNIFORM_SLEEVES(U_Simc_arvn_og107_tuck,U_Simc_arvn_og107_tuck_trop);
+UNIFORM_SLEEVES(U_Simc_arvn_TS,U_Simc_arvn_TS_tuck_trop);
+UNIFORM_SLEEVES(U_Simc_arvn_TS_tuck,U_Simc_arvn_TS_trop);
+
+class sns_f1_uniform: ace_wardrobe_base {
+    class modifiableTo {
+        class sns_f1_uniform_roll {};
+    };
+};
+class sns_f1_uniform_roll: ace_wardrobe_base_U_sleeves_up {
+    class modifiableTo {
+        class sns_f1_uniform {};
+        class sns_f1_uniform_trop {};
+    };
+};
+class sns_f1_uniform_trop: ace_wardrobe_base {
+    class modifiableTo {
+        class sns_f1_uniform_roll {};
+    };
+};
+
+UNIFORM_SLEEVES(U_Simc_nva_1,U_Simc_nva_1_trop);
+UNIFORM_SLEEVES(U_Simc_nva_2,U_Simc_nva_2_trop);
+
+UNIFORM_SLEEVES(U_Simc_SF_TS,U_Simc_SF_TS_tuck_trop);
+UNIFORM_SLEEVES(U_Simc_SF_TS_tuck,U_Simc_SF_TS_trop);
+UNIFORM_SLEEVES(U_Simc_OG107_mk1_MC,U_Simc_OG107_mk1_trop_MC);
+UNIFORM_SLEEVES(U_Simc_OG107_mk1_tuck_MC,U_Simc_OG107_mk1_tuck_trop_MC);
+UNIFORM_SLEEVES(U_Simc_OG107_mk1_nomex_MC,U_Simc_OG107_mk1_trop_nomex_MC);
+UNIFORM_SLEEVES(U_Simc_OG107_mk1_tuck_nomex_MC,U_Simc_OG107_mk1_tuck_trop_nomex_MC);
+UNIFORM_SLEEVES(U_Simc_OG107_mk1_gas_MC,U_Simc_OG107_mk1_gas_trop_MC);
+UNIFORM_SLEEVES(U_Simc_OG107_mk1_gas_nomex_MC,U_Simc_OG107_mk1_gas_trop_nomex_MC);
+UNIFORM_SLEEVES(U_Simc_OG107_mk3_MC,U_Simc_OG107_mk3_trop_MC);
+UNIFORM_SLEEVES(U_Simc_OG107_mk3_tuck_MC,U_Simc_OG107_mk3_tuck_trop_MC);
+UNIFORM_SLEEVES(U_Simc_OG107_mk3_tuck_nomex_MC,U_Simc_OG107_mk3_tuck_trop_nomex_MC);
+UNIFORM_SLEEVES(U_Simc_OG107_mk3_gas_MC,U_Simc_OG107_mk3_gas_trop_MC);
+UNIFORM_SLEEVES(U_Simc_OG107_mk3_gas_nomex_MC,U_Simc_OG107_mk3_gas_trop_nomex_MC);
+
+UNIFORM_SLEEVES2(U_Simc_TCU_mk1_mc,U_Simc_TCU_mk1_trop_mc,U_Simc_TCU_mk1_roll_mc);
+UNIFORM_SLEEVES2(U_Simc_TCU_mk2_mc,U_Simc_TCU_mk2_trop_mc,U_Simc_TCU_mk2_roll_mc);
+UNIFORM_SLEEVES2(U_Simc_TCU_mk3_mc,U_Simc_TCU_mk3_poplijn_trop_mc,U_Simc_TCU_mk3_trop_mc);
+
+UNIFORM_SLEEVES(U_Simc_TCU_mk3_erdl_mc_H,U_Simc_TCU_mk3_erdl_mc_H_trop);
+UNIFORM_SLEEVES(U_Simc_TCU_mk3_erdl_mc,U_Simc_TCU_mk3_erdl_mc_trop);
+
+UNIFORM_SLEEVES(U_Simc_TCU_mk1_og_mc,U_Simc_TCU_mk1_og_trop_mc);
+UNIFORM_SLEEVES(U_Simc_TCU_mk1_og_gas_mc,U_Simc_TCU_mk1_og_gas_trop_mc);
+
+//Skipped the Casual Clothes for now
+
+UNIFORM_SLEEVES(U_simc_og107_veldjas_blench,U_simc_og107_veldjas_blench_trop);
+UNIFORM_SLEEVES(U_simc_og107_veldjas_blench_gas,U_simc_og107_veldjas_blench_gas_trop);
+UNIFORM_SLEEVES(U_simc_tcu_veldjas_blench,U_simc_tcu_veldjas_blench_trop);
+UNIFORM_SLEEVES(U_simc_tcu_erdl_high_veldjas_blench,U_simc_tcu_erdl_high_veldjas_blench_trop);
+UNIFORM_SLEEVES(U_simc_tcu_erdl_high_veldjas_blench_gas,U_simc_tcu_erdl_high_veldjas_blench_gas_trop);
+UNIFORM_SLEEVES(U_simc_tcu_erdl_low_veldjas_blench,U_simc_tcu_erdl_low_veldjas_blench_trop);
+UNIFORM_SLEEVES(U_simc_tcu_erdl_low_veldjas_blench_gas,U_simc_tcu_erdl_low_veldjas_blench_gas_trop);
+UNIFORM_SLEEVES(U_simc_tcu_veldjas_blench_gas,U_simc_tcu_veldjas_blench_gas_trop);
+
+UNIFORM_SLEEVES(U_Simc_OG107_mk1_blench,U_Simc_OG107_mk1_trop_blench);
+UNIFORM_SLEEVES(U_Simc_OG107_mk1_tuck_blench,U_Simc_OG107_mk1_tuck_trop_blench);
+UNIFORM_SLEEVES(U_Simc_OG107_mk1_tuck_trop_blench,U_Simc_OG107_mk1_trop_nomex_blench);
+UNIFORM_SLEEVES(U_Simc_OG107_mk1_tuck_nomex_blench,U_Simc_OG107_mk1_tuck_trop_nomex_blench);
+UNIFORM_SLEEVES(U_Simc_OG107_mk1_gas_blench,U_Simc_OG107_mk1_gas_trop_blench);
+UNIFORM_SLEEVES(U_Simc_OG107_mk1_gas_nomex_blench,U_Simc_OG107_mk1_gas_trop_nomex_blench);
+
+UNIFORM_SLEEVES(U_Simc_OG107_mk3_blench,U_Simc_OG107_mk3_trop_blench);
+UNIFORM_SLEEVES(U_Simc_OG107_mk3_tuck_blench,U_Simc_OG107_mk3_tuck_trop_blench);
+UNIFORM_SLEEVES(U_Simc_OG107_mk3_nomex_blench,U_Simc_OG107_mk3_trop_nomex_blench);
+UNIFORM_SLEEVES(U_Simc_OG107_mk3_tuck_nomex_blench,U_Simc_OG107_mk3_tuck_trop_nomex_blench);
+UNIFORM_SLEEVES(U_Simc_OG107_mk3_gas_blench,U_Simc_OG107_mk3_gas_trop_blench);
+UNIFORM_SLEEVES(U_Simc_OG107_mk3_gas_nomex_blench,U_Simc_OG107_mk3_gas_trop_nomex_blench);
+
+//continue after pyjamas

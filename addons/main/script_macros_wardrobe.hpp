@@ -193,3 +193,22 @@ class FaceMaskGoggles2: ace_wardrobe_base {\
     };\
     components[] = {QUOTE(FaceMaskBase),QUOTE(Goggles2)};\
 }
+
+//Uniform with 2 types of rolled up
+#define UNIFORM_SLEEVES2(UniformBase,UniformRolled1,UniformRolled2)\
+class UniformBase: ace_wardrobe_base_U_sleeves_down {\
+    class modifiableTo {\
+        class UniformRolled1 {};\
+    };\
+};\
+class UniformRolled1: ace_wardrobe_base {\
+    class modifiableTo {\
+        class UniformBase {};\
+        class UniformRolled2 {};\
+    };\
+};\
+class UniformRolled2: ace_wardrobe_base_U_sleeves_up {\
+    class modifiableTo {\
+        class UniformRolled1 {};\
+    };\
+}
