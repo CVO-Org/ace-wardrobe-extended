@@ -42,12 +42,14 @@ For any help visit our [Discord](https://discord.gg/cQ7dSwRcVd).
 - [x] [Cold War Rearmed III - United States Marine Corps](https://steamcommunity.com/sharedfiles/filedetails/?id=2523658639)
 - [x] [Cold War Rearmed III - Soviet Airborne Forces](https://steamcommunity.com/sharedfiles/filedetails/?id=2523662458)
 - [x] [Cold War Rearmed III - Tonali Defense Forces](https://steamcommunity.com/sharedfiles/filedetails/?id=2778903330)
+- [x] [Cold War Rearmed III - Soviet Naval Infantry](https://steamcommunity.com/sharedfiles/filedetails/?id=2523665369)
 - [x] [3CB BAF Equipment](https://steamcommunity.com/sharedfiles/filedetails/?id=893328083)
 - [x] [Project Opfor](https://steamcommunity.com/sharedfiles/filedetails/?id=735566597)
 - [x] [3CB Factions](https://steamcommunity.com/sharedfiles/filedetails/?id=1673456286)
 - [x] [S.O.G. Nickel Steel](https://steamcommunity.com/sharedfiles/filedetails/?id=3083451905)
 - [x] [ArmaModFrance AiO](https://steamcommunity.com/workshop/filedetails/?id=1781990846)
 - [x] [VSM All in One](https://steamcommunity.com/sharedfiles/filedetails/?id=823636749)
+- [x] [Service & Supply](https://steamcommunity.com/sharedfiles/filedetails/?id=2183975396)
 
 ## Supported DLCs
 

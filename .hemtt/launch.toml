@@ -75,6 +75,12 @@ workshop = [
     "2778903330", # Cold War Rearmed III - Tonali Defense Forces
 ]
 
+[cwr3_vmf]
+extends = "cwr3"
+workshop = [
+    "2523665369", # Cold War Rearmed III - Soviet Naval Infantry
+]
+
 [ldf]
 extends = "cup"
 workshop = [
@@ -162,4 +168,10 @@ workshop = [
 extends = "default"
 workshop = [
     "3083451905" # SOG Nickel Steel
+]
+
+[sas]
+extends = "default"
+workshop = [
+    "2183975396" # Service & Supply
 ]
