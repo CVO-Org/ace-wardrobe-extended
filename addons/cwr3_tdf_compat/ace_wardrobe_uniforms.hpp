@@ -1,0 +1,3 @@
+UNIFORM_SLEEVES(cwr3_trf_uniform_blumentarn,cwr3_trf_uniform_blumentarn_rolled);
+UNIFORM_SLEEVES(cwr3_trf_uniform_brush_early,cwr3_trf_uniform_brush_early_rolled);
+UNIFORM_SLEEVES(cwr3_trf_uniform_lizard_late,cwr3_trf_uniform_lizard_late_rolled);
