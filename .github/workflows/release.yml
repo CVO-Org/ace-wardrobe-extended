@@ -16,8 +16,6 @@ name: Release
 
 env:
   FOLDER: '@awx'
-  WORKSHOPID: '3595979374'
-  WORKSHOPNAME: 'ACE Wardrobe Extended'
 
 on:
   release:
@@ -42,14 +40,6 @@ jobs:
           run: |
             & "${{ github.workspace }}/tools/update-version.ps1" `
               -Version "${{ github.event.release.tag_name }}"
-              
-        - name: Create meta.cpp for release
-          shell: pwsh
-          run: |
-            & "${{ github.workspace }}/tools/create-meta-cpp.ps1" `
-              -FilePath "${{ github.workspace }}/meta.cpp" `
-              -PublishedId "${{ env.WORKSHOPID }}" `
-              -ModName "${{ env.WORKSHOPNAME }}"
 
         - name: Setup HEMTT
           uses: arma-actions/hemtt@v1
