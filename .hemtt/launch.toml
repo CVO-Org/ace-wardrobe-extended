@@ -28,7 +28,7 @@ dlc = []
 
 [test]
 extends = "default"
-mission = "test.VR"
+mission = "wardrobe.VR"
 
 # CUP based Presets
 [cup]
