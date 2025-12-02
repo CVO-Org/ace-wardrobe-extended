@@ -175,3 +175,14 @@ extends = "default"
 workshop = [
     "2183975396" # Service & Supply
 ]
+
+
+[tfc]
+extends = "default"
+workshop = [
+    "2770236561", # TFC_CORE
+    "2770242574", # TFC_CA
+    "2770248260", # TFC_RCAF
+    "2770253787", # TFC_SF
+    "3031816871" # TFC_RCN
+]
