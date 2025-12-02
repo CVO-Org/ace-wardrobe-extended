@@ -1,0 +1,124 @@
+/*
+ToDo: Fold Helmet Strap
+
+Normal, Folded
+H_SPE_FFI_Adrian, H_SPE_FFI_Adrian_ns
+H_SPE_FR_Adrian,H_SPE_FR_Adrian_ns
+H_SPE_FR_Adrian_cover,H_SPE_FR_Adrian_cover_ns
+H_SPE_FR_Adrian_net,H_SPE_FR_Adrian_net_ns
+
+H_SPE_GER_Helmet_M35_LW,H_SPE_GER_Helmet_M35_LW_ns
+
+H_SPE_GER_Helmet_M40_lw,H_SPE_GER_Helmet_M40_ns_lw
+H_SPE_GER_Helmet_M40_lw_net,H_SPE_GER_Helmet_M40_ns_lw_net
+
+H_SPE_GER_Helmet_M40_lw_net_camo,H_SPE_GER_Helmet_M40_ns_lw_net_camo
+H_SPE_GER_Helmet_M40_lw_camo,H_SPE_GER_Helmet_M40_ns_lw_camo
+
+H_SPE_ST_Helmet,H_SPE_ST_Helmet_OS
+H_SPE_ST_Helmet2,H_SPE_ST_Helmet2_OS
+H_SPE_ST_Helmet3,H_SPE_ST_Helmet3_OS
+H_SPE_GER_HelmetCamo3,H_SPE_GER_HelmetCamo3_OS
+H_SPE_ST_Helmet4,H_SPE_ST_Helmet4_OS
+H_SPE_ST_Helmet5,H_SPE_ST_Helmet5_OS
+H_SPE_ST_Helmet6,H_SPE_ST_Helmet6_OS
+
+H_SPE_GER_Helmet_M40_burlap_band,H_SPE_GER_Helmet_M40_burlap_band_ns
+
+H_SPE_GER_Helmet_M40_net,H_SPE_GER_Helmet_M40_ns_net
+H_SPE_GER_Helmet_M40Utility,H_SPE_GER_Helmet_M40Utility_OS
+
+
+H_SPE_GER_Helmet_M40_wire,H_SPE_GER_Helmet_M40_ns_wire
+
+H_SPE_GER_Helmet_net,H_SPE_GER_Helmet_net_ns
+
+H_SPE_GER_Helmet_os,H_SPE_GER_Helmet_ns_wire
+*/
+
+
+
+
+
+/*
+ToDo: Headset up/down
+
+Headphones Up, Headphones Down
+H_SPE_GER_SPGPrivateCap,H_SPE_GER_SPGPrivateCap2
+
+H_SPE_GER_TankPrivateCap,H_SPE_GER_TankPrivateCap2
+H_SPE_GER_TankOffzCap,H_SPE_GER_TankOffzCap2
+
+H_SPE_GER_TankOfficerCap,H_SPE_GER_TankOfficerCap2
+
+
+
+ToDo: Tilt Hat
+
+Normal, Tilted
+H_SPE_GER_M40_LW,H_SPE_GER_M40_LW_2
+H_SPE_GER_M40_LW_Offz,H_SPE_GER_M40_LW_Offz_2
+
+H_SPE_GER_M38,H_SPE_GER_M38_2
+H_SPE_GER_M38_Offz,H_SPE_GER_M38_Offz_2
+
+H_SPE_GER_M38_art,H_SPE_GER_M38_art_2
+H_SPE_GER_M38_Art_Offz,H_SPE_GER_M38_Art_Offz_2
+
+H_SPE_GER_M38_inf,H_SPE_GER_M38_inf_2
+H_SPE_GER_M38_inf_Offz,H_SPE_GER_M38_inf_Offz_2
+
+H_SPE_GER_M38_Pz,H_SPE_GER_M38_Pz_2
+H_SPE_GER_M38_Pz_Offz,H_SPE_GER_M38_Pz_2
+
+H_SPE_GER_M38_pzgren,H_SPE_GER_M38_pzgren_2
+H_SPE_GER_M38_PzGren_Offz,H_SPE_GER_M38_PzGren_Offz_2
+
+H_SPE_GER_ST_M40_cap,H_SPE_GER_ST_M40_cap_2
+H_SPE_GER_ST_M40_cap_Offz,H_SPE_GER_ST_M40_cap_Offz_2
+
+H_SPE_GER_ST_M40_Pz_cap,H_SPE_GER_ST_M40_Pz_cap_2
+H_SPE_GER_ST_M40_Pz_cap_Offz,H_SPE_GER_ST_M40_Pz_cap_Offz_2
+
+
+
+*/
+
+
+/*
+
+Helmet plus Glasses Comboss
+
+Component: G_SPE_Dust_Goggles
+
+Helmet Base:
+H_SPE_GER_Helmet_M35
+
+Hlemet Variant:
+H_SPE_GER_Helmet_M35_ns
+
+Helmet with Glasses:
+H_SPE_GER_Helmet_M35_Glasses
+
+Helmet Variant with Glasses:
+H_SPE_GER_Helmet_M35_Glasses_ns
+
+*/
+
+/*
+
+H_SPE_GER_Helmet_M40
+H_SPE_GER_Helmet_M40_ns
+
+H_SPE_GER_Helmet_M40_Glasses
+H_SPE_GER_Helmet_M40_Glasses_ns
+*/
+
+/*
+H_SPE_GER_Helmet
+H_SPE_GER_Helmet_ns
+H_SPE_GER_Helmet_Glasses
+*/
+
+
+// ToDo: Continue US Helmets
