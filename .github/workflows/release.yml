@@ -16,6 +16,7 @@ name: Release
 
 env:
   FOLDER: '@awx'
+  WORKSHOPID: '3595979374'
 
 on:
   release:
