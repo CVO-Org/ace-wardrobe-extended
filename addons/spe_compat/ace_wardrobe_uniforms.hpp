@@ -1,7 +1,7 @@
 // UNIFORM_SLEEVES(variantSleevesDown,variantSleevesUp);
 // UNIFORM_GLOVES(variantGlovesOn,variantGlovesOff);
 
-// ToDo GER Jumper Uniforms
+UNIFORM_GLOVES(U_SPE_FSJ_mk2,U_SPE_FSJ_mk2_gloves);
 
 UNIFORM_SLEEVES(U_SPE_CIV_Worker_Coverall_1,U_SPE_CIV_Worker_Coverall_1_trop);
 UNIFORM_SLEEVES(U_SPE_CIV_Worker_Coverall_2,U_SPE_CIV_Worker_Coverall_2_trop);
@@ -29,38 +29,33 @@ UNIFORM_SLEEVES(U_SPE_ST_Soldier_E44_Boots,U_SPE_ST_Soldier_E44_Boots_rolled);
 
 UNIFORM_SLEEVES(U_SPE_ST_Soldier_E44,U_SPE_ST_MGunner_E44);
 
-/*
-TODO:
-Normal, Offener Kragen, Offener Kragen Ärmel Hoch
-U_SPE_GER_Soldier_M36_Boots,U_SPE_GER_Soldier_M36_Boots_open,U_SPE_GER_Soldier_M36_Boots_Rolled
-U_SPE_GER_Soldier_M40_Boots,U_SPE_GER_Soldier_M40_Boots_open,U_SPE_GER_Soldier_M40_Boots_Rolled
-U_SPE_GER_Soldier_M40_Gaiters_closed,U_SPE_GER_Soldier_M40_Gaiters,U_SPE_GER_Soldier_M40_Gaiters_Rolled
-U_SPE_GER_Soldier_Boots,U_SPE_GER_Soldier_Boots_open,U_SPE_GER_Soldier_Boots_Rolled
+//UNIFORM_SLEEVES2(UniformBase,UniformRolled1,UniformRolled2)
+//Normal, Offener Kragen, Offener Kragen Ärmel Hoch
 
-U_SPE_GER_Soldier_Gaiters_closed,U_SPE_GER_Soldier_Gaiters,U_SPE_GER_MG_schutze // Different colored shoes :sob:
+UNIFORM_SLEEVES2(U_SPE_GER_Soldier_M36_Boots,U_SPE_GER_Soldier_M36_Boots_open,U_SPE_GER_Soldier_M36_Boots_Rolled);
+UNIFORM_SLEEVES2(U_SPE_GER_Soldier_M40_Boots,U_SPE_GER_Soldier_M40_Boots_open,U_SPE_GER_Soldier_M40_Boots_Rolled);
+UNIFORM_SLEEVES2(U_SPE_GER_Soldier_M40_Gaiters_closed,U_SPE_GER_Soldier_M40_Gaiters,U_SPE_GER_Soldier_M40_Gaiters_Rolled);
+UNIFORM_SLEEVES2(U_SPE_GER_Soldier_Boots,U_SPE_GER_Soldier_Boots_open,U_SPE_GER_Soldier_Boots_Rolled);
 
-
-U_SPE_LW_base,U_SPE_LW_op,U_SPE_LW_roll
-U_SPE_LW_2,U_SPE_LW_2_op,U_SPE_LW_2_roll
-
-U_SPE_CSK_base,U_SPE_CSK_op,U_SPE_CSK_roll
-U_SPE_CSK_2,U_SPE_CSK_2_op,U_SPE_CSK_2_roll
-
-U_SPE_OST_base,U_SPE_OST_op,U_SPE_OST_roll
-U_SPE_OST_2,U_SPE_OST_2_op,U_SPE_OST_2_roll
-
-U_SPE_ST_Soldier_M36_Boots,U_SPE_ST_Soldier_M36_Boots_open,U_SPE_ST_Soldier_M36_Boots_rolled
-
-U_SPE_ST_Soldier_M40_Boots,U_SPE_ST_Soldier_M40_Boots_open,U_SPE_ST_Soldier_M40_Boots_rolled
-U_SPE_ST_Soldier_M40_Gaiters_closed,U_SPE_ST_Soldier_M40_Gaiters,U_SPE_ST_Soldier_M40_rolled
-
-U_SPE_ST_Soldier_Gaiters_closed,U_SPE_ST_Soldier_Gaiters,U_SPE_ST_Soldier_rolled
-
-U_SPE_ST_Soldier_Boots,U_SPE_ST_Soldier_Boots_open,U_SPE_ST_Soldier_Boots_rolled
-*/
+UNIFORM_SLEEVES2(U_SPE_GER_Soldier_Gaiters_closed,U_SPE_GER_Soldier_Gaiters,U_SPE_GER_MG_schutze); // Different colored shoes :sob:
 
 
+UNIFORM_SLEEVES2(U_SPE_LW_base,U_SPE_LW_op,U_SPE_LW_roll);
+UNIFORM_SLEEVES2(U_SPE_LW_2,U_SPE_LW_2_op,U_SPE_LW_2_roll);
 
+UNIFORM_SLEEVES2(U_SPE_CSK_base,U_SPE_CSK_op,U_SPE_CSK_roll);
+UNIFORM_SLEEVES2(U_SPE_CSK_2,U_SPE_CSK_2_op,U_SPE_CSK_2_roll);
+
+UNIFORM_SLEEVES2(U_SPE_OST_base,U_SPE_OST_op,U_SPE_OST_roll);
+UNIFORM_SLEEVES2(U_SPE_OST_2,U_SPE_OST_2_op,U_SPE_OST_2_roll);
+
+UNIFORM_SLEEVES2(U_SPE_ST_Soldier_M36_Boots,U_SPE_ST_Soldier_M36_Boots_open,U_SPE_ST_Soldier_M36_Boots_rolled);
+
+UNIFORM_SLEEVES2(U_SPE_ST_Soldier_M40_Boots,U_SPE_ST_Soldier_M40_Boots_open,U_SPE_ST_Soldier_M40_Boots_rolled);
+UNIFORM_SLEEVES2(U_SPE_ST_Soldier_M40_Gaiters_closed,U_SPE_ST_Soldier_M40_Gaiters,U_SPE_ST_Soldier_M40_rolled);
+
+UNIFORM_SLEEVES2(U_SPE_ST_Soldier_Gaiters_closed,U_SPE_ST_Soldier_Gaiters,U_SPE_ST_Soldier_rolled);
+UNIFORM_SLEEVES2(U_SPE_ST_Soldier_Boots,U_SPE_ST_Soldier_Boots_open,U_SPE_ST_Soldier_Boots_rolled);
 
 // US
 UNIFORM_GLOVES(U_SPE_US_AB_Uniform_M43,U_SPE_US_AB_Uniform_M43_glove);
