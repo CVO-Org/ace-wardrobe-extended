@@ -10,64 +10,64 @@ HELMET_VISOR(TFC_CH_Helo_Pilot_up,TFC_AH64_Helmet);
 class HelmetBase: ace_wardrobe_base {\
     class modifiableTo {\
         class HelmetScrim11 {\
-            directionalName = "Add light Scrim";\
+            directionalActionName = "Add light Scrim";\
         };\
         class HelmetScrim21 {\
-            directionalName = "Add light Scrim";\
+            directionalActionName = "Add light Scrim";\
         };\
         class HelmetScrim31 {\
-            directionalName = "Add light Scrim";\
+            directionalActionName = "Add light Scrim";\
         };\
     };\
 };\
 class HelmetScrim11: ace_wardrobe_base {\
     class modifiableTo {\
         class HelmetBase {\
-            directionalName = "Remove light Scrim";\
+            directionalActionName = "Remove light Scrim";\
         };\
         class HelmetScrim12 {\
-            directionalName = "Add full Scrim";\
+            directionalActionName = "Add full Scrim";\
         };\
     };\
 };\
 class HelmetScrim12: ace_wardrobe_base {\
     class modifiableTo {\
         class HelmetScrim11 {\
-            directionalName = "Remove full Scrim";\
+            directionalActionName = "Remove full Scrim";\
         };\
     };\
 };\
 class HelmetScrim21: ace_wardrobe_base {\
     class modifiableTo {\
         class HelmetBase {\
-            directionalName = "Remove light Scrim";\
+            directionalActionName = "Remove light Scrim";\
         };\
         class HelmetScrim22 {\
-            directionalName = "Add full Scrim";\
+            directionalActionName = "Add full Scrim";\
         };\
     };\
 };\
 class HelmetScrim22: ace_wardrobe_base {\
     class modifiableTo {\
         class HelmetScrim21 {\
-            directionalName = "Remove full Scrim";\
+            directionalActionName = "Remove full Scrim";\
         };\
     };\
 };\
 class HelmetScrim31: ace_wardrobe_base {\
     class modifiableTo {\
         class HelmetBase {\
-            directionalName = "Remove light Scrim";\
+            directionalActionName = "Remove light Scrim";\
         };\
         class HelmetScrim32 {\
-            directionalName = "Add full Scrim";\
+            directionalActionName = "Add full Scrim";\
         };\
     };\
 };\
 class HelmetScrim32: ace_wardrobe_base {\
     class modifiableTo {\
         class HelmetScrim31 {\
-            directionalName = "Remove full Scrim";\
+            directionalActionName = "Remove full Scrim";\
         };\
     };\
 }
@@ -78,28 +78,28 @@ SCRIM_HELMET(TFC_CH_CG634_CADPAT_TW,TFC_CH_CG634_CADPAT_SCRIM_L_01_TW,TFC_CH_CG6
 class TFC_CH_Caiman_CADPAT_MT: ace_wardrobe_base {
     class modifiableTo {
         class TFC_CH_Caiman_CADPAT_MT_Scrim {
-            directionalName = "Add Scrim";
+            directionalActionName = "Add Scrim";
         };
     };
 };
 class TFC_CH_Caiman_CADPAT_MT_Scrim: ace_wardrobe_base {
     class modifiableTo {
         class TFC_CH_Caiman_CADPAT_MT {
-            directionalName = "Remove Scrim";
+            directionalActionName = "Remove Scrim";
         };
     };
 };
 class TFC_CH_Caiman_pel_CADPAT_MT: ace_wardrobe_base {
     class modifiableTo {
         class TFC_CH_Caiman_pel_CADPAT_MT_Scrim {
-            directionalName = "Add Scrim";
+            directionalActionName = "Add Scrim";
         };
     };
 };
 class TFC_CH_Caiman_pel_CADPAT_MT_Scrim: ace_wardrobe_base {
     class modifiableTo {
         class TFC_CH_Caiman_pel_CADPAT_MT {
-            directionalName = "Remove Scrim";
+            directionalActionName = "Remove Scrim";
         };
     };
 };
