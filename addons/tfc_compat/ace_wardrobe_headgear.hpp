@@ -6,6 +6,16 @@ BASE_PAIR(TFC_CH_BCAP_BW_TW,TFC_CH_BCAP_TW);
 HELMET_VISOR(TFC_CH_Helo_Pilot_up,TFC_AH64_Helmet);
 
 //Scrim Helmets
+// Helmet with 3 scrim pattern variants, each having light (L) and full versions.
+// Parameters:
+//   HelmetBase      - The base helmet class (no scrim)
+//   HelmetScrim11   - Scrim pattern 1, light version
+//   HelmetScrim12   - Scrim pattern 1, full version
+//   HelmetScrim21   - Scrim pattern 2, light version
+//   HelmetScrim22   - Scrim pattern 2, full version
+//   HelmetScrim31   - Scrim pattern 3, light version
+//   HelmetScrim32   - Scrim pattern 3, full version
+// Usage: SCRIM_HELMET(Base, Scrim1Light, Scrim1Full, Scrim2Light, Scrim2Full, Scrim3Light, Scrim3Full)
 #define SCRIM_HELMET(HelmetBase,HelmetScrim11,HelmetScrim12,HelmetScrim21,HelmetScrim22,HelmetScrim31,HelmetScrim32)\
 class HelmetBase: ace_wardrobe_base {\
     class modifiableTo {\
