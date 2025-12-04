@@ -1,5 +1,5 @@
 #define COMPONENT main
-#define COMPONENT_BEAUTIFIED Main
+#define COMPONENT_BEAUTIFIED ACE Wardrobe Extended - Main
 
 
 #include "script_mod.hpp"
