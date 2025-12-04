@@ -60,7 +60,7 @@ class HelmetScrim21: ace_wardrobe_base {\
 class HelmetScrim22: ace_wardrobe_base {\
     class modifiableTo {\
         class HelmetScrim21 {\
-            directionalActionName = "Remove full Scrim";\
+            directionalActionName = "Downgrade to light Scrim";\
         };\
     };\
 };\
