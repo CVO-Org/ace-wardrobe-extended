@@ -269,3 +269,20 @@ class UniformRolled2: ace_wardrobe_base_U_sleeves_up {\
         class UniformRolled1 {};\
     };\
 }
+
+//Helmets with a Scrim and No Scrim Version
+#define HELMET_SCRIM(HelmetBase,HelmetScrim)\
+class HelmetBase: ace_wardrobe_base {\
+    class modifiableTo {\
+        class HelmetScrim {\
+            directionalActionName = "Add Scrim/Foliage to Helmet";\
+        };\
+    };\
+};\
+class HelmetScrim: ace_wardrobe_base {\
+    class modifiableTo {\
+        class HelmetBase {\
+            directionalActionName = "Remove Scrim/Foliage from Helmet";\
+        };\
+    };\
+}

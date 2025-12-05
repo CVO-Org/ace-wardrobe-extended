@@ -1,19 +1,3 @@
-#define HELMET_SCRIM(HelmetBase,HelmetScrim)\
-class HelmetBase: ace_wardrobe_base {\
-    class modifiableTo {\
-        class HelmetScrim {\
-            directionalActionName = "Add Scrim/Foliage to Helmet";\
-        };\
-    };\
-};\
-class HelmetScrim: ace_wardrobe_base {\
-    class modifiableTo {\
-        class HelmetBase {\
-            directionalActionName = "Remove Scrim/Foliage from Helmet";\
-        };\
-    };\
-}
-
 HELMET_SCRIM(cwr3_b_uk_headgear_m76_dpm_net,cwr3_b_uk_headgear_m76_dpm_camo);
 HELMET_SCRIM(cwr3_b_uk_headgear_m76_olive_net,cwr3_b_uk_headgear_m76_camo);
 HELMET_SCRIM(cwr3_b_uk_headgear_parahelmet_olive_net,cwr3_b_uk_headgear_parahelmet_camo);
