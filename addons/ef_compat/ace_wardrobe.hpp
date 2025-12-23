@@ -5,7 +5,6 @@ class ace_wardrobe {
     class ace_wardrobe_base_U_sleeves_up;
     class ace_wardrobe_base_U_sleeves_down;
     class ace_wardrobe_base_U_gloves_on;
-    class ace_wardrobe_base_U_gloves_off;
 
     #include "ace_wardrobe_uniforms.hpp"
     #include "ace_wardrobe_headgear.hpp"
