@@ -1,1 +1,0 @@
-HELMET_VISOR(vnx_b_helmet_aph6_01_06,vnx_b_helmet_aph6_02_06);
