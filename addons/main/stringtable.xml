@@ -7,5 +7,38 @@
         <Key ID="STR_AWX_Main_mod_author">
             <English>AWX Team</English>
         </Key>
+        <Key ID="STR_AWX_Main_add_scrim_light">
+            <English>Add light Scrim</English>
+        </Key>
+        <Key ID="STR_AWX_Main_add_scrim_full">
+            <English>Add full Scrim</English>
+        </Key>
+        <Key ID="STR_AWX_Main_remove_scrim_full">
+            <English>Remove full Scrim</English>
+        </Key>
+        <Key ID="STR_AWX_Main_remove_scrim_light">
+            <English>Remove light Scrim</English>
+        </Key>
+        <Key ID="STR_AWX_Main_downgrade_scrim">
+            <English>Remove light Scrim</English>
+        </Key>
+        <Key ID="STR_AWX_Main_add_foliage">
+            <English>Add foliage</English>
+        </Key>
+        <Key ID="STR_AWX_Main_remove_foliage">
+            <English>Remove foliage</English>
+        </Key>
+        <Key ID="STR_AWX_Main_add_scrim_foliage">
+            <English>Add scrim and foliage</English>
+        </Key>
+        <Key ID="STR_AWX_Main_remove_scrim_foliage">
+            <English>Remove scrim and foliage</English>
+        </Key>
+        <Key ID="STR_AWX_Main_add_scrim">
+            <English>Add Scrim</English>
+        </Key>
+        <Key ID="STR_AWX_Main_remove_scrim">
+            <English>Remove Scrim</English>
+        </Key>
     </Package>
 </Project>
