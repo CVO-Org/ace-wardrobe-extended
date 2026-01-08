@@ -1,23 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="AWX">
     <Package name="Main">
-        <Key ID="STR_AWX_Main_mod_URL">
-            <English>https://github.com/CVO-Org/ace-wardrobe-extended</English>
+        <Key ID="STR_AWX_Main_AddScrim">
+            <English>Add Scrim/Foliage to Helmet</English>
         </Key>
-        <Key ID="STR_AWX_Main_mod_author">
-            <English>AWX Team</English>
+        <Key ID="STR_AWX_Main_AttachGoggles">
+            <English>Attach Goggles</English>
         </Key>
         <Key ID="STR_AWX_Main_PutGlovesOn">
             <English>Put Gloves On</English>
         </Key>
-        <Key ID="STR_AWX_Main_TakeGlovesOff">
-            <English>Take Gloves Off</English>
+        <Key ID="STR_AWX_Main_RemoveGoggles">
+            <English>Remove Goggles</English>
         </Key>
-        <Key ID="STR_AWX_Main_RollSleevesUp">
-            <English>Roll Sleeves Up</English>
+        <Key ID="STR_AWX_Main_RemoveScrim">
+            <English>Remove Scrim/Foliage from Helmet</English>
+        </Key>
+        <Key ID="STR_AWX_Main_RollDownSides">
+            <English>Roll Down Sides</English>
         </Key>
         <Key ID="STR_AWX_Main_RollSleevesDown">
             <English>Roll Sleeves Down</English>
+        </Key>
+        <Key ID="STR_AWX_Main_RollSleevesUp">
+            <English>Roll Sleeves Up</English>
         </Key>
         <Key ID="STR_AWX_Main_RollSleevesUpFurther">
             <English>Roll Sleeves Up Further</English>
@@ -25,26 +31,20 @@
         <Key ID="STR_AWX_Main_RollUpSides">
             <English>Roll Up Sides</English>
         </Key>
-        <Key ID="STR_AWX_Main_RollDownSides">
-            <English>Roll Down Sides</English>
-        </Key>
-        <Key ID="STR_AWX_Main_AttachGoggles">
-            <English>Attach Goggles</English>
-        </Key>
-        <Key ID="STR_AWX_Main_RemoveGoggles">
-            <English>Remove Goggles</English>
-        </Key>
         <Key ID="STR_AWX_Main_SwitchVariant1">
             <English>Switch to Variant 1</English>
         </Key>
         <Key ID="STR_AWX_Main_SwitchVariant2">
             <English>Switch to Variant 2</English>
         </Key>
-        <Key ID="STR_AWX_Main_AddScrim">
-            <English>Add Scrim/Foliage to Helmet</English>
+        <Key ID="STR_AWX_Main_TakeGlovesOff">
+            <English>Take Gloves Off</English>
         </Key>
-        <Key ID="STR_AWX_Main_RemoveScrim">
-            <English>Remove Scrim/Foliage from Helmet</English>
+        <Key ID="STR_AWX_Main_mod_URL">
+            <English>https://github.com/CVO-Org/ace-wardrobe-extended</English>
+        </Key>
+        <Key ID="STR_AWX_Main_mod_author">
+            <English>AWX Team</English>
         </Key>
     </Package>
 </Project>

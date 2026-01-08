@@ -28,10 +28,10 @@ BASIC3(variant1,variant2,variant3,ACEWARDROBE(base),ACEWARDROBE(base),ACEWARDROB
 class UniformBase: ace_wardrobe_base {\
     class modifiableTo {\
         class UniformGloves {\
-            directionalActionName = CSTRING(PutGlovesOn);\
+            directionalActionName = ECSTRING(main,PutGlovesOn);\
         };\
         class UniformRolled {\
-            directionalActionName = CSTRING(RollSleevesUp);\
+            directionalActionName = ECSTRING(main,RollSleevesUp);\
         };\
     };\
 };\
@@ -50,10 +50,10 @@ class UniformRolled: ace_wardrobe_base_U_sleeves_up {\
 class UniformGlovesRolled: ace_wardrobe_base {\
     class modifiableTo {\
         class UniformGloves {\
-            directionalActionName = CSTRING(RollSleevesDown);\
+            directionalActionName = ECSTRING(main,RollSleevesDown);\
         };\
         class UniformRolled {\
-            directionalActionName = CSTRING(TakeGlovesOff);\
+            directionalActionName = ECSTRING(main,TakeGlovesOff);\
         };\
     };\
 }
@@ -63,10 +63,10 @@ class UniformGlovesRolled: ace_wardrobe_base {\
 class UniformBase: ace_wardrobe_base {\
     class modifiableTo {\
         class UniformGloves {\
-            directionalActionName = CSTRING(PutGlovesOn);\
+            directionalActionName = ECSTRING(main,PutGlovesOn);\
         };\
         class UniformRolled {\
-            directionalActionName = CSTRING(RollSleevesUp);\
+            directionalActionName = ECSTRING(main,RollSleevesUp);\
         };\
     };\
 };\
@@ -86,10 +86,10 @@ class UniformRolled: ace_wardrobe_base_U_sleeves_up {\
 class UniformGlovesRolled: ace_wardrobe_base {\
     class modifiableTo {\
         class UniformGloves {\
-            directionalActionName = CSTRING(RollSleevesDown);\
+            directionalActionName = ECSTRING(main,RollSleevesDown);\
         };\
         class UniformRolled {\
-            directionalActionName = CSTRING(TakeGlovesOff);\
+            directionalActionName = ECSTRING(main,TakeGlovesOff);\
         };\
     };\
     components[] = {QUOTE(Gloves)};\
@@ -115,10 +115,10 @@ class UniformGloves: ace_wardrobe_base_U_gloves_on {\
 class UniformBase: ace_wardrobe_base {\
     class modifiableTo {\
         class UniformGloves {\
-            directionalActionName = CSTRING(PutGlovesOn);\
+            directionalActionName = ECSTRING(main,PutGlovesOn);\
         };\
         class UniformRolled {\
-            directionalActionName = CSTRING(RollSleevesUp);\
+            directionalActionName = ECSTRING(main,RollSleevesUp);\
         };\
     };\
 };\
@@ -167,14 +167,14 @@ class HelmetCoverBack: ace_wardrobe_base_H_goggles_on {\
 class Boonie: ace_wardrobe_base {\
     class modifiableTo {\
         class BoonieRolled {\
-            directionalActionName = CSTRING(RollUpSides);\
+            directionalActionName = ECSTRING(main,RollUpSides);\
         };\
     };\
 };\
 class BoonieRolled: ace_wardrobe_base {\
     class modifiableTo {\
         class Boonie {\
-            directionalActionName = CSTRING(RollDownSides);\
+            directionalActionName = ECSTRING(main,RollDownSides);\
         };\
     };\
 }
@@ -212,30 +212,30 @@ class HelmetGoggles: ace_wardrobe_base_H_goggles_on {\
 class HelmetV1: ace_wardrobe_base {\
     class modifiableTo {\
         class HelmetV2 {\
-            directionalActionName = CSTRING(SwitchVariant2);\
+            directionalActionName = ECSTRING(main,SwitchVariant2);\
         };\
         class HelmetV1Goggles {\
-            directionalActionName = CSTRING(AttachGoggles);\
+            directionalActionName = ECSTRING(main,AttachGoggles);\
         };\
     };\
 };\
 class HelmetV2: ace_wardrobe_base {\
     class modifiableTo {\
         class HelmetV1 {\
-            directionalActionName = CSTRING(SwitchVariant1);\
+            directionalActionName = ECSTRING(main,SwitchVariant1);\
         };\
         class HelmetV2Goggles {\
-            directionalActionName = CSTRING(AttachGoggles);\
+            directionalActionName = ECSTRING(main,AttachGoggles);\
         };\
     };\
 };\
 class HelmetV1Goggles: ace_wardrobe_base {\
     class modifiableTo {\
         class HelmetV2Goggles {\
-            directionalActionName = CSTRING(SwitchVariant2);\
+            directionalActionName = ECSTRING(main,SwitchVariant2);\
         };\
         class HelmetV1 {\
-            directionalActionName = CSTRING(RemoveGoggles);\
+            directionalActionName = ECSTRING(main,RemoveGoggles);\
         };\
     };\
     components[] = { QUOTE(Component) };\
@@ -243,10 +243,10 @@ class HelmetV1Goggles: ace_wardrobe_base {\
 class HelmetV2Goggles: ace_wardrobe_base {\
     class modifiableTo {\
         class HelmetV1Goggles {\
-            directionalActionName = CSTRING(SwitchVariant1);\
+            directionalActionName = ECSTRING(main,SwitchVariant1);\
         };\
         class HelmetV2 {\
-            directionalActionName = CSTRING(RemoveGoggles);\
+            directionalActionName = ECSTRING(main,RemoveGoggles);\
         };\
     };\
     components[] = { QUOTE(Component) };\
@@ -259,7 +259,7 @@ class HelmetV2Goggles: ace_wardrobe_base {\
 class FaceMaskBase: ace_wardrobe_base {\
     class modifiableTo {\
         class FaceMaskGoggles {\
-            directionalActionName = CSTRING(AttachGoggles);\
+            directionalActionName = ECSTRING(main,AttachGoggles);\
         };\
     };\
     components[] = {QUOTE(FaceMaskBase)};\
@@ -267,7 +267,7 @@ class FaceMaskBase: ace_wardrobe_base {\
 class FaceMaskGoggles: ace_wardrobe_base {\
     class modifiableTo {\
         class FaceMaskBase {\
-            directionalActionName = CSTRING(RemoveGoggles);\
+            directionalActionName = ECSTRING(main,RemoveGoggles);\
         };\
     };\
     components[] = {QUOTE(FaceMaskBase),QUOTE(Goggles)};\
@@ -278,10 +278,10 @@ class FaceMaskGoggles: ace_wardrobe_base {\
 class FaceMaskBase: ace_wardrobe_base {\
     class modifiableTo {\
         class FaceMaskGoggles1 {\
-            directionalActionName = CSTRING(AttachGoggles);\
+            directionalActionName = ECSTRING(main,AttachGoggles);\
         };\
         class FaceMaskGoggles2 {\
-            directionalActionName = CSTRING(AttachGoggles);\
+            directionalActionName = ECSTRING(main,AttachGoggles);\
         };\
     };\
     components[] = {QUOTE(FaceMaskBase)};\
@@ -289,7 +289,7 @@ class FaceMaskBase: ace_wardrobe_base {\
 class FaceMaskGoggles1: ace_wardrobe_base {\
     class modifiableTo {\
         class FaceMaskBase {\
-            directionalActionName = CSTRING(RemoveGoggles);\
+            directionalActionName = ECSTRING(main,RemoveGoggles);\
         };\
     };\
     components[] = {QUOTE(FaceMaskBase),QUOTE(Goggles1)};\
@@ -297,7 +297,7 @@ class FaceMaskGoggles1: ace_wardrobe_base {\
 class FaceMaskGoggles2: ace_wardrobe_base {\
     class modifiableTo {\
         class FaceMaskBase {\
-            directionalActionName = CSTRING(RemoveGoggles);\
+            directionalActionName = ECSTRING(main,RemoveGoggles);\
         };\
     };\
     components[] = {QUOTE(FaceMaskBase),QUOTE(Goggles2)};\
@@ -308,17 +308,17 @@ class FaceMaskGoggles2: ace_wardrobe_base {\
 class UniformBase: ace_wardrobe_base_U_sleeves_down {\
     class modifiableTo {\
         class UniformRolled1 {\
-            directionalActionName = CSTRING(RollSleevesUp);\
+            directionalActionName = ECSTRING(main,RollSleevesUp);\
         };\
     };\
 };\
 class UniformRolled1: ace_wardrobe_base {\
     class modifiableTo {\
         class UniformBase {\
-            directionalActionName = CSTRING(RollSleevesDown);\
+            directionalActionName = ECSTRING(main,RollSleevesDown);\
         };\
         class UniformRolled2 {\
-            directionalActionName = CSTRING(RollSleevesUpFurther);\
+            directionalActionName = ECSTRING(main,RollSleevesUpFurther);\
         };\
     };\
 };\
@@ -333,14 +333,14 @@ class UniformRolled2: ace_wardrobe_base_U_sleeves_up {\
 class HelmetBase: ace_wardrobe_base {\
     class modifiableTo {\
         class HelmetScrim {\
-            directionalActionName = CSTRING(AddScrim);\
+            directionalActionName = ECSTRING(main,AddScrim);\
         };\
     };\
 };\
 class HelmetScrim: ace_wardrobe_base {\
     class modifiableTo {\
         class HelmetBase {\
-            directionalActionName = CSTRING(RemoveScrim);\
+            directionalActionName = ECSTRING(main,RemoveScrim);\
         };\
     };\
 }
