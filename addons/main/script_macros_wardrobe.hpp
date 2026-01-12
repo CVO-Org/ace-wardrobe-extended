@@ -275,14 +275,14 @@ class UniformRolled2: ace_wardrobe_base_U_sleeves_up {\
 class HelmetBase: ace_wardrobe_base {\
     class modifiableTo {\
         class HelmetScrim {\
-            directionalActionName = ECSTRING(main,add_scrim_foliage);\
+            displayName = ECSTRING(main,add_scrim_foliage);\
         };\
     };\
 };\
 class HelmetScrim: ace_wardrobe_base {\
     class modifiableTo {\
         class HelmetBase {\
-            directionalActionName = ECSTRING(main,remove_scrim_foliage);\
+            displayName = ECSTRING(main,remove_scrim_foliage);\
         };\
     };\
 }
