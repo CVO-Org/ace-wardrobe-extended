@@ -1,3 +1,7 @@
 HELMET_GOGGLES(Flex_CUP_FIN_Helmet_Comms,Flex_CUP_FIN_Helmet_Comms_cov,CUP_G_ESS_BLK);
 HELMET_GOGGLES(Flex_CUP_FIN_Helmet_Comms_Alt,Flex_CUP_FIN_Helmet_Comms_cov_Alt,CUP_G_ESS_BLK);
 HELMET_GOGGLES(Flex_CUP_FIN_Helmet_Comms_Winter,Flex_CUP_FIN_Helmet_Comms_cov_Winter,CUP_G_ESS_BLK);
+
+HELMET_SCRIM(FIN_H_Opscore_Cover,FIN_H_Opscore_CoverCamo);
+HELMET_SCRIM(FIN_H_Opscore_Cover_Winter,FIN_H_Opscore_CoverCamo_Winter);
+HELMET_SCRIM(FIN_H_Opscore_Cover_Winter_2,FIN_H_Opscore_CoverCamo_Winter_2);
