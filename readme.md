@@ -36,7 +36,6 @@ For any help visit our [Discord](https://discord.gg/cQ7dSwRcVd).
 - [x] [(CUP) Ukrainian Armed Forces](https://steamcommunity.com/sharedfiles/filedetails/?id=3312210548)
 - [x] [(CUP) Finnish Defence Forces](https://steamcommunity.com/sharedfiles/filedetails/?id=3465921651)
 - [x] [(CUP) Livonian Defense Force](https://steamcommunity.com/sharedfiles/filedetails/?id=3294585159)
-- [x] [Community Factions Project (CFP)](https://steamcommunity.com/sharedfiles/filedetails/?id=1369691841)
 - [x] [Cold War Rearmed III](https://steamcommunity.com/sharedfiles/filedetails/?id=2316343124)
 - [x] [Cold War Rearmed III - British Armed Forces](https://steamcommunity.com/sharedfiles/filedetails/?id=2521566285)
 - [x] [Cold War Rearmed III - United States Marine Corps](https://steamcommunity.com/sharedfiles/filedetails/?id=2523658639)
@@ -46,16 +45,10 @@ For any help visit our [Discord](https://discord.gg/cQ7dSwRcVd).
 - [x] [3CB BAF Equipment](https://steamcommunity.com/sharedfiles/filedetails/?id=893328083)
 - [x] [Project Opfor](https://steamcommunity.com/sharedfiles/filedetails/?id=735566597)
 - [x] [3CB Factions](https://steamcommunity.com/sharedfiles/filedetails/?id=1673456286)
-- [x] [S.O.G. Nickel Steel](https://steamcommunity.com/sharedfiles/filedetails/?id=3083451905)
 - [x] [ArmaModFrance AiO](https://steamcommunity.com/workshop/filedetails/?id=1781990846)
 - [x] [VSM All in One](https://steamcommunity.com/sharedfiles/filedetails/?id=823636749)
 - [x] [Service & Supply](https://steamcommunity.com/sharedfiles/filedetails/?id=2183975396)
 - [x] [Task Force Canada](https://steamcommunity.com/sharedfiles/filedetails/?id=2770236561) and more
-
-## Supported DLCs
-
-- [x] [Expeditionary Forces](https://store.steampowered.com/app/2647830/Arma_3_Creator_DLC_Expeditionary_Forces/)
-- [x] [CSLA Iron Curtain](https://store.steampowered.com/app/1294440/Arma_3_Creator_DLC_CSLA_Iron_Curtain/)
 
 ## Bugs and Mod Requests
 
