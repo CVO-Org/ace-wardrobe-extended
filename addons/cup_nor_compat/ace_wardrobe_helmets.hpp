@@ -1,0 +1,2 @@
+HELMET_SCRIM(NOR_H_Opscore_Cover_MC,NOR_H_Opscore_CoverCamo_MC);
+HELMET_SCRIM(NOR_H_Opscore_Cover_Winter,NOR_H_Opscore_CoverCamo_Winter);
