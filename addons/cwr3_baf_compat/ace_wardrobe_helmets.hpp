@@ -7,14 +7,14 @@ HELMET_SCRIM(cwr3_b_uk_headgear_mk5_helmet_dpm_net,cwr3_b_uk_headgear_mk5_helmet
 class cwr3_b_uk_headgear_mk5_helmet_scrim_burlap: ace_wardrobe_base {
     class modifiableTo {
         class cwr3_b_uk_headgear_mk5_helmet_scrim_burlap_camo {
-            directionalActionName = "Add Foliage to Helmet";
+            directionalActionName = ECSTRING(main,add_foliage);
         };
     };
 };
 class cwr3_b_uk_headgear_mk5_helmet_scrim_burlap_camo: ace_wardrobe_base {
     class modifiableTo {
         class cwr3_b_uk_headgear_mk5_helmet_scrim_burlap {
-            directionalActionName = "Remove Foliage from Helmet";
+            directionalActionName = ECSTRING(main,remove_foliage);
         };
     };
 };
@@ -23,24 +23,24 @@ class cwr3_b_uk_headgear_mk5_helmet_scrim_burlap_camo: ace_wardrobe_base {
 class cwr3_b_uk_headgear_mk5_helmet_net: ace_wardrobe_base {
     class modifiableTo {
         class cwr3_b_uk_headgear_mk5_helmet_scrim {
-            directionalActionName = "Add Scrim to Helmet";
+            directionalActionName = ECSTRING(main,add_scrim);
         };
     };
 };
 class cwr3_b_uk_headgear_mk5_helmet_scrim: ace_wardrobe_base {
     class modifiableTo {
         class cwr3_b_uk_headgear_mk5_helmet_scrim_camo {
-            directionalActionName = "Add Foliage to Helmet";
+            directionalActionName = ECSTRING(main,add_foliage);
         };
         class cwr3_b_uk_headgear_mk5_helmet_net {
-            directionalActionName = "Remove Scrim from Helmet";
+            directionalActionName = ECSTRING(main,remove_scrim);
         };
     };
 };
 class cwr3_b_uk_headgear_mk5_helmet_scrim_camo: ace_wardrobe_base {
     class modifiableTo {
         class cwr3_b_uk_headgear_mk5_helmet_scrim {
-            directionalActionName = "Remove Foliage from Helmet";
+            directionalActionName = ECSTRING(main,remove_foliage);
         };
     };
 };

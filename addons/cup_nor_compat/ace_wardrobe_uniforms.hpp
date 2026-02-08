@@ -1,1 +1,3 @@
-UNIFORM_GLOVES_ROLLED(NOR_Combat_Uniform,NOR_Combat_Uniform_Gloves,NOR_Combat_Uniform_Rolled,NOR_Combat_Uniform_Gloves_Rolled);
+UNIFORM_SLEEVES(NOR_Combat_Uniform_Gloves,NOR_Combat_Uniform);
+UNIFORM_SLEEVES(NOR_Combat_Uniform_SOF_Gloves,NOR_Combat_Uniform_SOF);
+UNIFORM_SLEEVES(NOR_Combat_Uniform_MC_Gloves,NOR_Combat_Uniform_MC);
