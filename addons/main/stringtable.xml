@@ -23,17 +23,6 @@
             <Chinese>添加伪装网</Chinese>
             <Ukrainian>Додати маскувальну сітку</Ukrainian>
         </Key>
-        <Key ID="STR_AWX_Main_add_scrim_foliage">
-            <English>Add scrim and foliage</English>
-            <French>Ajouter un filet de camouflage et du feuillage</French>
-            <Spanish>Añadir red de camuflaje y follaje</Spanish>
-            <Polish>Dodaj siatkę i maskowanie</Polish>
-            <German>Tarnnetz und Tarnung hinzufügen</German>
-            <Korean>위장망과 엽초 위장 추가</Korean>
-            <Japanese>偽装ネットと植生迷彩を追加</Japanese>
-            <Chinese>添加伪装网和植被</Chinese>
-            <Ukrainian>Додати сітку та маскування</Ukrainian>
-        </Key>
         <Key ID="STR_AWX_Main_add_scrim_full">
             <English>Add full Scrim</English>
             <French>Ajouter un filet de camouflage complet</French>
@@ -94,17 +83,6 @@
             <Japanese>偽装ネットを外す</Japanese>
             <Chinese>移除伪装网</Chinese>
             <Ukrainian>Видалити маскувальну сітку</Ukrainian>
-        </Key>
-        <Key ID="STR_AWX_Main_remove_scrim_foliage">
-            <English>Remove scrim and foliage</English>
-            <French>Retirer le filet de camouflage et le feuillage</French>
-            <Spanish>Quitar red de camuflaje y follaje</Spanish>
-            <Polish>Usuń siatkę i maskowanie</Polish>
-            <German>Tarnnetz und Tarnung entfernen</German>
-            <Korean>위장망과 엽초 위장 제거</Korean>
-            <Japanese>偽装ネットと植生迷彩を外す</Japanese>
-            <Chinese>移除伪装网和植被</Chinese>
-            <Ukrainian>Видалити сітку та маскування</Ukrainian>
         </Key>
         <Key ID="STR_AWX_Main_remove_scrim_full">
             <English>Remove full Scrim</English>
