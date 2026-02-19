@@ -44,39 +44,11 @@ HELMET_MK7_ESS(UK3CB_BAF_H_Mk7_Net_B,UK3CB_BAF_H_Mk7_Net_ESS_B,UK3CB_BAF_H_Mk7_N
 HELMET_MK7_ESS(UK3CB_BAF_H_Mk7_Net_C,UK3CB_BAF_H_Mk7_Net_ESS_C,UK3CB_BAF_H_Mk7_Net_CESS_C,rhs_ess_black);
 HELMET_MK7_ESS(UK3CB_BAF_H_Mk7_Net_D,UK3CB_BAF_H_Mk7_Net_ESS_D,UK3CB_BAF_H_Mk7_Net_CESS_D,rhs_ess_black);
 
-#define HELMET_MK7_SCRIM(HelmetBase,HelmetESS,Goggles)\
-class HelmetBase: ace_wardrobe_base_H_goggles_off {\
-    class modifiableTo {\
-        class HelmetESS {};\
-    };\
-};\
-class HelmetESS: ace_wardrobe_base_H_goggles_on {\
-    class modifiableTo {\
-        class HelmetBase {};\
-    };\
-    components[] = {QUOTE(Goggles)};\
-    fallbackComponent = QUOTE(G_Combat);\
-}
+HELMET_GOGGLES(UK3CB_BAF_H_Mk7_Scrim_ESS_A,UK3CB_BAF_H_Mk7_Scrim_A,rhs_ess_black);
+HELMET_GOGGLES(UK3CB_BAF_H_Mk7_Scrim_ESS_B,UK3CB_BAF_H_Mk7_Scrim_B,rhs_ess_black);
+HELMET_GOGGLES(UK3CB_BAF_H_Mk7_Scrim_ESS_C,UK3CB_BAF_H_Mk7_Scrim_C,rhs_ess_black);
 
-HELMET_MK7_SCRIM(UK3CB_BAF_H_Mk7_Scrim_A,UK3CB_BAF_H_Mk7_Scrim_ESS_A,rhs_ess_black);
-HELMET_MK7_SCRIM(UK3CB_BAF_H_Mk7_Scrim_B,UK3CB_BAF_H_Mk7_Scrim_ESS_B,rhs_ess_black);
-HELMET_MK7_SCRIM(UK3CB_BAF_H_Mk7_Scrim_C,UK3CB_BAF_H_Mk7_Scrim_ESS_C,rhs_ess_black);
-
-#define HELMET_CREW_ESS(HelmetBase,HelmetESS,Goggles)\
-class HelmetBase: ace_wardrobe_base_H_goggles_off {\
-    class modifiableTo {\
-        class HelmetESS {};\
-    };\
-};\
-class HelmetESS: ace_wardrobe_base_H_goggles_on {\
-    class modifiableTo {\
-        class HelmetBase {};\
-    };\
-    components[] = {QUOTE(Goggles)};\
-    fallbackComponent = QUOTE(G_Combat);\
-}
-
-HELMET_CREW_ESS(UK3CB_BAF_H_CrewHelmet_DDPM_A,UK3CB_BAF_H_CrewHelmet_DDPM_ESS_A,rhs_ess_black);
-HELMET_CREW_ESS(UK3CB_BAF_H_CrewHelmet_DPMT_A,UK3CB_BAF_H_CrewHelmet_DPMT_ESS_A,rhs_ess_black);
-HELMET_CREW_ESS(UK3CB_BAF_H_CrewHelmet_DPMW_A,UK3CB_BAF_H_CrewHelmet_DPMW_ESS_A,rhs_ess_black);
-HELMET_CREW_ESS(UK3CB_BAF_H_CrewHelmet_A,UK3CB_BAF_H_CrewHelmet_ESS_A,rhs_ess_black);
+HELMET_GOGGLES(UK3CB_BAF_H_CrewHelmet_DDPM_ESS_A,UK3CB_BAF_H_CrewHelmet_DDPM_A,rhs_ess_black);
+HELMET_GOGGLES(UK3CB_BAF_H_CrewHelmet_DPMT_ESS_A,UK3CB_BAF_H_CrewHelmet_DPMT_A,rhs_ess_black);
+HELMET_GOGGLES(UK3CB_BAF_H_CrewHelmet_DPMW_ESS_A,UK3CB_BAF_H_CrewHelmet_DPMW_A,rhs_ess_black);
+HELMET_GOGGLES(UK3CB_BAF_H_CrewHelmet_ESS_A,UK3CB_BAF_H_CrewHelmet_A,rhs_ess_black);
