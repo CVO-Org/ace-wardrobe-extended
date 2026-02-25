@@ -36,7 +36,6 @@ For any help visit our [Discord](https://discord.gg/cQ7dSwRcVd).
 - [x] [(CUP) Ukrainian Armed Forces](https://steamcommunity.com/sharedfiles/filedetails/?id=3312210548)
 - [x] [(CUP) Finnish Defence Forces](https://steamcommunity.com/sharedfiles/filedetails/?id=3465921651)
 - [x] [(CUP) Livonian Defense Force](https://steamcommunity.com/sharedfiles/filedetails/?id=3294585159)
-- [x] [Cold War Rearmed III](https://steamcommunity.com/sharedfiles/filedetails/?id=2316343124)
 - [x] [Cold War Rearmed III - British Armed Forces](https://steamcommunity.com/sharedfiles/filedetails/?id=2521566285)
 - [x] [Cold War Rearmed III - United States Marine Corps](https://steamcommunity.com/sharedfiles/filedetails/?id=2523658639)
 - [x] [Cold War Rearmed III - Soviet Airborne Forces](https://steamcommunity.com/sharedfiles/filedetails/?id=2523662458)
