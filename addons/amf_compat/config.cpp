@@ -23,7 +23,6 @@ class CfgPatches {
             "amf_uniforms",
             "amf_uniforms02",
             "amf_uniforms03",
-            "amf_uniforms04",
             "amf_headgear",
             "AMF_Headgear_02",
             "AMF_Headgear_03",
