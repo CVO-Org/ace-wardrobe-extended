@@ -191,14 +191,14 @@ class HelmetV2Goggles: ace_wardrobe_base {\
 class HelmetBase: ace_wardrobe_base {\
     class modifiableTo {\
         class HelmetScrim {\
-            directionalActionName = "Add Scrim/Foliage to Helmet";\
+            disyplayName = "Add Scrim/Foliage to Helmet";\
         };\
     };\
 };\
 class HelmetScrim: ace_wardrobe_base {\
     class modifiableTo {\
         class HelmetBase {\
-            directionalActionName = "Remove Scrim/Foliage from Helmet";\
+            disyplayName = "Remove Scrim/Foliage from Helmet";\
         };\
     };\
 }
