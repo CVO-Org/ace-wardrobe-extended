@@ -15,7 +15,5 @@ class ace_wardrobe {
     class ACEWARDROBE(base_H_mask_on);
     class ACEWARDROBE(base_H_mask_off);
 
-    #include "ace_wardrobe_uniforms.hpp"
     #include "ace_wardrobe_headgear.hpp"
-    #include "ace_wardrobe_goggles.hpp"
 };

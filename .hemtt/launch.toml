@@ -180,3 +180,10 @@ workshop = [
     "2770253787", # TFC_SF
     "3031816871" # TFC_RCN
 ]
+
+[1400]
+extends = "default"
+workshop = [
+    "3779310113", # Arma Domini 1400
+    "3510959070"  # IMS: DEV
+]
