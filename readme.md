@@ -29,6 +29,7 @@ For any help visit our [Discord](https://discord.gg/cQ7dSwRcVd).
 
 ## Supported Mods
 
+- [x] [Arma Domini - 1400AD](https://steamcommunity.com/sharedfiles/filedetails/?id=3779310113)
 - [X] [BWmod](https://steamcommunity.com/sharedfiles/filedetails/?id=1200127537)
 - [x] [(CUP) Norwegian Armed Forces](https://steamcommunity.com/sharedfiles/filedetails/?id=3333292879)
 - [x] [(CUP) Polish Armed Forces](https://steamcommunity.com/sharedfiles/filedetails/?id=3459905206)
