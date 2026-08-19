@@ -187,3 +187,9 @@ workshop = [
     "3779310113", # Arma Domini 1400
     "3510959070"  # IMS: DEV
 ]
+
+[blackdogs]
+extends = "1400"
+workshop = [
+    "3780409647" # Arma Domini- The Black Dogs of Burnham
+]
