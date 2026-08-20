@@ -187,3 +187,9 @@ workshop = [
     "3779310113", # Arma Domini 1400
     "3510959070"  # IMS: DEV
 ]
+
+[usp]
+extends = "default"
+workshop = [
+    "1795825073" # USP Gear AiO
+]

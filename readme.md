@@ -47,7 +47,8 @@ For any help visit our [Discord](https://discord.gg/cQ7dSwRcVd).
 - [x] [ArmaModFrance AiO](https://steamcommunity.com/workshop/filedetails/?id=1781990846)
 - [x] [VSM All in One](https://steamcommunity.com/sharedfiles/filedetails/?id=823636749)
 - [x] [Service & Supply](https://steamcommunity.com/sharedfiles/filedetails/?id=2183975396)
-- [x] [Task Force Canada](https://steamcommunity.com/sharedfiles/filedetails/?id=2770236561) and more
+- [x] [Task Force Canada](https://steamcommunity.com/sharedfiles/filedetails/?id=2770236561)
+- [x] [USP Gear AiO](https://steamcommunity.com/sharedfiles/filedetails/?id=1795825073)
 
 ## Bugs and Mod Requests
 

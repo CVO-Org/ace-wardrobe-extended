@@ -56,6 +56,15 @@
             <Chinese>添加轻型伪装网</Chinese>
             <Ukrainian>Додати легку маскувальну сітку</Ukrainian>
         </Key>
+        <Key ID="STR_AWX_Main_collar_down">
+            <English>Put Collar Down</English>
+        </Key>
+        <Key ID="STR_AWX_Main_collar_up">
+            <English>Put Collar Up</English>
+        </Key>
+        <Key ID="STR_AWX_Main_cut_sleeves">
+            <English>Cut Off Sleeves (Permanent)</English>
+        </Key>
         <Key ID="STR_AWX_Main_downgrade_scrim">
             <English>Downgrade to light Scrim</English>
             <French>Réduire au filet de camouflage léger</French>
@@ -66,6 +75,15 @@
             <Japanese>軽量偽装ネットに変更</Japanese>
             <Chinese>更换为轻型伪装网</Chinese>
             <Ukrainian>Змінити на легку маскувальну сітку</Ukrainian>
+        </Key>
+        <Key ID="STR_AWX_Main_gloves_off">
+            <English>Take Off Gloves</English>
+        </Key>
+        <Key ID="STR_AWX_Main_kneepads_off">
+            <English>Take Off Kneepads</English>
+        </Key>
+        <Key ID="STR_AWX_Main_kneepads_on">
+            <English>Put On Kneepads</English>
         </Key>
         <Key ID="STR_AWX_Main_mod_URL">
             <English>https://github.com/CVO-Org/ace-wardrobe-extended</English>
@@ -127,6 +145,18 @@
             <Japanese>軽量偽装ネットを外す</Japanese>
             <Chinese>移除轻型伪装网</Chinese>
             <Ukrainian>Видалити легку маскувальну сітку</Ukrainian>
+        </Key>
+        <Key ID="STR_AWX_Main_roll_sleeves_down">
+            <English>Roll Down Sleeves</English>
+        </Key>
+        <Key ID="STR_AWX_Main_roll_sleeves_down_partial">
+            <English>Partially Roll Down Sleeves</English>
+        </Key>
+        <Key ID="STR_AWX_Main_roll_sleeves_up">
+            <English>Roll Up Sleeves</English>
+        </Key>
+        <Key ID="STR_AWX_Main_roll_sleeves_up_further">
+            <English>Roll Sleeves Up Further</English>
         </Key>
     </Package>
 </Project>
