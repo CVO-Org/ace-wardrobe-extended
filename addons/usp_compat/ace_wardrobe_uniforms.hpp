@@ -1208,7 +1208,7 @@ class USP_G3C_RS_VQ_##CAMO: ACEWARDROBE(base_U_sleeves_up) { \
             displayName = "Put On OR Gloves"; \
         }; \
         class USP_G3C_VQ_##CAMO { \
-            displayName = ECSTRING(main,collar_down); \
+            displayName = ECSTRING(main,roll_sleeves_down); \
         }; \
     }; \
 }; \
@@ -1589,7 +1589,7 @@ class USP_G3C_RS2_KP_VQ_##CAMO: ACEWARDROBE(base_U_sleeves_up) { \
             displayName = ECSTRING(main,collar_up); \
         }; \
         class USP_G3C_RS2_KP_OR_VQ_##CAMO { \
-            displayName = ECSTRING(main,gloves_off); \
+            displayName = "Put On OR Gloves"; \
         }; \
     }; \
 }; \
@@ -1687,20 +1687,1738 @@ class USP_G3C_VQ_##CAMO: ACEWARDROBE(base_U_sleeves_down) { \
             displayName = "Put On OR Gloves"; \
         }; \
     }; \
-}
+};
 
-// One invocation per camo pattern - all 15 share the AOR1 combination set above.
+// BLK has no camo suffix at all in USP's own naming (it's the undyed/base finish), so it
+// gets its own non-parametrised macro instead of USP_G3C_UNIFORMS(BLK).
+#define USP_G3C_UNIFORMS_BLK \
+class USP_G3C: ACEWARDROBE(base_U_sleeves_down) { \
+    class modifiableTo { \
+        class USP_G3C_RS { \
+            displayName = ECSTRING(main,roll_sleeves_up); \
+        }; \
+        class USP_G3C_CS { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_CU { \
+            displayName = ECSTRING(main,collar_up); \
+        }; \
+        class USP_G3C_KP { \
+            displayName = ECSTRING(main,kneepads_on); \
+        }; \
+        class USP_G3C_MX { \
+            displayName = "Put On MX Gloves"; \
+        }; \
+        class USP_G3C_OR { \
+            displayName = "Put On OR Gloves"; \
+        }; \
+    }; \
+}; \
+class USP_G3C_CS: ACEWARDROBE(base) { \
+    class modifiableTo { \
+        class USP_G3C_CS_CU { \
+            displayName = ECSTRING(main,collar_up); \
+        }; \
+        class USP_G3C_CS_KP { \
+            displayName = ECSTRING(main,kneepads_on); \
+        }; \
+        class USP_G3C_CS_MX { \
+            displayName = "Put On MX Gloves"; \
+        }; \
+        class USP_G3C_CS_OR { \
+            displayName = "Put On OR Gloves"; \
+        }; \
+    }; \
+}; \
+class USP_G3C_CS_CU: ACEWARDROBE(base) { \
+    class modifiableTo { \
+        class USP_G3C_CS { \
+            displayName = ECSTRING(main,collar_down); \
+        }; \
+        class USP_G3C_CS_CU_KP { \
+            displayName = ECSTRING(main,kneepads_on); \
+        }; \
+        class USP_G3C_CS_CU_MX { \
+            displayName = "Put On MX Gloves"; \
+        }; \
+        class USP_G3C_CS_CU_OR { \
+            displayName = "Put On OR Gloves"; \
+        }; \
+    }; \
+}; \
+class USP_G3C_CS_CU_KP: ACEWARDROBE(base) { \
+    class modifiableTo { \
+        class USP_G3C_CS_CU { \
+            displayName = ECSTRING(main,kneepads_off); \
+        }; \
+        class USP_G3C_CS_CU_KP_MX { \
+            displayName = "Put On MX Gloves"; \
+        }; \
+        class USP_G3C_CS_CU_KP_OR { \
+            displayName = "Put On OR Gloves"; \
+        }; \
+        class USP_G3C_CS_KP { \
+            displayName = ECSTRING(main,collar_down); \
+        }; \
+    }; \
+}; \
+class USP_G3C_CS_CU_KP_MX: ACEWARDROBE(base) { \
+    class modifiableTo { \
+        class USP_G3C_CS_CU_KP { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_CS_CU_KP_OR { \
+            displayName = "Switch to OR Gloves"; \
+        }; \
+        class USP_G3C_CS_CU_MX { \
+            displayName = ECSTRING(main,kneepads_off); \
+        }; \
+        class USP_G3C_CS_KP_MX { \
+            displayName = ECSTRING(main,collar_down); \
+        }; \
+    }; \
+}; \
+class USP_G3C_CS_CU_KP_MX_VQ: ACEWARDROBE(base) { \
+    class modifiableTo { \
+        class USP_G3C_CS_CU_KP_OR_VQ { \
+            displayName = "Switch to OR Gloves"; \
+        }; \
+        class USP_G3C_CS_CU_KP_VQ { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_CS_CU_MX_VQ { \
+            displayName = ECSTRING(main,kneepads_off); \
+        }; \
+    }; \
+}; \
+class USP_G3C_CS_CU_KP_OR: ACEWARDROBE(base) { \
+    class modifiableTo { \
+        class USP_G3C_CS_CU_KP { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_CS_CU_KP_MX { \
+            displayName = "Switch to MX Gloves"; \
+        }; \
+        class USP_G3C_CS_CU_OR { \
+            displayName = ECSTRING(main,kneepads_off); \
+        }; \
+        class USP_G3C_CS_KP_OR { \
+            displayName = ECSTRING(main,collar_down); \
+        }; \
+    }; \
+}; \
+class USP_G3C_CS_CU_KP_OR_VQ: ACEWARDROBE(base) { \
+    class modifiableTo { \
+        class USP_G3C_CS_CU_KP_MX_VQ { \
+            displayName = "Switch to MX Gloves"; \
+        }; \
+        class USP_G3C_CS_CU_KP_VQ { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_CS_CU_OR_VQ { \
+            displayName = ECSTRING(main,kneepads_off); \
+        }; \
+        class USP_G3C_CS_KP_OR_VQ { \
+            displayName = ECSTRING(main,collar_down); \
+        }; \
+    }; \
+}; \
+class USP_G3C_CS_CU_KP_VQ: ACEWARDROBE(base) { \
+    class modifiableTo { \
+        class USP_G3C_CS_CU_KP_MX_VQ { \
+            displayName = "Put On MX Gloves"; \
+        }; \
+        class USP_G3C_CS_CU_KP_OR_VQ { \
+            displayName = "Put On OR Gloves"; \
+        }; \
+        class USP_G3C_CS_CU_VQ { \
+            displayName = ECSTRING(main,kneepads_off); \
+        }; \
+        class USP_G3C_CS_KP_VQ { \
+            displayName = ECSTRING(main,collar_down); \
+        }; \
+    }; \
+}; \
+class USP_G3C_CS_CU_MX: ACEWARDROBE(base) { \
+    class modifiableTo { \
+        class USP_G3C_CS_CU { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_CS_CU_KP_MX { \
+            displayName = ECSTRING(main,kneepads_on); \
+        }; \
+        class USP_G3C_CS_CU_OR { \
+            displayName = "Switch to OR Gloves"; \
+        }; \
+        class USP_G3C_CS_MX { \
+            displayName = ECSTRING(main,collar_down); \
+        }; \
+    }; \
+}; \
+class USP_G3C_CS_CU_MX_VQ: ACEWARDROBE(base) { \
+    class modifiableTo { \
+        class USP_G3C_CS_CU_KP_MX_VQ { \
+            displayName = ECSTRING(main,kneepads_on); \
+        }; \
+        class USP_G3C_CS_CU_OR_VQ { \
+            displayName = "Switch to OR Gloves"; \
+        }; \
+        class USP_G3C_CS_CU_VQ { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_CS_MX_VQ { \
+            displayName = ECSTRING(main,collar_down); \
+        }; \
+    }; \
+}; \
+class USP_G3C_CS_CU_OR: ACEWARDROBE(base) { \
+    class modifiableTo { \
+        class USP_G3C_CS_CU { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_CS_CU_MX { \
+            displayName = "Switch to MX Gloves"; \
+        }; \
+        class USP_G3C_CS_CU_KP_OR { \
+            displayName = ECSTRING(main,kneepads_on); \
+        }; \
+        class USP_G3C_CS_OR { \
+            displayName = ECSTRING(main,collar_down); \
+        }; \
+    }; \
+}; \
+class USP_G3C_CS_CU_OR_VQ: ACEWARDROBE(base) { \
+    class modifiableTo { \
+        class USP_G3C_CS_CU_MX_VQ { \
+            displayName = "Switch to MX Gloves"; \
+        }; \
+        class USP_G3C_CS_CU_KP_OR_VQ { \
+            displayName = ECSTRING(main,kneepads_on); \
+        }; \
+        class USP_G3C_CS_CU_VQ { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_CS_OR_VQ { \
+            displayName = ECSTRING(main,collar_down); \
+        }; \
+    }; \
+}; \
+class USP_G3C_CS_CU_VQ: ACEWARDROBE(base) { \
+    class modifiableTo { \
+        class USP_G3C_CS_CU_KP_VQ { \
+            displayName = ECSTRING(main,kneepads_on); \
+        }; \
+        class USP_G3C_CS_CU_MX_VQ { \
+            displayName = "Put On MX Gloves"; \
+        }; \
+        class USP_G3C_CS_CU_OR_VQ { \
+            displayName = "Put On OR Gloves"; \
+        }; \
+        class USP_G3C_CS_VQ { \
+            displayName = ECSTRING(main,collar_down); \
+        }; \
+    }; \
+}; \
+class USP_G3C_CS_KP: ACEWARDROBE(base) { \
+    class modifiableTo { \
+        class USP_G3C_CS { \
+            displayName = ECSTRING(main,kneepads_off); \
+        }; \
+        class USP_G3C_CS_CU_KP { \
+            displayName = ECSTRING(main,collar_up); \
+        }; \
+        class USP_G3C_CS_KP_MX { \
+            displayName = "Put On MX Gloves"; \
+        }; \
+        class USP_G3C_CS_KP_OR { \
+            displayName = "Put On OR Gloves"; \
+        }; \
+    }; \
+}; \
+class USP_G3C_CS_KP_MX: ACEWARDROBE(base) { \
+    class modifiableTo { \
+        class USP_G3C_CS_KP { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_CS_CU_KP_MX { \
+            displayName = ECSTRING(main,collar_up); \
+        }; \
+        class USP_G3C_CS_KP_OR { \
+            displayName = "Switch to OR Gloves"; \
+        }; \
+        class USP_G3C_CS_MX { \
+            displayName = ECSTRING(main,kneepads_off); \
+        }; \
+    }; \
+}; \
+class USP_G3C_CS_KP_OR: ACEWARDROBE(base) { \
+    class modifiableTo { \
+        class USP_G3C_CS_KP { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_CS_KP_MX { \
+            displayName = "Switch to MX Gloves"; \
+        }; \
+        class USP_G3C_CS_CU_KP_OR { \
+            displayName = ECSTRING(main,collar_up); \
+        }; \
+        class USP_G3C_CS_OR { \
+            displayName = ECSTRING(main,kneepads_off); \
+        }; \
+    }; \
+}; \
+class USP_G3C_CS_KP_OR_VQ: ACEWARDROBE(base) { \
+    class modifiableTo { \
+        class USP_G3C_CS_CU_KP_OR_VQ { \
+            displayName = ECSTRING(main,collar_up); \
+        }; \
+        class USP_G3C_CS_KP_VQ { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_CS_OR_VQ { \
+            displayName = ECSTRING(main,kneepads_off); \
+        }; \
+    }; \
+}; \
+class USP_G3C_CS_KP_VQ: ACEWARDROBE(base) { \
+    class modifiableTo { \
+        class USP_G3C_CS_CU_KP_VQ { \
+            displayName = ECSTRING(main,collar_up); \
+        }; \
+        class USP_G3C_CS_KP_OR_VQ { \
+            displayName = "Put On OR Gloves"; \
+        }; \
+        class USP_G3C_CS_VQ { \
+            displayName = ECSTRING(main,kneepads_off); \
+        }; \
+    }; \
+}; \
+class USP_G3C_CS_MX: ACEWARDROBE(base) { \
+    class modifiableTo { \
+        class USP_G3C_CS { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_CS_CU_MX { \
+            displayName = ECSTRING(main,collar_up); \
+        }; \
+        class USP_G3C_CS_KP_MX { \
+            displayName = ECSTRING(main,kneepads_on); \
+        }; \
+        class USP_G3C_CS_OR { \
+            displayName = "Switch to OR Gloves"; \
+        }; \
+    }; \
+}; \
+class USP_G3C_CS_MX_VQ: ACEWARDROBE(base) { \
+    class modifiableTo { \
+        class USP_G3C_CS_CU_MX_VQ { \
+            displayName = ECSTRING(main,collar_up); \
+        }; \
+        class USP_G3C_CS_OR_VQ { \
+            displayName = "Switch to OR Gloves"; \
+        }; \
+        class USP_G3C_CS_VQ { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+    }; \
+}; \
+class USP_G3C_CS_OR: ACEWARDROBE(base) { \
+    class modifiableTo { \
+        class USP_G3C_CS { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_CS_MX { \
+            displayName = "Switch to MX Gloves"; \
+        }; \
+        class USP_G3C_CS_CU_OR { \
+            displayName = ECSTRING(main,collar_up); \
+        }; \
+        class USP_G3C_CS_KP_OR { \
+            displayName = ECSTRING(main,kneepads_on); \
+        }; \
+    }; \
+}; \
+class USP_G3C_CS_OR_VQ: ACEWARDROBE(base) { \
+    class modifiableTo { \
+        class USP_G3C_CS_MX_VQ { \
+            displayName = "Switch to MX Gloves"; \
+        }; \
+        class USP_G3C_CS_CU_OR_VQ { \
+            displayName = ECSTRING(main,collar_up); \
+        }; \
+        class USP_G3C_CS_KP_OR_VQ { \
+            displayName = ECSTRING(main,kneepads_on); \
+        }; \
+        class USP_G3C_CS_VQ { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+    }; \
+}; \
+class USP_G3C_CS_VQ: ACEWARDROBE(base) { \
+    class modifiableTo { \
+        class USP_G3C_CS_CU_VQ { \
+            displayName = ECSTRING(main,collar_up); \
+        }; \
+        class USP_G3C_CS_KP_VQ { \
+            displayName = ECSTRING(main,kneepads_on); \
+        }; \
+        class USP_G3C_CS_MX_VQ { \
+            displayName = "Put On MX Gloves"; \
+        }; \
+        class USP_G3C_CS_OR_VQ { \
+            displayName = "Put On OR Gloves"; \
+        }; \
+    }; \
+}; \
+class USP_G3C_CU: ACEWARDROBE(base_U_sleeves_down) { \
+    class modifiableTo { \
+        class USP_G3C { \
+            displayName = ECSTRING(main,collar_down); \
+        }; \
+        class USP_G3C_RS_CU { \
+            displayName = ECSTRING(main,roll_sleeves_up); \
+        }; \
+        class USP_G3C_CS_CU { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_CU_KP { \
+            displayName = ECSTRING(main,kneepads_on); \
+        }; \
+        class USP_G3C_CU_MX { \
+            displayName = "Put On MX Gloves"; \
+        }; \
+        class USP_G3C_CU_OR { \
+            displayName = "Put On OR Gloves"; \
+        }; \
+    }; \
+}; \
+class USP_G3C_CU_KP: ACEWARDROBE(base_U_sleeves_down) { \
+    class modifiableTo { \
+        class USP_G3C_CU { \
+            displayName = ECSTRING(main,kneepads_off); \
+        }; \
+        class USP_G3C_RS_CU_KP { \
+            displayName = ECSTRING(main,roll_sleeves_up); \
+        }; \
+        class USP_G3C_CS_CU_KP { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_CU_KP_MX { \
+            displayName = "Put On MX Gloves"; \
+        }; \
+        class USP_G3C_CU_KP_OR { \
+            displayName = "Put On OR Gloves"; \
+        }; \
+        class USP_G3C_KP { \
+            displayName = ECSTRING(main,collar_down); \
+        }; \
+    }; \
+}; \
+class USP_G3C_CU_KP_MX: ACEWARDROBE(base_U_sleeves_down) { \
+    class modifiableTo { \
+        class USP_G3C_CU_KP { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_RS_CU_KP_MX { \
+            displayName = ECSTRING(main,roll_sleeves_up); \
+        }; \
+        class USP_G3C_CS_CU_KP_MX { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_CU_KP_OR { \
+            displayName = "Switch to OR Gloves"; \
+        }; \
+        class USP_G3C_CU_MX { \
+            displayName = ECSTRING(main,kneepads_off); \
+        }; \
+        class USP_G3C_KP_MX { \
+            displayName = ECSTRING(main,collar_down); \
+        }; \
+    }; \
+}; \
+class USP_G3C_CU_KP_OR: ACEWARDROBE(base_U_sleeves_down) { \
+    class modifiableTo { \
+        class USP_G3C_CU_KP { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_CU_KP_MX { \
+            displayName = "Switch to MX Gloves"; \
+        }; \
+        class USP_G3C_RS_CU_KP_OR { \
+            displayName = ECSTRING(main,roll_sleeves_up); \
+        }; \
+        class USP_G3C_CS_CU_KP_OR { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_CU_OR { \
+            displayName = ECSTRING(main,kneepads_off); \
+        }; \
+        class USP_G3C_KP_OR { \
+            displayName = ECSTRING(main,collar_down); \
+        }; \
+    }; \
+}; \
+class USP_G3C_CU_MX: ACEWARDROBE(base_U_sleeves_down) { \
+    class modifiableTo { \
+        class USP_G3C_CU { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_RS_CU_MX { \
+            displayName = ECSTRING(main,roll_sleeves_up); \
+        }; \
+        class USP_G3C_CS_CU_MX { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_CU_KP_MX { \
+            displayName = ECSTRING(main,kneepads_on); \
+        }; \
+        class USP_G3C_CU_OR { \
+            displayName = "Switch to OR Gloves"; \
+        }; \
+        class USP_G3C_MX { \
+            displayName = ECSTRING(main,collar_down); \
+        }; \
+    }; \
+}; \
+class USP_G3C_CU_OR: ACEWARDROBE(base_U_sleeves_down) { \
+    class modifiableTo { \
+        class USP_G3C_CU { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_CU_MX { \
+            displayName = "Switch to MX Gloves"; \
+        }; \
+        class USP_G3C_RS_CU_OR { \
+            displayName = ECSTRING(main,roll_sleeves_up); \
+        }; \
+        class USP_G3C_CS_CU_OR { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_CU_KP_OR { \
+            displayName = ECSTRING(main,kneepads_on); \
+        }; \
+        class USP_G3C_OR { \
+            displayName = ECSTRING(main,collar_down); \
+        }; \
+    }; \
+}; \
+class USP_G3C_KP: ACEWARDROBE(base_U_sleeves_down) { \
+    class modifiableTo { \
+        class USP_G3C { \
+            displayName = ECSTRING(main,kneepads_off); \
+        }; \
+        class USP_G3C_RS_KP { \
+            displayName = ECSTRING(main,roll_sleeves_up); \
+        }; \
+        class USP_G3C_CS_KP { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_CU_KP { \
+            displayName = ECSTRING(main,collar_up); \
+        }; \
+        class USP_G3C_KP_MX { \
+            displayName = "Put On MX Gloves"; \
+        }; \
+        class USP_G3C_KP_OR { \
+            displayName = "Put On OR Gloves"; \
+        }; \
+    }; \
+}; \
+class USP_G3C_KP_MX: ACEWARDROBE(base_U_sleeves_down) { \
+    class modifiableTo { \
+        class USP_G3C_KP { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_RS_KP_MX { \
+            displayName = ECSTRING(main,roll_sleeves_up); \
+        }; \
+        class USP_G3C_CS_KP_MX { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_CU_KP_MX { \
+            displayName = ECSTRING(main,collar_up); \
+        }; \
+        class USP_G3C_KP_OR { \
+            displayName = "Switch to OR Gloves"; \
+        }; \
+        class USP_G3C_MX { \
+            displayName = ECSTRING(main,kneepads_off); \
+        }; \
+    }; \
+}; \
+class USP_G3C_KP_OR: ACEWARDROBE(base_U_sleeves_down) { \
+    class modifiableTo { \
+        class USP_G3C_KP { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_KP_MX { \
+            displayName = "Switch to MX Gloves"; \
+        }; \
+        class USP_G3C_RS_KP_OR { \
+            displayName = ECSTRING(main,roll_sleeves_up); \
+        }; \
+        class USP_G3C_CS_KP_OR { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_CU_KP_OR { \
+            displayName = ECSTRING(main,collar_up); \
+        }; \
+        class USP_G3C_OR { \
+            displayName = ECSTRING(main,kneepads_off); \
+        }; \
+    }; \
+}; \
+class USP_G3C_MX: ACEWARDROBE(base_U_sleeves_down) { \
+    class modifiableTo { \
+        class USP_G3C { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_RS_MX { \
+            displayName = ECSTRING(main,roll_sleeves_up); \
+        }; \
+        class USP_G3C_CS_MX { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_CU_MX { \
+            displayName = ECSTRING(main,collar_up); \
+        }; \
+        class USP_G3C_KP_MX { \
+            displayName = ECSTRING(main,kneepads_on); \
+        }; \
+        class USP_G3C_OR { \
+            displayName = "Switch to OR Gloves"; \
+        }; \
+    }; \
+}; \
+class USP_G3C_MX_VQ: ACEWARDROBE(base_U_sleeves_down) { \
+    class modifiableTo { \
+        class USP_G3C_RS_MX_VQ { \
+            displayName = ECSTRING(main,roll_sleeves_up); \
+        }; \
+        class USP_G3C_CS_MX_VQ { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_OR_VQ { \
+            displayName = "Switch to OR Gloves"; \
+        }; \
+        class USP_G3C_VQ { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+    }; \
+}; \
+class USP_G3C_OR: ACEWARDROBE(base_U_sleeves_down) { \
+    class modifiableTo { \
+        class USP_G3C { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_MX { \
+            displayName = "Switch to MX Gloves"; \
+        }; \
+        class USP_G3C_RS_OR { \
+            displayName = ECSTRING(main,roll_sleeves_up); \
+        }; \
+        class USP_G3C_CS_OR { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_CU_OR { \
+            displayName = ECSTRING(main,collar_up); \
+        }; \
+        class USP_G3C_KP_OR { \
+            displayName = ECSTRING(main,kneepads_on); \
+        }; \
+    }; \
+}; \
+class USP_G3C_OR_VQ: ACEWARDROBE(base_U_sleeves_down) { \
+    class modifiableTo { \
+        class USP_G3C_MX_VQ { \
+            displayName = "Switch to MX Gloves"; \
+        }; \
+        class USP_G3C_RS_OR_VQ { \
+            displayName = ECSTRING(main,roll_sleeves_up); \
+        }; \
+        class USP_G3C_CS_OR_VQ { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_VQ { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C { \
+            displayName = ECSTRING(main,roll_sleeves_down); \
+        }; \
+        class USP_G3C_RS2 { \
+            displayName = ECSTRING(main,roll_sleeves_up_further); \
+        }; \
+        class USP_G3C_CS { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS_CU { \
+            displayName = ECSTRING(main,collar_up); \
+        }; \
+        class USP_G3C_RS_KP { \
+            displayName = ECSTRING(main,kneepads_on); \
+        }; \
+        class USP_G3C_RS_MX { \
+            displayName = "Put On MX Gloves"; \
+        }; \
+        class USP_G3C_RS_OR { \
+            displayName = "Put On OR Gloves"; \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS_CU: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_CU { \
+            displayName = ECSTRING(main,roll_sleeves_down); \
+        }; \
+        class USP_G3C_RS { \
+            displayName = ECSTRING(main,collar_down); \
+        }; \
+        class USP_G3C_RS2_CU { \
+            displayName = ECSTRING(main,roll_sleeves_up_further); \
+        }; \
+        class USP_G3C_CS_CU { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS_CU_KP { \
+            displayName = ECSTRING(main,kneepads_on); \
+        }; \
+        class USP_G3C_RS_CU_MX { \
+            displayName = "Put On MX Gloves"; \
+        }; \
+        class USP_G3C_RS_CU_OR { \
+            displayName = "Put On OR Gloves"; \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS_CU_KP: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_CU_KP { \
+            displayName = ECSTRING(main,roll_sleeves_down); \
+        }; \
+        class USP_G3C_RS_CU { \
+            displayName = ECSTRING(main,kneepads_off); \
+        }; \
+        class USP_G3C_RS2_CU_KP { \
+            displayName = ECSTRING(main,roll_sleeves_up_further); \
+        }; \
+        class USP_G3C_CS_CU_KP { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS_CU_KP_MX { \
+            displayName = "Put On MX Gloves"; \
+        }; \
+        class USP_G3C_RS_CU_KP_OR { \
+            displayName = "Put On OR Gloves"; \
+        }; \
+        class USP_G3C_RS_KP { \
+            displayName = ECSTRING(main,collar_down); \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS_CU_KP_MX: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_CU_KP_MX { \
+            displayName = ECSTRING(main,roll_sleeves_down); \
+        }; \
+        class USP_G3C_RS_CU_KP { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_RS2_CU_KP_MX { \
+            displayName = ECSTRING(main,roll_sleeves_up_further); \
+        }; \
+        class USP_G3C_CS_CU_KP_MX { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS_CU_KP_OR { \
+            displayName = "Switch to OR Gloves"; \
+        }; \
+        class USP_G3C_RS_CU_MX { \
+            displayName = ECSTRING(main,kneepads_off); \
+        }; \
+        class USP_G3C_RS_KP_MX { \
+            displayName = ECSTRING(main,collar_down); \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS_CU_KP_MX_VQ: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_RS2_CU_KP_MX_VQ { \
+            displayName = ECSTRING(main,roll_sleeves_up_further); \
+        }; \
+        class USP_G3C_CS_CU_KP_MX_VQ { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS_CU_KP_OR_VQ { \
+            displayName = "Switch to OR Gloves"; \
+        }; \
+        class USP_G3C_RS_CU_KP_VQ { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_RS_CU_MX_VQ { \
+            displayName = ECSTRING(main,kneepads_off); \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS_CU_KP_OR: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_CU_KP_OR { \
+            displayName = ECSTRING(main,roll_sleeves_down); \
+        }; \
+        class USP_G3C_RS_CU_KP { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_RS_CU_KP_MX { \
+            displayName = "Switch to MX Gloves"; \
+        }; \
+        class USP_G3C_RS2_CU_KP_OR { \
+            displayName = ECSTRING(main,roll_sleeves_up_further); \
+        }; \
+        class USP_G3C_CS_CU_KP_OR { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS_CU_OR { \
+            displayName = ECSTRING(main,kneepads_off); \
+        }; \
+        class USP_G3C_RS_KP_OR { \
+            displayName = ECSTRING(main,collar_down); \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS_CU_KP_OR_VQ: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_RS_CU_KP_MX_VQ { \
+            displayName = "Switch to MX Gloves"; \
+        }; \
+        class USP_G3C_RS2_CU_KP_OR_VQ { \
+            displayName = ECSTRING(main,roll_sleeves_up_further); \
+        }; \
+        class USP_G3C_CS_CU_KP_OR_VQ { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS_CU_KP_VQ { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_RS_CU_OR_VQ { \
+            displayName = ECSTRING(main,kneepads_off); \
+        }; \
+        class USP_G3C_RS_KP_OR_VQ { \
+            displayName = ECSTRING(main,collar_down); \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS_CU_KP_VQ: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_RS2_CU_KP_VQ { \
+            displayName = ECSTRING(main,roll_sleeves_up_further); \
+        }; \
+        class USP_G3C_CS_CU_KP_VQ { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS_CU_KP_MX_VQ { \
+            displayName = "Put On MX Gloves"; \
+        }; \
+        class USP_G3C_RS_CU_KP_OR_VQ { \
+            displayName = "Put On OR Gloves"; \
+        }; \
+        class USP_G3C_RS_CU_VQ { \
+            displayName = ECSTRING(main,kneepads_off); \
+        }; \
+        class USP_G3C_RS_KP_VQ { \
+            displayName = ECSTRING(main,collar_down); \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS_CU_MX: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_CU_MX { \
+            displayName = ECSTRING(main,roll_sleeves_down); \
+        }; \
+        class USP_G3C_RS_CU { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_RS2_CU_MX { \
+            displayName = ECSTRING(main,roll_sleeves_up_further); \
+        }; \
+        class USP_G3C_CS_CU_MX { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS_CU_KP_MX { \
+            displayName = ECSTRING(main,kneepads_on); \
+        }; \
+        class USP_G3C_RS_CU_OR { \
+            displayName = "Switch to OR Gloves"; \
+        }; \
+        class USP_G3C_RS_MX { \
+            displayName = ECSTRING(main,collar_down); \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS_CU_MX_VQ: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_RS2_CU_MX_VQ { \
+            displayName = ECSTRING(main,roll_sleeves_up_further); \
+        }; \
+        class USP_G3C_CS_CU_MX_VQ { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS_CU_KP_MX_VQ { \
+            displayName = ECSTRING(main,kneepads_on); \
+        }; \
+        class USP_G3C_RS_CU_OR_VQ { \
+            displayName = "Switch to OR Gloves"; \
+        }; \
+        class USP_G3C_RS_CU_VQ { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_RS_MX_VQ { \
+            displayName = ECSTRING(main,collar_down); \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS_CU_OR: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_CU_OR { \
+            displayName = ECSTRING(main,roll_sleeves_down); \
+        }; \
+        class USP_G3C_RS_CU { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_RS_CU_MX { \
+            displayName = "Switch to MX Gloves"; \
+        }; \
+        class USP_G3C_RS2_CU_OR { \
+            displayName = ECSTRING(main,roll_sleeves_up_further); \
+        }; \
+        class USP_G3C_CS_CU_OR { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS_CU_KP_OR { \
+            displayName = ECSTRING(main,kneepads_on); \
+        }; \
+        class USP_G3C_RS_OR { \
+            displayName = ECSTRING(main,collar_down); \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS_CU_OR_VQ: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_RS_CU_MX_VQ { \
+            displayName = "Switch to MX Gloves"; \
+        }; \
+        class USP_G3C_RS2_CU_OR_VQ { \
+            displayName = ECSTRING(main,roll_sleeves_up_further); \
+        }; \
+        class USP_G3C_CS_CU_OR_VQ { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS_CU_KP_OR_VQ { \
+            displayName = ECSTRING(main,kneepads_on); \
+        }; \
+        class USP_G3C_RS_CU_VQ { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_RS_OR_VQ { \
+            displayName = ECSTRING(main,collar_down); \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS_CU_VQ: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_RS2_CU_VQ { \
+            displayName = ECSTRING(main,roll_sleeves_up_further); \
+        }; \
+        class USP_G3C_CS_CU_VQ { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS_CU_KP_VQ { \
+            displayName = ECSTRING(main,kneepads_on); \
+        }; \
+        class USP_G3C_RS_CU_MX_VQ { \
+            displayName = "Put On MX Gloves"; \
+        }; \
+        class USP_G3C_RS_CU_OR_VQ { \
+            displayName = "Put On OR Gloves"; \
+        }; \
+        class USP_G3C_RS_VQ { \
+            displayName = ECSTRING(main,collar_down); \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS_KP: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_KP { \
+            displayName = ECSTRING(main,roll_sleeves_down); \
+        }; \
+        class USP_G3C_RS { \
+            displayName = ECSTRING(main,kneepads_off); \
+        }; \
+        class USP_G3C_RS2_KP { \
+            displayName = ECSTRING(main,roll_sleeves_up_further); \
+        }; \
+        class USP_G3C_CS_KP { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS_CU_KP { \
+            displayName = ECSTRING(main,collar_up); \
+        }; \
+        class USP_G3C_RS_KP_MX { \
+            displayName = "Put On MX Gloves"; \
+        }; \
+        class USP_G3C_RS_KP_OR { \
+            displayName = "Put On OR Gloves"; \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS_KP_MX: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_KP_MX { \
+            displayName = ECSTRING(main,roll_sleeves_down); \
+        }; \
+        class USP_G3C_RS_KP { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_RS2_KP_MX { \
+            displayName = ECSTRING(main,roll_sleeves_up_further); \
+        }; \
+        class USP_G3C_CS_KP_MX { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS_CU_KP_MX { \
+            displayName = ECSTRING(main,collar_up); \
+        }; \
+        class USP_G3C_RS_KP_OR { \
+            displayName = "Switch to OR Gloves"; \
+        }; \
+        class USP_G3C_RS_MX { \
+            displayName = ECSTRING(main,kneepads_off); \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS_KP_OR: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_KP_OR { \
+            displayName = ECSTRING(main,roll_sleeves_down); \
+        }; \
+        class USP_G3C_RS_KP { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_RS_KP_MX { \
+            displayName = "Switch to MX Gloves"; \
+        }; \
+        class USP_G3C_RS2_KP_OR { \
+            displayName = ECSTRING(main,roll_sleeves_up_further); \
+        }; \
+        class USP_G3C_CS_KP_OR { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS_CU_KP_OR { \
+            displayName = ECSTRING(main,collar_up); \
+        }; \
+        class USP_G3C_RS_OR { \
+            displayName = ECSTRING(main,kneepads_off); \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS_KP_OR_VQ: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_RS2_KP_OR_VQ { \
+            displayName = ECSTRING(main,roll_sleeves_up_further); \
+        }; \
+        class USP_G3C_CS_KP_OR_VQ { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS_CU_KP_OR_VQ { \
+            displayName = ECSTRING(main,collar_up); \
+        }; \
+        class USP_G3C_RS_KP_VQ { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_RS_OR_VQ { \
+            displayName = ECSTRING(main,kneepads_off); \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS_KP_VQ: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_RS2_KP_VQ { \
+            displayName = ECSTRING(main,roll_sleeves_up_further); \
+        }; \
+        class USP_G3C_CS_KP_VQ { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS_CU_KP_VQ { \
+            displayName = ECSTRING(main,collar_up); \
+        }; \
+        class USP_G3C_RS_KP_OR_VQ { \
+            displayName = "Put On OR Gloves"; \
+        }; \
+        class USP_G3C_RS_VQ { \
+            displayName = ECSTRING(main,kneepads_off); \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS_MX: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_MX { \
+            displayName = ECSTRING(main,roll_sleeves_down); \
+        }; \
+        class USP_G3C_RS { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_RS2_MX { \
+            displayName = ECSTRING(main,roll_sleeves_up_further); \
+        }; \
+        class USP_G3C_CS_MX { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS_CU_MX { \
+            displayName = ECSTRING(main,collar_up); \
+        }; \
+        class USP_G3C_RS_KP_MX { \
+            displayName = ECSTRING(main,kneepads_on); \
+        }; \
+        class USP_G3C_RS_OR { \
+            displayName = "Switch to OR Gloves"; \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS_MX_VQ: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_MX_VQ { \
+            displayName = ECSTRING(main,roll_sleeves_down); \
+        }; \
+        class USP_G3C_RS2_MX_VQ { \
+            displayName = ECSTRING(main,roll_sleeves_up_further); \
+        }; \
+        class USP_G3C_CS_MX_VQ { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS_CU_MX_VQ { \
+            displayName = ECSTRING(main,collar_up); \
+        }; \
+        class USP_G3C_RS_OR_VQ { \
+            displayName = "Switch to OR Gloves"; \
+        }; \
+        class USP_G3C_RS_VQ { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS_OR: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_OR { \
+            displayName = ECSTRING(main,roll_sleeves_down); \
+        }; \
+        class USP_G3C_RS { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_RS_MX { \
+            displayName = "Switch to MX Gloves"; \
+        }; \
+        class USP_G3C_RS2_OR { \
+            displayName = ECSTRING(main,roll_sleeves_up_further); \
+        }; \
+        class USP_G3C_CS_OR { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS_CU_OR { \
+            displayName = ECSTRING(main,collar_up); \
+        }; \
+        class USP_G3C_RS_KP_OR { \
+            displayName = ECSTRING(main,kneepads_on); \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS_OR_VQ: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_OR_VQ { \
+            displayName = ECSTRING(main,roll_sleeves_down); \
+        }; \
+        class USP_G3C_RS_MX_VQ { \
+            displayName = "Switch to MX Gloves"; \
+        }; \
+        class USP_G3C_RS2_OR_VQ { \
+            displayName = ECSTRING(main,roll_sleeves_up_further); \
+        }; \
+        class USP_G3C_CS_OR_VQ { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS_CU_OR_VQ { \
+            displayName = ECSTRING(main,collar_up); \
+        }; \
+        class USP_G3C_RS_KP_OR_VQ { \
+            displayName = ECSTRING(main,kneepads_on); \
+        }; \
+        class USP_G3C_RS_VQ { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS_VQ: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_CS_VQ { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS_CU_VQ { \
+            displayName = ECSTRING(main,collar_up); \
+        }; \
+        class USP_G3C_RS_KP_VQ { \
+            displayName = ECSTRING(main,kneepads_on); \
+        }; \
+        class USP_G3C_RS_MX_VQ { \
+            displayName = "Put On MX Gloves"; \
+        }; \
+        class USP_G3C_RS_OR_VQ { \
+            displayName = "Put On OR Gloves"; \
+        }; \
+        class USP_G3C_VQ { \
+            displayName = ECSTRING(main,roll_sleeves_down); \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS2: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_RS { \
+            displayName = ECSTRING(main,roll_sleeves_down_partial); \
+        }; \
+        class USP_G3C_CS { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS2_CU { \
+            displayName = ECSTRING(main,collar_up); \
+        }; \
+        class USP_G3C_RS2_KP { \
+            displayName = ECSTRING(main,kneepads_on); \
+        }; \
+        class USP_G3C_RS2_MX { \
+            displayName = "Put On MX Gloves"; \
+        }; \
+        class USP_G3C_RS2_OR { \
+            displayName = "Put On OR Gloves"; \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS2_CU: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_RS_CU { \
+            displayName = ECSTRING(main,roll_sleeves_down_partial); \
+        }; \
+        class USP_G3C_RS2 { \
+            displayName = ECSTRING(main,collar_down); \
+        }; \
+        class USP_G3C_CS_CU { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS2_CU_KP { \
+            displayName = ECSTRING(main,kneepads_on); \
+        }; \
+        class USP_G3C_RS2_CU_MX { \
+            displayName = "Put On MX Gloves"; \
+        }; \
+        class USP_G3C_RS2_CU_OR { \
+            displayName = "Put On OR Gloves"; \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS2_CU_KP: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_RS_CU_KP { \
+            displayName = ECSTRING(main,roll_sleeves_down_partial); \
+        }; \
+        class USP_G3C_RS2_CU { \
+            displayName = ECSTRING(main,kneepads_off); \
+        }; \
+        class USP_G3C_CS_CU_KP { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS2_CU_KP_MX { \
+            displayName = "Put On MX Gloves"; \
+        }; \
+        class USP_G3C_RS2_CU_KP_OR { \
+            displayName = "Put On OR Gloves"; \
+        }; \
+        class USP_G3C_RS2_KP { \
+            displayName = ECSTRING(main,collar_down); \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS2_CU_KP_MX: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_RS_CU_KP_MX { \
+            displayName = ECSTRING(main,roll_sleeves_down_partial); \
+        }; \
+        class USP_G3C_RS2_CU_KP { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_CS_CU_KP_MX { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS2_CU_KP_OR { \
+            displayName = "Switch to OR Gloves"; \
+        }; \
+        class USP_G3C_RS2_CU_MX { \
+            displayName = ECSTRING(main,kneepads_off); \
+        }; \
+        class USP_G3C_RS2_KP_MX { \
+            displayName = ECSTRING(main,collar_down); \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS2_CU_KP_MX_VQ: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_RS_CU_KP_MX_VQ { \
+            displayName = ECSTRING(main,roll_sleeves_down_partial); \
+        }; \
+        class USP_G3C_CS_CU_KP_MX_VQ { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS2_CU_KP_OR_VQ { \
+            displayName = "Switch to OR Gloves"; \
+        }; \
+        class USP_G3C_RS2_CU_KP_VQ { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_RS2_CU_MX_VQ { \
+            displayName = ECSTRING(main,kneepads_off); \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS2_CU_KP_OR: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_RS_CU_KP_OR { \
+            displayName = ECSTRING(main,roll_sleeves_down_partial); \
+        }; \
+        class USP_G3C_RS2_CU_KP { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_RS2_CU_KP_MX { \
+            displayName = "Switch to MX Gloves"; \
+        }; \
+        class USP_G3C_CS_CU_KP_OR { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS2_CU_OR { \
+            displayName = ECSTRING(main,kneepads_off); \
+        }; \
+        class USP_G3C_RS2_KP_OR { \
+            displayName = ECSTRING(main,collar_down); \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS2_CU_KP_OR_VQ: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_RS_CU_KP_OR_VQ { \
+            displayName = ECSTRING(main,roll_sleeves_down_partial); \
+        }; \
+        class USP_G3C_RS2_CU_KP_MX_VQ { \
+            displayName = "Switch to MX Gloves"; \
+        }; \
+        class USP_G3C_CS_CU_KP_OR_VQ { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS2_CU_KP_VQ { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_RS2_CU_OR_VQ { \
+            displayName = ECSTRING(main,kneepads_off); \
+        }; \
+        class USP_G3C_RS2_KP_OR_VQ { \
+            displayName = ECSTRING(main,collar_down); \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS2_CU_KP_VQ: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_RS_CU_KP_VQ { \
+            displayName = ECSTRING(main,roll_sleeves_down_partial); \
+        }; \
+        class USP_G3C_CS_CU_KP_VQ { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS2_CU_KP_MX_VQ { \
+            displayName = "Put On MX Gloves"; \
+        }; \
+        class USP_G3C_RS2_CU_KP_OR_VQ { \
+            displayName = "Put On OR Gloves"; \
+        }; \
+        class USP_G3C_RS2_CU_VQ { \
+            displayName = ECSTRING(main,kneepads_off); \
+        }; \
+        class USP_G3C_RS2_KP_VQ { \
+            displayName = ECSTRING(main,collar_down); \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS2_CU_MX: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_RS_CU_MX { \
+            displayName = ECSTRING(main,roll_sleeves_down_partial); \
+        }; \
+        class USP_G3C_RS2_CU { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_CS_CU_MX { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS2_CU_KP_MX { \
+            displayName = ECSTRING(main,kneepads_on); \
+        }; \
+        class USP_G3C_RS2_CU_OR { \
+            displayName = "Switch to OR Gloves"; \
+        }; \
+        class USP_G3C_RS2_MX { \
+            displayName = ECSTRING(main,collar_down); \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS2_CU_MX_VQ: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_RS_CU_MX_VQ { \
+            displayName = ECSTRING(main,roll_sleeves_down_partial); \
+        }; \
+        class USP_G3C_CS_CU_MX_VQ { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS2_CU_KP_MX_VQ { \
+            displayName = ECSTRING(main,kneepads_on); \
+        }; \
+        class USP_G3C_RS2_CU_OR_VQ { \
+            displayName = "Switch to OR Gloves"; \
+        }; \
+        class USP_G3C_RS2_CU_VQ { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_RS2_MX_VQ { \
+            displayName = ECSTRING(main,collar_down); \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS2_CU_OR: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_RS_CU_OR { \
+            displayName = ECSTRING(main,roll_sleeves_down_partial); \
+        }; \
+        class USP_G3C_RS2_CU { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_RS2_CU_MX { \
+            displayName = "Switch to MX Gloves"; \
+        }; \
+        class USP_G3C_CS_CU_OR { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS2_CU_KP_OR { \
+            displayName = ECSTRING(main,kneepads_on); \
+        }; \
+        class USP_G3C_RS2_OR { \
+            displayName = ECSTRING(main,collar_down); \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS2_CU_OR_VQ: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_RS_CU_OR_VQ { \
+            displayName = ECSTRING(main,roll_sleeves_down_partial); \
+        }; \
+        class USP_G3C_RS2_CU_MX_VQ { \
+            displayName = "Switch to MX Gloves"; \
+        }; \
+        class USP_G3C_CS_CU_OR_VQ { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS2_CU_KP_OR_VQ { \
+            displayName = ECSTRING(main,kneepads_on); \
+        }; \
+        class USP_G3C_RS2_CU_VQ { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_RS2_OR_VQ { \
+            displayName = ECSTRING(main,collar_down); \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS2_CU_VQ: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_RS_CU_VQ { \
+            displayName = ECSTRING(main,roll_sleeves_down_partial); \
+        }; \
+        class USP_G3C_CS_CU_VQ { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS2_CU_KP_VQ { \
+            displayName = ECSTRING(main,kneepads_on); \
+        }; \
+        class USP_G3C_RS2_CU_MX_VQ { \
+            displayName = "Put On MX Gloves"; \
+        }; \
+        class USP_G3C_RS2_CU_OR_VQ { \
+            displayName = "Put On OR Gloves"; \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS2_KP: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_RS_KP { \
+            displayName = ECSTRING(main,roll_sleeves_down_partial); \
+        }; \
+        class USP_G3C_RS2 { \
+            displayName = ECSTRING(main,kneepads_off); \
+        }; \
+        class USP_G3C_CS_KP { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS2_CU_KP { \
+            displayName = ECSTRING(main,collar_up); \
+        }; \
+        class USP_G3C_RS2_KP_MX { \
+            displayName = "Put On MX Gloves"; \
+        }; \
+        class USP_G3C_RS2_KP_OR { \
+            displayName = "Put On OR Gloves"; \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS2_KP_MX: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_RS_KP_MX { \
+            displayName = ECSTRING(main,roll_sleeves_down_partial); \
+        }; \
+        class USP_G3C_RS2_KP { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_CS_KP_MX { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS2_CU_KP_MX { \
+            displayName = ECSTRING(main,collar_up); \
+        }; \
+        class USP_G3C_RS2_KP_OR { \
+            displayName = "Switch to OR Gloves"; \
+        }; \
+        class USP_G3C_RS2_MX { \
+            displayName = ECSTRING(main,kneepads_off); \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS2_KP_OR: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_RS_KP_OR { \
+            displayName = ECSTRING(main,roll_sleeves_down_partial); \
+        }; \
+        class USP_G3C_RS2_KP { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_RS2_KP_MX { \
+            displayName = "Switch to MX Gloves"; \
+        }; \
+        class USP_G3C_CS_KP_OR { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS2_CU_KP_OR { \
+            displayName = ECSTRING(main,collar_up); \
+        }; \
+        class USP_G3C_RS2_OR { \
+            displayName = ECSTRING(main,kneepads_off); \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS2_KP_OR_VQ: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_RS_KP_OR_VQ { \
+            displayName = ECSTRING(main,roll_sleeves_down_partial); \
+        }; \
+        class USP_G3C_CS_KP_OR_VQ { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS2_CU_KP_OR_VQ { \
+            displayName = ECSTRING(main,collar_up); \
+        }; \
+        class USP_G3C_RS2_KP_VQ { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_RS2_OR_VQ { \
+            displayName = ECSTRING(main,kneepads_off); \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS2_KP_VQ: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_RS_KP_VQ { \
+            displayName = ECSTRING(main,roll_sleeves_down_partial); \
+        }; \
+        class USP_G3C_CS_KP_VQ { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS2_CU_KP_VQ { \
+            displayName = ECSTRING(main,collar_up); \
+        }; \
+        class USP_G3C_RS2_KP_OR_VQ { \
+            displayName = "Put On OR Gloves"; \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS2_MX: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_RS_MX { \
+            displayName = ECSTRING(main,roll_sleeves_down_partial); \
+        }; \
+        class USP_G3C_RS2 { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_CS_MX { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS2_CU_MX { \
+            displayName = ECSTRING(main,collar_up); \
+        }; \
+        class USP_G3C_RS2_KP_MX { \
+            displayName = ECSTRING(main,kneepads_on); \
+        }; \
+        class USP_G3C_RS2_OR { \
+            displayName = "Switch to OR Gloves"; \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS2_MX_VQ: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_RS_MX_VQ { \
+            displayName = ECSTRING(main,roll_sleeves_down_partial); \
+        }; \
+        class USP_G3C_CS_MX_VQ { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS2_CU_MX_VQ { \
+            displayName = ECSTRING(main,collar_up); \
+        }; \
+        class USP_G3C_RS2_OR_VQ { \
+            displayName = "Switch to OR Gloves"; \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS2_OR: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_RS_OR { \
+            displayName = ECSTRING(main,roll_sleeves_down_partial); \
+        }; \
+        class USP_G3C_RS2 { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_G3C_RS2_MX { \
+            displayName = "Switch to MX Gloves"; \
+        }; \
+        class USP_G3C_CS_OR { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS2_CU_OR { \
+            displayName = ECSTRING(main,collar_up); \
+        }; \
+        class USP_G3C_RS2_KP_OR { \
+            displayName = ECSTRING(main,kneepads_on); \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS2_OR_VQ: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_RS_OR_VQ { \
+            displayName = ECSTRING(main,roll_sleeves_down_partial); \
+        }; \
+        class USP_G3C_RS2_MX_VQ { \
+            displayName = "Switch to MX Gloves"; \
+        }; \
+        class USP_G3C_CS_OR_VQ { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_RS2_CU_OR_VQ { \
+            displayName = ECSTRING(main,collar_up); \
+        }; \
+        class USP_G3C_RS2_KP_OR_VQ { \
+            displayName = ECSTRING(main,kneepads_on); \
+        }; \
+    }; \
+}; \
+class USP_G3C_VQ: ACEWARDROBE(base_U_sleeves_down) { \
+    class modifiableTo { \
+        class USP_G3C_RS_VQ { \
+            displayName = ECSTRING(main,roll_sleeves_up); \
+        }; \
+        class USP_G3C_CS_VQ { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+        class USP_G3C_MX_VQ { \
+            displayName = "Put On MX Gloves"; \
+        }; \
+        class USP_G3C_OR_VQ { \
+            displayName = "Put On OR Gloves"; \
+        }; \
+    }; \
+};
+
+// Some camo patterns only have the bare sleeve-state variants modelled (no collar/
+// kneepad/glove/boot variants exist for them), so they use this smaller macro instead
+// of USP_G3C_UNIFORMS(CAMO).
+#define USP_G3C_UNIFORMS_SLEEVES_ONLY(CAMO) \
+class USP_G3C_##CAMO: ACEWARDROBE(base_U_sleeves_down) { \
+    class modifiableTo { \
+        class USP_G3C_RS_##CAMO { \
+            displayName = ECSTRING(main,roll_sleeves_up); \
+        }; \
+        class USP_G3C_CS_##CAMO { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+    }; \
+}; \
+class USP_G3C_CS_##CAMO: ACEWARDROBE(base) { \
+}; \
+class USP_G3C_RS_##CAMO: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_##CAMO { \
+            displayName = ECSTRING(main,roll_sleeves_down); \
+        }; \
+        class USP_G3C_RS2_##CAMO { \
+            displayName = ECSTRING(main,roll_sleeves_up_further); \
+        }; \
+        class USP_G3C_CS_##CAMO { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+    }; \
+}; \
+class USP_G3C_RS2_##CAMO: ACEWARDROBE(base_U_sleeves_up) { \
+    class modifiableTo { \
+        class USP_G3C_RS_##CAMO { \
+            displayName = ECSTRING(main,roll_sleeves_down_partial); \
+        }; \
+        class USP_G3C_CS_##CAMO { \
+            displayName = ECSTRING(main,cut_sleeves); \
+        }; \
+    }; \
+};
+
+// One invocation per camo pattern, alphabetically sorted within each macro type. BLK has no
+// camo suffix at all; AMCU/DCU/MM14/MPD/MPW/MTN/MTP/RBS only have the sleeve-state variants
+// modelled; the rest use the full uniform matrix.
+USP_G3C_UNIFORMS_BLK;
+USP_G3C_UNIFORMS_SLEEVES_ONLY(AMCU);
+USP_G3C_UNIFORMS_SLEEVES_ONLY(DCU);
+USP_G3C_UNIFORMS_SLEEVES_ONLY(MM14);
+USP_G3C_UNIFORMS_SLEEVES_ONLY(MPD);
+USP_G3C_UNIFORMS_SLEEVES_ONLY(MPW);
+USP_G3C_UNIFORMS_SLEEVES_ONLY(MTN);
+USP_G3C_UNIFORMS_SLEEVES_ONLY(MTP);
+USP_G3C_UNIFORMS_SLEEVES_ONLY(RBS);
 USP_G3C_UNIFORMS(AOR1);
 USP_G3C_UNIFORMS(AOR2);
-USP_G3C_UNIFORMS(BLK);
 USP_G3C_UNIFORMS(GRY);
 USP_G3C_UNIFORMS(KHK);
 USP_G3C_UNIFORMS(M81);
 USP_G3C_UNIFORMS(MC);
 USP_G3C_UNIFORMS(MCB);
-USP_G3C_UNIFORMS(MCW);
-USP_G3C_UNIFORMS(MCT);
 USP_G3C_UNIFORMS(MCD);
+USP_G3C_UNIFORMS(MCT);
+USP_G3C_UNIFORMS(MCW);
 USP_G3C_UNIFORMS(NAV);
 USP_G3C_UNIFORMS(RGR);
 USP_G3C_UNIFORMS(TSD);
