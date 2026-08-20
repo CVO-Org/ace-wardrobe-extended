@@ -64,6 +64,7 @@
         </Key>
         <Key ID="STR_AWX_Main_cut_sleeves">
             <English>Cut Off Sleeves (Permanent)</English>
+        </Key>
         <Key ID="STR_AWX_Main_attach_chinstrap">
             <English>Attach Chinstrap</English>
         </Key>
@@ -92,6 +93,7 @@
         </Key>
         <Key ID="STR_AWX_Main_kneepads_on">
             <English>Put On Kneepads</English>
+        </Key>
         <Key ID="STR_AWX_Main_loosen_chinstrap">
             <English>Loosen Chinstrap</English>
         </Key>
@@ -179,6 +181,7 @@
         </Key>
         <Key ID="STR_AWX_Main_roll_sleeves_up_further">
             <English>Roll Sleeves Up Further</English>
+        </Key>
         <Key ID="STR_AWX_Main_roll_down_sleeves">
             <English>Roll down Sleeves</English>
         </Key>
