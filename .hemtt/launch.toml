@@ -170,6 +170,12 @@ workshop = [
     "2183975396" # Service & Supply
 ]
 
+[sasnw]
+extends = "sas"
+workshop = [
+    "2643518676" # Service & Supply: New Wave
+]
+
 
 [tfc]
 extends = "default"

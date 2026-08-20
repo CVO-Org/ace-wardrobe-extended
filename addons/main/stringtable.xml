@@ -64,6 +64,14 @@
         </Key>
         <Key ID="STR_AWX_Main_cut_sleeves">
             <English>Cut Off Sleeves (Permanent)</English>
+        <Key ID="STR_AWX_Main_attach_chinstrap">
+            <English>Attach Chinstrap</English>
+        </Key>
+        <Key ID="STR_AWX_Main_attach_goggles">
+            <English>Attach Goggles</English>
+        </Key>
+        <Key ID="STR_AWX_Main_cut_off_brim">
+            <English>Cut off Brim (Permanent)</English>
         </Key>
         <Key ID="STR_AWX_Main_downgrade_scrim">
             <English>Downgrade to light Scrim</English>
@@ -84,12 +92,23 @@
         </Key>
         <Key ID="STR_AWX_Main_kneepads_on">
             <English>Put On Kneepads</English>
+        <Key ID="STR_AWX_Main_loosen_chinstrap">
+            <English>Loosen Chinstrap</English>
+        </Key>
+        <Key ID="STR_AWX_Main_lower_goggles">
+            <English>Lower Goggles</English>
         </Key>
         <Key ID="STR_AWX_Main_mod_URL">
             <English>https://github.com/CVO-Org/ace-wardrobe-extended</English>
         </Key>
         <Key ID="STR_AWX_Main_mod_author">
             <English>AWX Team</English>
+        </Key>
+        <Key ID="STR_AWX_Main_raise_goggles">
+            <English>Raise Goggles</English>
+        </Key>
+        <Key ID="STR_AWX_Main_remove_chinstrap">
+            <English>Remove Chinstrap</English>
         </Key>
         <Key ID="STR_AWX_Main_remove_foliage">
             <English>Remove foliage</English>
@@ -101,6 +120,9 @@
             <Japanese>植生迷彩を外す</Japanese>
             <Chinese>移除植被伪装</Chinese>
             <Ukrainian>Видалити маскування</Ukrainian>
+        </Key>
+        <Key ID="STR_AWX_Main_remove_goggles">
+            <English>Remove Goggles</English>
         </Key>
         <Key ID="STR_AWX_Main_remove_scrim">
             <English>Remove Scrim</English>
@@ -157,6 +179,14 @@
         </Key>
         <Key ID="STR_AWX_Main_roll_sleeves_up_further">
             <English>Roll Sleeves Up Further</English>
+        <Key ID="STR_AWX_Main_roll_down_sleeves">
+            <English>Roll down Sleeves</English>
+        </Key>
+        <Key ID="STR_AWX_Main_roll_up_sleeves">
+            <English>Roll up Sleeves</English>
+        </Key>
+        <Key ID="STR_AWX_Main_tighten_chinstrap">
+            <English>Tighten Chinstrap</English>
         </Key>
     </Package>
 </Project>
