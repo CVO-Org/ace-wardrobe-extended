@@ -131,24 +131,24 @@ class Tight: ace_wardrobe_base {\
 class Low: ace_wardrobe_base_U_sleeves_down {\
     class modifiableTo {\
         class Mid {\
-            displayName = ECSTRING(main,roll_up_sleeves);\
+            displayName = ECSTRING(main,roll_sleeves_up);\
         };\
     };\
 };\
 class Mid: ace_wardrobe_base_U_sleeves_up {\
     class modifiableTo {\
         class Low {\
-            displayName = ECSTRING(main,roll_down_sleeves);\
+            displayName = ECSTRING(main,roll_sleeves_down);\
         };\
         class High {\
-            displayName = ECSTRING(main,roll_up_sleeves);\
+            displayName = ECSTRING(main,roll_sleeves_up);\
         };\
     };\
 };\
 class High: ace_wardrobe_base_U_sleeves_up {\
     class modifiableTo {\
         class Mid {\
-            displayName = ECSTRING(main,roll_down_sleeves);\
+            displayName = ECSTRING(main,roll_sleeves_down);\
         };\
     };\
 }

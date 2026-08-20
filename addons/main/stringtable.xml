@@ -56,23 +56,23 @@
             <Chinese>添加轻型伪装网</Chinese>
             <Ukrainian>Додати легку маскувальну сітку</Ukrainian>
         </Key>
-        <Key ID="STR_AWX_Main_collar_down">
-            <English>Put Collar Down</English>
-        </Key>
-        <Key ID="STR_AWX_Main_collar_up">
-            <English>Put Collar Up</English>
-        </Key>
-        <Key ID="STR_AWX_Main_cut_sleeves">
-            <English>Cut Off Sleeves (Permanent)</English>
-        </Key>
         <Key ID="STR_AWX_Main_attach_chinstrap">
             <English>Attach Chinstrap</English>
         </Key>
         <Key ID="STR_AWX_Main_attach_goggles">
             <English>Attach Goggles</English>
         </Key>
+        <Key ID="STR_AWX_Main_collar_down">
+            <English>Put Collar Down</English>
+        </Key>
+        <Key ID="STR_AWX_Main_collar_up">
+            <English>Put Collar Up</English>
+        </Key>
         <Key ID="STR_AWX_Main_cut_off_brim">
             <English>Cut off Brim (Permanent)</English>
+        </Key>
+        <Key ID="STR_AWX_Main_cut_sleeves">
+            <English>Cut Off Sleeves (Permanent)</English>
         </Key>
         <Key ID="STR_AWX_Main_downgrade_scrim">
             <English>Downgrade to light Scrim</English>
@@ -181,12 +181,6 @@
         </Key>
         <Key ID="STR_AWX_Main_roll_sleeves_up_further">
             <English>Roll Sleeves Up Further</English>
-        </Key>
-        <Key ID="STR_AWX_Main_roll_down_sleeves">
-            <English>Roll down Sleeves</English>
-        </Key>
-        <Key ID="STR_AWX_Main_roll_up_sleeves">
-            <English>Roll up Sleeves</English>
         </Key>
         <Key ID="STR_AWX_Main_tighten_chinstrap">
             <English>Tighten Chinstrap</English>
