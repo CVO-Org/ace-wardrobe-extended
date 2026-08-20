@@ -3642,6 +3642,139 @@ class USP_##TYPE##_G3C_KP_OR: ACEWARDROBE(base) { \
     }; \
 }
 
+// USP Rugby shirt: kneepads come in two mutually-exclusive styles (KP / KP2) that only
+// connect back to the bare state, never to each other directly - to switch styles you have
+// to take the first pair off before putting the second on. Gloves (MX/OR, plus bare hands)
+// still form their own fully-connected set, independent of which kneepad style is worn.
+// COLOR/CAMO are the two halves of the colour code (e.g. CBR over AOR1).
+#define USP_G3C_RUGBY_UNIFORMS(COLOR,CAMO) \
+class USP_RUGBY_G3C_##COLOR##_##CAMO: ACEWARDROBE(base) { \
+    class modifiableTo { \
+        class USP_RUGBY_G3C_KP_##COLOR##_##CAMO { \
+            displayName = ECSTRING(main,kneepads_on); \
+        }; \
+        class USP_RUGBY_G3C_KP2_##COLOR##_##CAMO { \
+            displayName = "Put On Kneepads (Type 2)"; \
+        }; \
+        class USP_RUGBY_G3C_MX_##COLOR##_##CAMO { \
+            displayName = "Put On MX Gloves"; \
+        }; \
+        class USP_RUGBY_G3C_OR_##COLOR##_##CAMO { \
+            displayName = "Put On OR Gloves"; \
+        }; \
+    }; \
+}; \
+class USP_RUGBY_G3C_KP_##COLOR##_##CAMO: ACEWARDROBE(base) { \
+    class modifiableTo { \
+        class USP_RUGBY_G3C_##COLOR##_##CAMO { \
+            displayName = ECSTRING(main,kneepads_off); \
+        }; \
+        class USP_RUGBY_G3C_KP_MX_##COLOR##_##CAMO { \
+            displayName = "Put On MX Gloves"; \
+        }; \
+        class USP_RUGBY_G3C_KP_OR_##COLOR##_##CAMO { \
+            displayName = "Put On OR Gloves"; \
+        }; \
+    }; \
+}; \
+class USP_RUGBY_G3C_KP2_##COLOR##_##CAMO: ACEWARDROBE(base) { \
+    class modifiableTo { \
+        class USP_RUGBY_G3C_##COLOR##_##CAMO { \
+            displayName = "Take Off Kneepads (Type 2)"; \
+        }; \
+        class USP_RUGBY_G3C_KP2_MX_##COLOR##_##CAMO { \
+            displayName = "Put On MX Gloves"; \
+        }; \
+        class USP_RUGBY_G3C_KP2_OR_##COLOR##_##CAMO { \
+            displayName = "Put On OR Gloves"; \
+        }; \
+    }; \
+}; \
+class USP_RUGBY_G3C_MX_##COLOR##_##CAMO: ACEWARDROBE(base) { \
+    class modifiableTo { \
+        class USP_RUGBY_G3C_KP_MX_##COLOR##_##CAMO { \
+            displayName = ECSTRING(main,kneepads_on); \
+        }; \
+        class USP_RUGBY_G3C_KP2_MX_##COLOR##_##CAMO { \
+            displayName = "Put On Kneepads (Type 2)"; \
+        }; \
+        class USP_RUGBY_G3C_##COLOR##_##CAMO { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_RUGBY_G3C_OR_##COLOR##_##CAMO { \
+            displayName = "Switch to OR Gloves"; \
+        }; \
+    }; \
+}; \
+class USP_RUGBY_G3C_OR_##COLOR##_##CAMO: ACEWARDROBE(base) { \
+    class modifiableTo { \
+        class USP_RUGBY_G3C_KP_OR_##COLOR##_##CAMO { \
+            displayName = ECSTRING(main,kneepads_on); \
+        }; \
+        class USP_RUGBY_G3C_KP2_OR_##COLOR##_##CAMO { \
+            displayName = "Put On Kneepads (Type 2)"; \
+        }; \
+        class USP_RUGBY_G3C_##COLOR##_##CAMO { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_RUGBY_G3C_MX_##COLOR##_##CAMO { \
+            displayName = "Switch to MX Gloves"; \
+        }; \
+    }; \
+}; \
+class USP_RUGBY_G3C_KP_MX_##COLOR##_##CAMO: ACEWARDROBE(base) { \
+    class modifiableTo { \
+        class USP_RUGBY_G3C_MX_##COLOR##_##CAMO { \
+            displayName = ECSTRING(main,kneepads_off); \
+        }; \
+        class USP_RUGBY_G3C_KP_##COLOR##_##CAMO { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_RUGBY_G3C_KP_OR_##COLOR##_##CAMO { \
+            displayName = "Switch to OR Gloves"; \
+        }; \
+    }; \
+}; \
+class USP_RUGBY_G3C_KP_OR_##COLOR##_##CAMO: ACEWARDROBE(base) { \
+    class modifiableTo { \
+        class USP_RUGBY_G3C_OR_##COLOR##_##CAMO { \
+            displayName = ECSTRING(main,kneepads_off); \
+        }; \
+        class USP_RUGBY_G3C_KP_##COLOR##_##CAMO { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_RUGBY_G3C_KP_MX_##COLOR##_##CAMO { \
+            displayName = "Switch to MX Gloves"; \
+        }; \
+    }; \
+}; \
+class USP_RUGBY_G3C_KP2_MX_##COLOR##_##CAMO: ACEWARDROBE(base) { \
+    class modifiableTo { \
+        class USP_RUGBY_G3C_MX_##COLOR##_##CAMO { \
+            displayName = "Take Off Kneepads (Type 2)"; \
+        }; \
+        class USP_RUGBY_G3C_KP2_##COLOR##_##CAMO { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_RUGBY_G3C_KP2_OR_##COLOR##_##CAMO { \
+            displayName = "Switch to OR Gloves"; \
+        }; \
+    }; \
+}; \
+class USP_RUGBY_G3C_KP2_OR_##COLOR##_##CAMO: ACEWARDROBE(base) { \
+    class modifiableTo { \
+        class USP_RUGBY_G3C_OR_##COLOR##_##CAMO { \
+            displayName = "Take Off Kneepads (Type 2)"; \
+        }; \
+        class USP_RUGBY_G3C_KP2_##COLOR##_##CAMO { \
+            displayName = ECSTRING(main,gloves_off); \
+        }; \
+        class USP_RUGBY_G3C_KP2_MX_##COLOR##_##CAMO { \
+            displayName = "Switch to MX Gloves"; \
+        }; \
+    }; \
+}
+
 // One invocation per camo pattern, alphabetically sorted within each macro type. BLK has no
 // camo suffix at all; AMCU/DCU/MM14/MPD/MPW/MTN/MTP/RBS only have the sleeve-state variants
 // modelled; the rest use the full uniform matrix.
@@ -4100,3 +4233,82 @@ USP_G3C_LAYER_UNIFORMS_SOLID(PCU,MC);
 USP_G3C_LAYER_UNIFORMS_SOLID(PCU,MCB);
 USP_G3C_LAYER_UNIFORMS_SOLID(PCU,MCD);
 USP_G3C_LAYER_UNIFORMS_SOLID(PCU,MCT);
+
+// Known COLOR_CAMO combinations, alphabetically sorted. COLOR (the top/first colour) is
+// drawn from a small fixed palette; CAMO (the bottom/second colour) is the full camo list.
+USP_G3C_RUGBY_UNIFORMS(BLK,AMCU);
+USP_G3C_RUGBY_UNIFORMS(BLK,AOR1);
+USP_G3C_RUGBY_UNIFORMS(BLK,AOR2);
+USP_G3C_RUGBY_UNIFORMS(BLK,GRY);
+USP_G3C_RUGBY_UNIFORMS(BLK,KHK);
+USP_G3C_RUGBY_UNIFORMS(BLK,M81);
+USP_G3C_RUGBY_UNIFORMS(BLK,MC);
+USP_G3C_RUGBY_UNIFORMS(BLK,MCB);
+USP_G3C_RUGBY_UNIFORMS(BLK,MCD);
+USP_G3C_RUGBY_UNIFORMS(BLK,MCT);
+USP_G3C_RUGBY_UNIFORMS(BLK,MCW);
+USP_G3C_RUGBY_UNIFORMS(BLK,MPD);
+USP_G3C_RUGBY_UNIFORMS(BLK,MPW);
+USP_G3C_RUGBY_UNIFORMS(BLK,MTN);
+USP_G3C_RUGBY_UNIFORMS(BLK,NAV);
+USP_G3C_RUGBY_UNIFORMS(BLK,RBS);
+USP_G3C_RUGBY_UNIFORMS(BLK,RGR);
+USP_G3C_RUGBY_UNIFORMS(BLK,TSD);
+USP_G3C_RUGBY_UNIFORMS(BLK,TSW);
+USP_G3C_RUGBY_UNIFORMS(CBR,AMCU);
+USP_G3C_RUGBY_UNIFORMS(CBR,AOR1);
+USP_G3C_RUGBY_UNIFORMS(CBR,AOR2);
+USP_G3C_RUGBY_UNIFORMS(CBR,GRY);
+USP_G3C_RUGBY_UNIFORMS(CBR,KHK);
+USP_G3C_RUGBY_UNIFORMS(CBR,M81);
+USP_G3C_RUGBY_UNIFORMS(CBR,MC);
+USP_G3C_RUGBY_UNIFORMS(CBR,MCB);
+USP_G3C_RUGBY_UNIFORMS(CBR,MCD);
+USP_G3C_RUGBY_UNIFORMS(CBR,MCT);
+USP_G3C_RUGBY_UNIFORMS(CBR,MCW);
+USP_G3C_RUGBY_UNIFORMS(CBR,MPD);
+USP_G3C_RUGBY_UNIFORMS(CBR,MPW);
+USP_G3C_RUGBY_UNIFORMS(CBR,MTN);
+USP_G3C_RUGBY_UNIFORMS(CBR,NAV);
+USP_G3C_RUGBY_UNIFORMS(CBR,RBS);
+USP_G3C_RUGBY_UNIFORMS(CBR,RGR);
+USP_G3C_RUGBY_UNIFORMS(CBR,TSD);
+USP_G3C_RUGBY_UNIFORMS(CBR,TSW);
+USP_G3C_RUGBY_UNIFORMS(GRY,AMCU);
+USP_G3C_RUGBY_UNIFORMS(GRY,AOR1);
+USP_G3C_RUGBY_UNIFORMS(GRY,AOR2);
+USP_G3C_RUGBY_UNIFORMS(GRY,GRY);
+USP_G3C_RUGBY_UNIFORMS(GRY,KHK);
+USP_G3C_RUGBY_UNIFORMS(GRY,M81);
+USP_G3C_RUGBY_UNIFORMS(GRY,MC);
+USP_G3C_RUGBY_UNIFORMS(GRY,MCB);
+USP_G3C_RUGBY_UNIFORMS(GRY,MCD);
+USP_G3C_RUGBY_UNIFORMS(GRY,MCT);
+USP_G3C_RUGBY_UNIFORMS(GRY,MCW);
+USP_G3C_RUGBY_UNIFORMS(GRY,MPD);
+USP_G3C_RUGBY_UNIFORMS(GRY,MPW);
+USP_G3C_RUGBY_UNIFORMS(GRY,MTN);
+USP_G3C_RUGBY_UNIFORMS(GRY,NAV);
+USP_G3C_RUGBY_UNIFORMS(GRY,RBS);
+USP_G3C_RUGBY_UNIFORMS(GRY,RGR);
+USP_G3C_RUGBY_UNIFORMS(GRY,TSD);
+USP_G3C_RUGBY_UNIFORMS(GRY,TSW);
+USP_G3C_RUGBY_UNIFORMS(RGR,AMCU);
+USP_G3C_RUGBY_UNIFORMS(RGR,AOR1);
+USP_G3C_RUGBY_UNIFORMS(RGR,AOR2);
+USP_G3C_RUGBY_UNIFORMS(RGR,GRY);
+USP_G3C_RUGBY_UNIFORMS(RGR,KHK);
+USP_G3C_RUGBY_UNIFORMS(RGR,M81);
+USP_G3C_RUGBY_UNIFORMS(RGR,MC);
+USP_G3C_RUGBY_UNIFORMS(RGR,MCB);
+USP_G3C_RUGBY_UNIFORMS(RGR,MCD);
+USP_G3C_RUGBY_UNIFORMS(RGR,MCT);
+USP_G3C_RUGBY_UNIFORMS(RGR,MCW);
+USP_G3C_RUGBY_UNIFORMS(RGR,MPD);
+USP_G3C_RUGBY_UNIFORMS(RGR,MPW);
+USP_G3C_RUGBY_UNIFORMS(RGR,MTN);
+USP_G3C_RUGBY_UNIFORMS(RGR,NAV);
+USP_G3C_RUGBY_UNIFORMS(RGR,RBS);
+USP_G3C_RUGBY_UNIFORMS(RGR,RGR);
+USP_G3C_RUGBY_UNIFORMS(RGR,TSD);
+USP_G3C_RUGBY_UNIFORMS(RGR,TSW);
