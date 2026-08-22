@@ -47,6 +47,7 @@ For any help visit our [Discord](https://discord.gg/cQ7dSwRcVd).
 - [x] [ArmaModFrance AiO](https://steamcommunity.com/workshop/filedetails/?id=1781990846)
 - [x] [VSM All in One](https://steamcommunity.com/sharedfiles/filedetails/?id=823636749)
 - [x] [Service & Supply](https://steamcommunity.com/sharedfiles/filedetails/?id=2183975396)
+- [x] [The Black Dogs of Burnham](https://steamcommunity.com/sharedfiles/filedetails/?id=3780409647) and more
 - [x] [Service & Supply: New Wave (partially Supported)](https://steamcommunity.com/sharedfiles/filedetails/?id=2643518676)
 - [x] [Task Force Canada](https://steamcommunity.com/sharedfiles/filedetails/?id=2770236561) and more
 
