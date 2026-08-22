@@ -1,0 +1,3 @@
+HELMET_VISOR(RC_bascinet_Black_hounskull_VU,RC_bascinet_Black_hounskull_VD);
+HELMET_VISOR(RC_bascinet_Black_Klappvisor_VU,RC_bascinet_Black_Klappvisor_VD);
+HELMET_VISOR(RC_Sallet_Black_VU,RC_Sallet_Black_VD);

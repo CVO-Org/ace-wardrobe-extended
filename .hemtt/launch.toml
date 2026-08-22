@@ -198,4 +198,9 @@ workshop = [
 extends = "default"
 workshop = [
     "1795825073" # USP Gear AiO
+]    
+[blackdogs]
+extends = "1400"
+workshop = [
+    "3780409647" # Arma Domini- The Black Dogs of Burnham
 ]
