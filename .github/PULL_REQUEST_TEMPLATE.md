@@ -15,6 +15,11 @@ Closes #
 - [ ] Tested in game (`hemtt launch`) - SP / MP / dedicated:
 
 ## Checklist
+- [ ] Title follows "Scope - Type: Short description" and has a `pr/*` label
+- [ ] User-facing text is in `stringtable.xml`
+- [ ] README / docs updated if behaviour changed
+
+<!-- ACE Wardrobe Extended -->
 - [ ] [Development Guidelines](https://ace3.acemod.org/wiki/development/) are read, understood and applied.
 - [ ] Mod is added to `readme.md`
 - [ ] Launch Preset is added to `.hemtt/launch.toml`.
