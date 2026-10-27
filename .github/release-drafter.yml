@@ -1,4 +1,6 @@
 # Automatically generates draft releases based on merged PRs
+# A PR with labels of several categories is listed in each of them
+# The old labels (pr/feature, pr/impovement, pr/refactor, pr/meta, pr/ignoreChangelog) are kept so older PRs still sort correctly
 
 name-template: 'v$NEXT_PATCH_VERSION'
 tag-template: 'v$NEXT_PATCH_VERSION'
@@ -6,22 +8,35 @@ tag-template: 'v$NEXT_PATCH_VERSION'
 categories:
   - title: 'Features 🚀'
     labels:
-      - pr/feature
+      - pr/new
       - pr/improvement
+      - pr/feature
+      - pr/impovement
   - title: 'Bug Fixes 🐛'
     labels:
       - pr/fix
+  - title: 'Settings ⚙️'
+    labels:
+      - pr/settings
+  - title: 'Translation 📚'
+    labels:
+      - pr/translation
   - title: 'Documentation 📚'
     labels:
       - pr/docs
   - title: 'Maintenance 🛠️'
     labels:
-      - pr/refactor
+      - pr/maintenance
       - pr/cleanup
+      - pr/refactor
       - pr/meta
+  - title: 'Breaking Changes ⚠️'
+    labels:
+      - pr/breaking
 
 # change-template: '- $TITLE (#$NUMBER) @$AUTHOR'
 exclude-labels:
+  - pr/ignore
   - pr/ignoreChangelog
 
 change-template: '* $TITLE (#$NUMBER) by @$AUTHOR'

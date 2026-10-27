@@ -1,3 +1,7 @@
+<!--
+Title: "Scope - Type: Short description" (e.g. "Arsenal - Fix: ..."), imperative, English - it is used as the changelog entry.
+Add at least one pr/* label (pr/new, pr/improvement, pr/fix, pr/settings, pr/translation, pr/docs, pr/maintenance, pr/cleanup, pr/breaking, pr/ignore).
+-->
 
 # PULL REQUEST
 
@@ -11,4 +15,4 @@
 - [ ] [Development Guidelines](https://ace3.acemod.org/wiki/development/) are read, understood and applied.
 - [ ] Title of this PR describes the changes accurately.
 - [ ] Mod is added to `readme.md`
-- [ ] Launch Preset is added to `.hemmt/launch.toml`.
+- [ ] Launch Preset is added to `.hemtt/launch.toml`.
