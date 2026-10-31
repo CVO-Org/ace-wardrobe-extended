@@ -204,3 +204,10 @@ extends = "1400"
 workshop = [
     "3780409647" # Arma Domini- The Black Dogs of Burnham
 ]
+
+[nav]
+extends = "default"
+workshop = [
+    "3795628782", # Nav Shemag
+    "3813942311", # Nav Bandana
+]
